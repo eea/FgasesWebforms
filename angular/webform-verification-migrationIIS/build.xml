@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="fgases-verification" default="build" basedir=".">
+
+    <!-- Rutas base -->
+    <property name="site_root" location="app"/>
+    <property name="css" location="${site_root}/css" />
+    <property name="js" location="${site_root}/js" />
+    <property name="scripts" location="${site_root}/scripts" />
+    <property name="markup" location="${site_root}/markup" />
+    <property name="bower_components" location="${site_root}/bower_components" />
+    <property name="bower_component_promise_tracker" location="${bower_components}/angular-promise-tracker" />
+    <property name="bower_component_file_upload" location="${bower_components}/angular-file-upload/dist" />
+    <property name="build" location="build" />
+    <property name="dist" location="dist" />
+
+    <!-- Filtro usado en concat de JS -->
+    <filterchain id="js_standard">
+        <linecontains negate="true">
+            <contains value="use strict" />
+        </linecontains>
+        <linecontains negate="true">
+            <contains value="/*-ant-includes" />
+        </linecontains>
+        <linecontains negate="true">
+            <contains value="ant-includes-*/" />
+        </linecontains>
+    </filterchain>
+
+    <!-- Limpiar -->
+    <target name="clean">
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+    </target>
+
+    <!-- Generar SOLO el JSON de fgases-labels-2025-en.xml y copiar verification-instance-empty-2025.xml sin convertir -->
+    <target name="gen-json">
+        <!-- 1) Copiar únicamente el XML objetivo a una carpeta temporal -->
+        <mkdir dir="${build}/xml_one"/>
+        <copy todir="${build}/xml_one" overwrite="true">
+            <fileset dir="../xml">
+                <include name="fgases-labels-2025-en.xml"/>
+            </fileset>
+        </copy>
+
+        <!-- 2) Ejecutar el conversor para generar JSON -->
+        <mkdir dir="${build}/labels"/>
+        <echo>Generando JSON desde ${build}/xml_one/fgases-labels-2025-en.xml hacia ${build}/labels</echo>
+        <exec executable="python" failonerror="true">
+            <arg line="tools/xml_to_json_labels.py ${build}/xml_one ${build}/labels" />
+        </exec>
+
+        <!-- 3) Copiar el JSON al raíz de build y renombrarlo a fgases-labels-verification-2025-en.json -->
+        <copy todir="${build}" flatten="true" overwrite="true">
+            <fileset dir="${build}/labels">
+                <include name="fgases-labels-2025-en.json"/>
+            </fileset>
+        </copy>
+        <!-- Renombrar al nombre final solicitado -->
+        <move file="${build}/fgases-labels-2025-en.json"
+              tofile="${build}/fgases-labels-verification-2025-en.json" overwrite="true"/>
+
+        <!-- 4) Copiar el XML verification-instance-empty-2025.xml (SIN convertir) desde ../xml a build/ -->
+        <copy file="../xml/verification-instance-empty-2025.xml" todir="${build}" overwrite="true"/>
+    </target>
+
+    <!-- Build principal: depende de gen-json -->
+    <target name="build" depends="clean,gen-json">
+        <mkdir dir="${build}" />
+
+        <!-- Copia CSS/JS sueltos y vendor mínimos -->
+        <copy flatten="true" todir="${build}" includeEmptyDirs="false">
+            <fileset dir="${css}" />
+            <fileset file="${scripts}/notification/notification.css" />
+            <fileset file="${bower_component_promise_tracker}/promise-tracker.js" />
+            <fileset file="${bower_component_promise_tracker}/promise-tracker-http-interceptor.js" />
+            <fileset file="${bower_component_file_upload}/angular-file-upload.min.js" />
+            <fileset file="${scripts}/fxparser.min.js" />
+        </copy>
+
+        <!-- Copia markup (plantillas HTML) al build/root -->
+        <copy flatten="true" todir="${build}" includeEmptyDirs="false">
+            <fileset dir="${markup}" />
+        </copy>
+
+        <!-- Copia Web.config de la app al build -->
+        <copy file="${site_root}/Web.config" todir="${build}" overwrite="true"/>
+
+        <!-- Normaliza referencias de plantillas en los HTML de build -->
+        <replaceregexp byline="true">
+            <regexp pattern="=&quot;'markup\/(.*\/)*(.*\.html)'&quot;"/>
+            <substitution expression="=&quot;'\2'&quot;"/>
+            <fileset dir="${build}">
+                <include name="*.html"/>
+            </fileset>
+        </replaceregexp>
+
+        <!-- Concatena todo el JS de la app + scripts en un único app.js -->
+        <concat destfile="${build}/app.js" encoding="UTF-8" outputencoding="UTF-8" fixlastline="true">
+            <filterchain refid="js_standard" />
+            <fileset file="${js}/app.js" />
+            <fileset dir="${js}/controllers" />
+            <fileset dir="${js}/directives" />
+            <fileset dir="${js}/filters" />
+            <fileset dir="${js}/services" />
+            <fileset dir="${js}/viewmodel" />
+            <fileset dir="${scripts}">
+                <exclude name="**/*.css" />
+            </fileset>
+        </concat>
+
+        <!-- Copia y filtra index.html (elimina refs a /scripts, /js, etc.) -->
+        <copy file="${site_root}/index.html" todir="${build}">
+            <filterchain>
+                <linecontains negate="true">
+                    <contains value="href=&quot;css/" />
+                </linecontains>
+                <linecontains negate="true">
+                    <contains value="href=&quot;scripts/" />
+                </linecontains>
+                <linecontains negate="true">
+                    <contains value="src=&quot;scripts/" />
+                </linecontains>
+                <linecontains negate="true">
+                    <contains value="src=&quot;js/" />
+                </linecontains>
+                <linecontains negate="true">
+                    <contains value="src=&quot;mock/" />
+                </linecontains>
+                <linecontains negate="true">
+                    <contains value="ant-includes" />
+                </linecontains>
+                <linecontains negate="true">
+                    <contains value="=&quot;bower_components/" />
+                </linecontains>
+                <tokenfilter>
+                    <replaceregex pattern="=&quot;markup\/(.*\.html)&quot;" replace="=&quot;\1&quot;" />
+                </tokenfilter>
+            </filterchain>
+        </copy>
+    </target>
+
+    <!-- Verificación de parámetro de proyecto antes de empaquetar -->
+    <target name="build-to-deploy" depends="build">
+        <fail>
+            <condition>
+                <not>
+                    <isset property="project"/>
+                </not>
+            </condition>
+        </fail>
+    </target>
+
+    <!-- Empaquetados -->
+    <target name="build-test" depends="build-to-deploy">
+        <exec executable="python" failonerror="true">
+            <arg line="build-archiver.py test ${project}" />
+        </exec>
+    </target>
+
+    <target name="build-prod" depends="build-to-deploy">
+        <exec executable="python" failonerror="true">
+            <arg line="build-archiver.py prod ${project}" />
+        </exec>
+    </target>
+
+</project>

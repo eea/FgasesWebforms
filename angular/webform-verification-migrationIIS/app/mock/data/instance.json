@@ -1,0 +1,810 @@
+{
+	"Verification": {
+	  "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+	  "@xml:lang": "en",
+	  "@xsi:noNamespaceSchemaLocation": "http://dd.eionet.europa.eu/schemas/fgases-2025/Verification.xsd",
+	  "GeneralReportData": {
+		"Company": {
+		  "CompanyId": "BM-123",
+		  "CompanyName": "Bilbomatica",
+		  "PostalAddress": {
+			"StreetAddress": "Street name",
+			"City": "Bilbao",
+			"Region": "Bizkaia",
+			"PostalCode": "48005"
+		  },
+		  "Country": {
+			"_desc": "",
+			"__text": "aa",
+			"code": "FI",
+	        "Type": "EU_TYPE",
+	        "Name": "Finlandd"
+		  },
+		  "ContactInfo": {
+			"Telephone": "String",
+			"FaxNumber": "String",
+			"Email": "String",
+			"ContactPerson": "String"
+		  },
+		  "EoriCode": "String",
+		  "VatCode": "String",
+		  "NoReporting": "true"
+		  
+		},
+		"EuLegalRepresentativeCompany":{
+			"Name":"name_repre",
+			"Country":{
+				"Name": "coutnry euLegalRepresentativeCompany"
+			}
+		},
+		"Auditor": {
+		  "Auditor_uid": "FAUBO4SY",
+		  "Name": "auditor_bdr_1",
+		  "LeadAuditorEmail": "olimpiu.rob@eaudeweb.ro",
+		  "Telephone": "222222",
+		  "Website": "www.auditoRRR.com",
+		  "Company": {
+			"CompanyName": "BM",
+			"City": "Tokio"
+		  },
+		  "Adress": {
+			"Number": "BM",
+			"Street": "C/Kalea",
+			"PostalCode": "48014444"
+		  },
+		   "Country": {
+			"Type": "EU_TYPE",
+			"Name": "Italy"
+		  }
+		}
+  
+	   
+	  },
+	  "VerificationScope": {
+		  "SubmissionDate": "1957-08-13",
+		  "TransactionYear": "2007",
+		  "Bulk": true,
+		  "Equipment": false,
+		  "DataReportUrl":"https://bdr-test.eionet.europa.eu/fgases/fi/44420/envz9fmw"
+	  },
+	  "BulkHFCs": {
+		"section_I_1": {
+		  "confirmation_a": {
+			"checked": false
+		  },
+		  "confirmation_b": {
+			"checked": false,
+			"option_1": false,
+			"option_2": false,
+			"option_3": false,
+			"option_4": false,
+			"option_4_reason": ""
+		  },
+		  "confirmation_c": {
+			"checked": false,
+			"option_1": false,
+			"option_2": false,
+			"option_3": false,
+			"option_4": false,
+			"option_4_reason": ""
+		  }
+		},
+		"section_I_2": {
+		  "tr_01A": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_01A_a_own": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_01A_a_other": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_01B": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_01C": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_02A": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_02B": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_02G": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_02H": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_02I": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_03B": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_04C": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_04H": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_05A": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_05B": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_5C_exempted_CO2e": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_05D": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_05E": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_05F": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_09A": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  },
+		  "tr_09F": {
+			"confirmation_a": {
+			  "checked": false
+			},
+			"confirmation_b": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			},
+			"confirmation_c": {
+			  "checked": false,
+			  "option_1": false,
+			  "option_2": false,
+			  "option_3": false,
+			  "option_4": false,
+			  "option_4_reason": ""
+			}
+		  }
+		},
+		"section_I_3": {
+		  "confirmation_a": {
+			"checked": false
+		  },
+		  "confirmation_b": {
+			"checked": false,
+			"option_1": false,
+			"option_2": false,
+			"option_3": false,
+			"option_4": false,
+			"option_4_reason": ""
+		  },
+		  "confirmation_c": {
+			"checked": false,
+			"option_1": false,
+			"option_2": false,
+			"option_3": false,
+			"option_4": false,
+			"option_4_reason": ""
+		  }
+		},
+		"section_I_4": {
+		  "VerificationReport": {
+			"Url": null,
+			"Title": null
+		  }
+		}
+	  },
+	  "EquipmentHFCs": {
+		"section_II_1": {
+		  "confirmation_a": {
+			"checked": false
+		  },
+		  "confirmation_b": {
+			"checked": false,
+			"option_1": false,
+			"option_2": false,
+			"option_3": false,
+			"option_4": false,
+			"option_4_reason": ""
+		  },
+		  "confirmation_c": {
+			"checked": false,
+			"option_1": false,
+			"option_2": false,
+			"option_3": false,
+			"option_4": false,
+			"option_4_reason": ""
+		  }
+		},
+			"section_II_2": {
+				"tr_11G": {
+					"confirmation_a": {
+						"checked": false
+					},
+					"confirmation_b": {
+						"checked": false,
+						"option_1": false,
+						"option_2": false,
+						"option_3": false,
+						"option_4": false,
+						"option_4_reason": ""
+					},
+					"confirmation_c": {
+						"checked": false,
+						"option_1": false,
+						"option_2": false,
+						"option_3": false,
+						"option_4": false,
+						"option_4_reason": ""
+					}
+				},
+				"tr_11J1": {
+					"confirmation_a": {
+						"checked": false
+					},
+					"confirmation_b": {
+						"checked": false,
+						"option_1": false,
+						"option_2": false,
+						"option_3": false,
+						"option_4": false,
+						"option_4_reason": ""
+					},
+					"confirmation_c": {
+						"checked": false,
+						"option_1": false,
+						"option_2": false,
+						"option_3": false,
+						"option_4": false,
+						"option_4_reason": ""
+					}
+				},
+				"tr_12A": {
+					"confirmation_a": {
+						"checked": false
+					},
+					"confirmation_b": {
+						"checked": false,
+						"option_1": false,
+						"option_2": false,
+						"option_3": false,
+						"option_4": false,
+						"option_4_reason": ""
+					},
+					"confirmation_c": {
+						"checked": false,
+						"option_1": false,
+						"option_2": false,
+						"option_3": false,
+						"option_4": false,
+						"option_4_reason": ""
+					}
+				},
+				"tr_12aA": {
+					"confirmation_a": {
+						"checked": false
+					},
+					"confirmation_b": {
+						"checked": false,
+						"option_1": false,
+						"option_2": false,
+						"option_3": false,
+						"option_4": false,
+						"option_4_reason": ""
+					},
+					"confirmation_c": {
+						"checked": false,
+						"option_1": false,
+						"option_2": false,
+						"option_3": false,
+						"option_4": false,
+						"option_4_reason": ""
+					}
+				},
+				"tr_12B": {
+					"confirmation_a": {
+						"checked": false
+					},
+					"confirmation_b": {
+						"checked": false,
+						"option_1": false,
+						"option_2": false,
+						"option_3": false,
+						"option_4": false,
+						"option_4_reason": ""
+					},
+					"confirmation_c": {
+						"checked": false,
+						"option_1": false,
+						"option_2": false,
+						"option_3": false,
+						"option_4": false,
+						"option_4_reason": ""
+					}
+				},
+				"tr_12aB": {
+					"confirmation_a": {
+						"checked": false
+					},
+					"confirmation_b": {
+						"checked": false,
+						"option_1": false,
+						"option_2": false,
+						"option_3": false,
+						"option_4": false,
+						"option_4_reason": ""
+					},
+					"confirmation_c": {
+						"checked": false,
+						"option_1": false,
+						"option_2": false,
+						"option_3": false,
+						"option_4": false,
+						"option_4_reason": ""
+					}
+				},
+				"tr_13D": {
+					"confirmation_a": {
+						"checked": false
+					},
+					"confirmation_b": {
+						"checked": false,
+						"option_1": false,
+						"option_2": false,
+						"option_3": false,
+						"option_4": false,
+						"option_4_reason": ""
+					},
+					"confirmation_c": {
+						"checked": false,
+						"option_1": false,
+						"option_2": false,
+						"option_3": false,
+						"option_4": false,
+						"option_4_reason": ""
+					}
+				},
+				"tr_11P": {
+					"confirmation_a": {
+						"checked": false
+					},
+					"confirmation_b": {
+						"checked": false,
+						"option_4": false,
+						"option_4_reason": ""
+					},
+					"confirmation_c": {
+						"checked": false,
+						"option_4": false,
+						"option_4_reason": ""
+					}
+				}
+			},
+		"section_II_3": {
+		  "confirmation_a": {
+			"checked": false
+		  },
+		  "confirmation_b": {
+			"checked": false,
+			"option_1": false,
+			"option_2": false,
+			"option_3": false,
+			"option_4": false,
+			"option_4_reason": ""
+		  },
+		  "confirmation_c": {
+			"checked": false,
+			"option_1": false,
+			"option_2": false,
+			"option_3": false,
+			"option_4": false,
+			"option_4_reason": ""
+		  }
+		},
+			"section_II_4": {
+				"option_a": {
+					"option": null,
+					"reason_1": null,
+					"reason_2": null,
+					"reason_3": null
+				},
+				"option_b": {
+					"option": null,
+					"reason_1": null,
+					"reason_2": null,
+					"reason_3": null
+				},
+				"option_c": {
+					"option": null,
+					"reason_1": null,
+					"reason_2": null,
+					"reason_3": null
+				}
+			},
+		"section_II_5": {
+		  "VerificationReport": {
+			"Url": null,
+			"Title": null
+		  }
+		}
+	  },
+	  "Year": "",
+	  "NILReport": "",
+	  "URL": "",
+	  "ReportedDate": "",
+	  "BV_9F": "",
+	  "BV_5C": "",
+	  "BV_10A": "",
+	  "ReportFiles": {
+		"ReportFile": ""
+	  },
+	  "_xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+	  "_xsi:schemaLocation": "http://dd.eionet.europa.eu/namespace.jsp?ns_id=802 http://dd.eionet.europa.eu/schemas/fgases-2025/Verification.xsd"
+	}
+  }

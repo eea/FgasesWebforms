@@ -1,0 +1,205 @@
+
+<style>
+    table.bulk-hfcs-selection th {
+        text-align: center;
+    }
+    table.bulk-hfcs-selection th.reported-hfc-title {
+        vertical-align: middle;
+    }
+    table.bulk-hfcs-selection th.confirmed-a {
+        min-width: fit-content;
+        vertical-align: top;
+        text-wrap-mode: nowrap;
+    } 
+    table.bulk-hfcs-selection th.confirmed-b, 
+    table.bulk-hfcs-selection th.confirmed-c {
+        width: 300px;
+        vertical-align: top;
+    }
+    table.bulk-hfcs-selection th.confirmed-note {
+        font-size: 0.75em;
+        text-align: left;
+    }
+    table.bulk-hfcs-selection td.confirmation{
+        text-align: center;
+        /* vertical-align: middle; */
+    }
+    table.bulk-hfcs-selection td div.confirmation-summary {
+        text-align: left;
+    }
+    table.bulk-hfcs-selection td.gas-header {
+        text-align: center;
+    }
+
+    table.bulk-hfcs-selection-componets { margin-bottom: 0px; }
+    table.bulk-hfcs-selection-componets thead tr {
+        border-top-width: 0px;
+        border-bottom-width: 1px;
+    }
+    table.bulk-hfcs-selection-componets th:first-child { border-left-width: 0px; }
+    table.bulk-hfcs-selection-componets th:last-child { border-right-width: 0px; }
+    table.bulk-hfcs-selection-componets tbody td { border: 0px }
+    table.bulk-hfcs-selection-componets tbody tr { border: 0px }
+    table.bulk-hfcs-selection-componets .component {
+        max-width: 100px;
+        word-wrap: break-word;
+    }
+    table.bulk-hfcs-selection-componets td.no-top-border { border-top: 0; }
+    table.bulk-hfcs-selection-componets td.no-bottom-border { border-bottom: 0; }
+</style>
+
+<table class="table table-hover table-bordered fixed-table bulk-hfcs-selection" style="font-size: 90%;">
+    <thead>
+        <tr>
+            <th colspan="{{3 + (instance.Verification.ReportedEquipment.ReportedGases.length * 3 || 1)}}"><span data-translate="bulk-hfcs-verification.section-I-1-table-title"></span></th>
+        </tr>
+        <tr>
+            <th class="" colspan="3"><span data-translate="bulk-hfcs-verification.section-I-1-table-header1"></span></th>
+            <th class="reported-hfc-title" colspan="{{(instance.Verification.ReportedEquipment.ReportedGases.length * 3 || 1)}}" rowspan="3">
+                <span data-translate="bulk-hfcs-verification.section-I-1-table-header2"></span>
+                <span>{{instance.Verification.GeneralReportData.ReportingYear}}</span>
+            </th>
+        </tr>
+        <tr>
+            <th class="confirmed-a">
+                <span>(a)</span>
+                <br/>
+                <span data-translate="bulk-hfcs-verification.table-confirmed-a"></span>
+                <span>*</span>
+            </th>
+            <th class="confirmed-b">
+                <span>(b)</span>
+                <br/>
+                <span data-translate="bulk-hfcs-verification.table-confirmed-b"></span>
+                <span>*</span>
+            </th>
+            <th class="confirmed-c">
+                <span>(c)</span>
+                <br/>
+                <span data-translate="bulk-hfcs-verification.table-confirmed-c"></span>
+                <span>*</span>
+            </th>
+        </tr>
+        <tr>
+            <th class="confirmed-note" colspan="3"><span>* </span><span data-translate="bulk-hfcs-verification.table-confirmed-note"></span></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="equipment-verification-confirmation">
+            <td rowspan="5" class="confirmation no-bottom-border" ng-class="{'disabled' : !instance.Verification.EquipmentHFCs.section_II_1}">
+                <input class="form-check-input" type="checkbox"
+                        ng-if="instance.Verification.EquipmentHFCs.section_II_1"
+                        ng-model="instance.Verification.EquipmentHFCs.section_II_1.confirmation_a.checked"
+                        ng-change="onConfirmation_a_Changed(instance.Verification.EquipmentHFCs.section_II_1)">
+            </td>
+            <td rowspan="5" class="confirmation no-bottom-border" ng-class="{'disabled' : !instance.Verification.EquipmentHFCs.section_II_1}">
+                <input class="form-check-input" type="checkbox"
+                        ng-if="instance.Verification.EquipmentHFCs.section_II_1"
+                        ng-model="instance.Verification.EquipmentHFCs.section_II_1.confirmation_b.checked"
+                        ng-change="onConfirmation_b_Changed('equipment-verification.section-II-1-table', instance.Verification.EquipmentHFCs.section_II_1)">
+                <div class="confirmation-summary" ng-if="instance.Verification.EquipmentHFCs.section_II_1.confirmation_b.checked">
+                    <div ng-if="instance.Verification.EquipmentHFCs.section_II_1.confirmation_b.option_1">
+                        <span data-translate="equipment-verification.section-II-1-table-option-b1"></span>
+                    </div>
+                    <div ng-if="instance.Verification.EquipmentHFCs.section_II_1.confirmation_b.option_2">
+                        <span data-translate="equipment-verification.section-II-1-table-option-b2"></span>
+                    </div>
+                    <div ng-if="instance.Verification.EquipmentHFCs.section_II_1.confirmation_b.option_3">
+                        <span data-translate="equipment-verification.section-II-1-table-option-b3"></span>
+                    </div>
+                    <div ng-if="instance.Verification.EquipmentHFCs.section_II_1.confirmation_b.option_4">
+                        <span data-translate="equipment-verification.section-II-1-table-option-b4"></span>
+                    </div>
+                    <div ng-if="instance.Verification.EquipmentHFCs.section_II_1.confirmation_b.option_4">
+                        <span>{{instance.Verification.EquipmentHFCs.section_II_1.confirmation_b.option_4_reason}}</span>
+                    </div>
+                </div>
+            </td>
+            <td rowspan="5" class="confirmation no-bottom-border" ng-class="{'disabled' : !instance.Verification.EquipmentHFCs.section_II_1}">
+                <input class="form-check-input" type="checkbox"
+                        ng-if="instance.Verification.EquipmentHFCs.section_II_1"
+                        ng-model="instance.Verification.EquipmentHFCs.section_II_1.confirmation_c.checked"
+                        ng-change="onConfirmation_c_Changed('equipment-verification.section-II-1-table', instance.Verification.EquipmentHFCs.section_II_1)">
+                <div class="confirmation-summary" ng-if="instance.Verification.EquipmentHFCs.section_II_1.confirmation_c.checked">
+                    <div ng-if="instance.Verification.EquipmentHFCs.section_II_1.confirmation_c.option_1">
+                        <span data-translate="equipment-verification.section-II-1-table-option-c1"></span>
+                    </div>
+                    <div ng-if="instance.Verification.EquipmentHFCs.section_II_1.confirmation_c.option_2">
+                        <span data-translate="equipment-verification.section-II-1-table-option-c2"></span>
+                    </div>
+                    <div ng-if="instance.Verification.EquipmentHFCs.section_II_1.confirmation_c.option_3">
+                        <span data-translate="equipment-verification.section-II-1-table-option-c3"></span>
+                    </div>
+                    <div ng-if="instance.Verification.EquipmentHFCs.section_II_1.confirmation_c.option_4">
+                        <span data-translate="equipment-verification.section-II-1-table-option-c4"></span>
+                    </div>
+                    <div ng-if="instance.Verification.EquipmentHFCs.section_II_1.confirmation_c.option_4">
+                        <span>{{instance.Verification.EquipmentHFCs.section_II_1.confirmation_c.option_4_reason}}</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td ng-repeat="reportedGas in instance.Verification.ReportedEquipment.ReportedGases" class="gas-header">
+                <span>{{reportedGas.Name}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td ng-repeat="reportedGas in instance.Verification.ReportedEquipment.ReportedGases" class="gas-header">
+                <span data-translate="bulk-hfcs-verification.section-I-1-table-component-gwp"></span><span>: {{reportedGas.GWP_AR4_AnnexIV}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td ng-repeat="reportedGas in instance.Verification.ReportedEquipment.ReportedGases" class="gas-header">
+                <span data-translate="bulk-hfcs-verification.section-I-1-table-component-composition"></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center; padding: 0px; " ng-repeat="reportedGas in instance.Verification.ReportedEquipment.ReportedGases">
+                <table class="table table-hover table-bordered bulk-hfcs-selection-componets">
+                    <thead>
+                        <tr>
+                            <th class="component"><span data-translate="bulk-hfcs-verification.section-I-1-table-component-component"></span></th>
+                            <th class="percentage"><span data-translate="bulk-hfcs-verification.section-I-1-table-component-percentage"></span></th>
+                            <th class="gwp"><span data-translate="bulk-hfcs-verification.section-I-1-table-component-gwp"></span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-if="reportedGas.BlendComponents.Component.length > 1"
+                            ng-repeat="component in reportedGas.BlendComponents.Component">
+                            <td class="component">{{component.Code}}</td>
+                            <td class="percentage">{{component.Percentage}}</td>
+                            <td class="gwp">{{component.GWP_AR4_AnnexIV}}</td>
+                        </tr>
+                        <tr ng-if="reportedGas.BlendComponents.Component.length <= 1">
+                            <td colspan="3"><span data-translate="bulk-hfcs-verification.section-I-1-table-component-not-applicable"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td ng-if="instance.Verification.ReportedEquipment.ReportedGases.length === 0">
+                <strong><span data-translate="bulk-hfcs-verification.section-I-1-table-no-hydrofluorocarbons" data-translate-values="{ transaction_year: instance.Verification.GeneralReportData.ReportingYear }">
+                </span></strong>
+            </td>
+            
+        </tr>
+        <tr>
+            <td class="no-bottom-border no-top-border"></td>
+            <td class="no-top-border no-bottom-border"></td>
+            <td colspan="{{1 + (instance.Verification.ReportedEquipment.ReportedGases.length * 3 || 1)}}" class="no-top-border"">
+                <span data-translate="bulk-hfcs-verification.table-confirmed-a-description"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="no-top-border no-bottom-border"></td>
+            <td class="no-top-border" colspan="{{2 + (instance.Verification.ReportedEquipment.ReportedGases.length * 3 || 1)}}">
+                <span data-translate="bulk-hfcs-verification.table-confirmed-b-description"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="no-top-border" colspan="{{3 + (instance.Verification.ReportedEquipment.ReportedGases.length * 3 || 1)}}">
+                <span data-translate="bulk-hfcs-verification.table-confirmed-c-description"></span>
+            </td>
+        </tr>
+    </tbody>
+</table>

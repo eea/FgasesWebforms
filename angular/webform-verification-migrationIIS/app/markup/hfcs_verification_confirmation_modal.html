@@ -1,0 +1,75 @@
+<script type="text/ng-template" id="hfcs-verification-confirmation.html">
+    <style>
+        table.hfcs-modal-confirmation th,
+        table.hfcs-modal-confirmation td.confirmation {
+            text-align: center;
+        }
+        table.hfcs-modal-confirmation th.confirmed {
+            min-width: 200px;
+            vertical-align: top;
+        }
+        table.hfcs-modal-confirmation label { display: inline; }
+    </style>
+    <div class="modal-header">
+        <h3 class="modal-title"><span data-translate="{{ modalTitle }}"></span></h3>
+    </div>
+    <div class="modal-body">
+        <table class="table table-bordered hfcs-modal-confirmation">
+            <thead>
+                <tr>
+                    <th class="confirmation">
+                        <span>{{ header_1 }}</span>
+                        <br/>
+                        <span data-translate="{{ header_2 }}"></span>
+                        <span>*</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <td rowspan="5" class="confirmation">
+                    <div style="text-align: left;">
+                        <div ng-if="show_options_1_2_3" class="form-check">
+                            <input class="form-check-input" type="checkbox" id="verification-confirm-1" ng-model="modalData.confirmation.option_1">
+                            <label class="form-check-label" for="verification-confirm-1" data-bs-toggle="tooltip"
+                                    data-tooltip="{{option_1_tooltip | translate}}"
+                                    class="form-check-label">{{option_1 | translate}}</label>
+                        </div>
+                        
+                        <div ng-if="show_options_1_2_3" class="form-check">
+                            <input class="form-check-input" type="checkbox" id="verification-confirm-2" ng-model="modalData.confirmation.option_2">
+                            <label class="form-check-label" for="verification-confirm-2" data-bs-toggle="tooltip"
+                                    data-tooltip="{{option_2_tooltip | translate}}"
+                                    class="form-check-label">{{option_2 | translate}}</label>
+                        </div>
+                        
+                        <div ng-if="show_options_1_2_3" class="form-check">
+                            <input class="form-check-input" type="checkbox" id="verification-confirm-3" ng-model="modalData.confirmation.option_3">
+                            <label class="form-check-label" for="verification-confirm-3" data-bs-toggle="tooltip"
+                                    data-tooltip="{{option_3_tooltip | translate}}"
+                                    class="form-check-label">{{option_3 | translate}}</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="verification-confirm-4" ng-model="modalData.confirmation.option_4">
+                            <label class="form-check-label" for="verification-confirm-4" data-bs-toggle="tooltip"
+                                    data-tooltip="{{option_4_tooltip | translate}}"
+                                    class="form-check-label">{{option_4 | translate}}</label>
+                        </div>
+                        <input type="text" class="form-control form-control-sm"
+                                    ng-model="modalData.confirmation.option_4_reason"
+                                    ng-disabled="!modalData.confirmation.option_4"
+                                    ng-class="(!modalData.confirmation.option_4) ? 'disabled' : 'enabled'"
+                                    required/>
+                    </div>
+                </td>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="remove(alerts, $index, alert)"><span data-translate="{{alert.msg}}"></span></alert>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok()"><span data-translate="common.ok"></button>
+        <button class="btn btn-warning" type="button" ng-click="cancel()"><span data-translate="common.cancel"></button>
+    </div>
+</script>

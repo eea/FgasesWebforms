@@ -1,0 +1,481 @@
+{
+  "GeneralReportData": {
+    "ReportingYear": 2024,
+    "EuLegalRepresentativeCompany":{    
+      "Name":"company represent name",
+      "Country":"countryname"
+      },
+     "Company":{    
+      "Country":{      
+        "Name":"country company",
+        "Type":"type country company"
+        }
+      }
+  },
+  "Bulk": {
+    "ReportedGases": [
+      {
+        "GasId": "26",
+        "Name": "R-404A",
+        "GWP_AR4_AnnexIV": "3921.6",
+        "BlendComponents": {
+          "Component": [
+            {
+              "Code": "HFC-125",
+              "Percentage": "44",
+              "GWP_AR4_AnnexIV": "3500"
+            },
+            {
+              "Code": "HFC-134a",
+              "Percentage": "4",
+              "GWP_AR4_AnnexIV": "1430"
+            },
+            {
+              "Code": "HFC-143a",
+              "Percentage": "52",
+              "GWP_AR4_AnnexIV": "4470"
+            }
+          ]
+        }
+      }
+    ],
+    "Transactions": [
+      {
+        "id": "tr_01A",
+        "code": "bulk-hfcs-verification.transactions.tr_01A.code",
+        "description": "bulk-hfcs-verification.transactions.tr_01A.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_01A_a_own",
+        "code": "bulk-hfcs-verification.transactions.tr_01A_a_own.code",
+        "description": "bulk-hfcs-verification.transactions.tr_01A_a_own.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_01A_a_other",
+        "code": "bulk-hfcs-verification.transactions.tr_01A_a_other.code",
+        "description": "bulk-hfcs-verification.transactions.tr_01A_a_other.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_01B",
+        "code": "bulk-hfcs-verification.transactions.tr_01B.code",
+        "description": "bulk-hfcs-verification.transactions.tr_01B.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_01C",
+        "code": "bulk-hfcs-verification.transactions.tr_01C.code",
+        "description": "bulk-hfcs-verification.transactions.tr_01C.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0.000"
+          }
+        ]
+      },
+      {
+        "id": "tr_02A",
+        "code": "bulk-hfcs-verification.transactions.tr_02A.code",
+        "description": "bulk-hfcs-verification.transactions.tr_02A.description",
+        "tco2e": 392160,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "100.000"
+          }
+        ]
+      },
+      {
+        "id": "tr_02B",
+        "code": "bulk-hfcs-verification.transactions.tr_02B.code",
+        "description": "bulk-hfcs-verification.transactions.tr_02B.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_02G",
+        "code": "bulk-hfcs-verification.transactions.tr_02G.code",
+        "description": "bulk-hfcs-verification.transactions.tr_02G.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_02H",
+        "code": "bulk-hfcs-verification.transactions.tr_02H.code",
+        "description": "bulk-hfcs-verification.transactions.tr_02H.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_02I",
+        "code": "bulk-hfcs-verification.transactions.tr_02I.code",
+        "description": "bulk-hfcs-verification.transactions.tr_02I.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_03B",
+        "code": "bulk-hfcs-verification.transactions.tr_03B.code",
+        "description": "bulk-hfcs-verification.transactions.tr_03B.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_04C",
+        "code": "bulk-hfcs-verification.transactions.tr_04C.code",
+        "description": "bulk-hfcs-verification.transactions.tr_04C.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_04H",
+        "code": "bulk-hfcs-verification.transactions.tr_04H.code",
+        "description": "bulk-hfcs-verification.transactions.tr_04H.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_04M",
+        "code": "bulk-hfcs-verification.transactions.tr_04M.code",
+        "description": "bulk-hfcs-verification.transactions.tr_04M.description",
+        "formula": "bulk-hfcs-verification.transactions.tr_04M.formula",
+        "tco2e": "0",
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "100.000"
+          }
+        ]
+      },
+      {
+        "id": "tr_05A",
+        "code": "bulk-hfcs-verification.transactions.tr_05A.code",
+        "description": "bulk-hfcs-verification.transactions.tr_05A.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0.000"
+          }
+        ]
+      },
+      {
+        "id": "tr_05B",
+        "code": "bulk-hfcs-verification.transactions.tr_05B.code",
+        "description": "bulk-hfcs-verification.transactions.tr_05B.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0.000"
+          }
+        ]
+      },
+      {
+        "id": "tr_05C_exempted",
+        "code": "bulk-hfcs-verification.transactions.tr_05C_exempted.code",
+        "description": "bulk-hfcs-verification.transactions.tr_05C_exempted.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_05D",
+        "code": "bulk-hfcs-verification.transactions.tr_05D.code",
+        "description": "bulk-hfcs-verification.transactions.tr_05D.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0.000"
+          }
+        ]
+      },
+      {
+        "id": "tr_05E",
+        "code": "bulk-hfcs-verification.transactions.tr_05E.code",
+        "description": "bulk-hfcs-verification.transactions.tr_05E.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0.000"
+          }
+        ]
+      },
+      {
+        "id": "tr_05F",
+        "code": "bulk-hfcs-verification.transactions.tr_05F.code",
+        "description": "bulk-hfcs-verification.transactions.tr_05F.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0.000"
+          }
+        ]
+      },
+      {
+        "id": "tr_05I",
+        "code": "bulk-hfcs-verification.transactions.tr_05I.code",
+        "description": "bulk-hfcs-verification.transactions.tr_05I.description",
+        "formula": "bulk-hfcs-verification.transactions.tr_05I.formula",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0.000"
+          }
+        ]
+      },
+      {
+        "id": "tr_05J",
+        "code": "bulk-hfcs-verification.transactions.tr_05J.code",
+        "description": "bulk-hfcs-verification.transactions.tr_05J.description",
+        "formula": "bulk-hfcs-verification.transactions.tr_05J.formula",
+        "tco2e": "392160",
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "100.000"
+          }
+        ]
+      },
+      {
+        "id": "tr_09A_imp",
+        "code": "bulk-hfcs-verification.transactions.tr_09A_imp.code",
+        "description": "bulk-hfcs-verification.transactions.tr_09A_imp.description",
+        "tco2e": "0",
+        "gases": [
+          {
+            "gas_id": "26"
+          }
+        ]
+      },
+      {
+        "id": "tr_09A_add",
+        "code": "bulk-hfcs-verification.transactions.tr_09A_add.code",
+        "description": "bulk-hfcs-verification.transactions.tr_09A_add.description",
+        "tco2e": "0",
+        "gases": [
+          {
+            "gas_id": "26"
+          }
+        ]
+      },
+      {
+        "id": "tr_09A",
+        "code": "bulk-hfcs-verification.transactions.tr_09A.code",
+        "description": "bulk-hfcs-verification.transactions.tr_09A.description",
+        "formula": "bulk-hfcs-verification.transactions.tr_09A.formula",
+        "tco2e": "0",
+        "gases": [
+          {
+            "gas_id": "26"
+          }
+        ]
+      },
+      {
+        "id": "tr_09C",
+        "code": "bulk-hfcs-verification.transactions.tr_09C.code",
+        "description": "bulk-hfcs-verification.transactions.tr_09C.description",
+        "formula": "bulk-hfcs-verification.transactions.tr_09C.formula",
+        "tco2e": "392160",
+        "gases": [
+          {
+            "gas_id": "26"
+          }
+        ]
+      },
+      {
+        "id": "tr_09F",
+        "code": "bulk-hfcs-verification.transactions.tr_09F.code",
+        "description": "bulk-hfcs-verification.transactions.tr_09F.description",
+        "formula": "bulk-hfcs-verification.transactions.tr_09F.formula",
+        "option_a_tooltip": "bulk-hfcs-verification.transactions.tr_09F.option_a_tooltip",
+        "option_b_tooltip": "bulk-hfcs-verification.transactions.tr_09F.option_b_tooltip",
+        "option_c_tooltip": "bulk-hfcs-verification.transactions.tr_09F.option_c_tooltip",
+        "tco2e": "392160",
+        "gases": [
+          {
+            "gas_id": "26"
+          }
+        ]
+      }
+    ]
+  },
+  "Equipment": {
+    "ReportedGases": [
+      {
+        "GasId": "26",
+        "Name": "R-404A",
+        "GWP_AR4_AnnexIV": "3921.6",
+        "BlendComponents": {
+          "Component": [
+            {
+              "Code": "HFC-125",
+              "Percentage": "44",
+              "GWP_AR4_AnnexIV": "3500"
+            },
+            {
+              "Code": "HFC-134a",
+              "Percentage": "4",
+              "GWP_AR4_AnnexIV": "1430"
+            },
+            {
+              "Code": "HFC-143a",
+              "Percentage": "52",
+              "GWP_AR4_AnnexIV": "4470"
+            }
+          ]
+        }
+      }
+    ],
+    "Transactions": [
+      {
+        "id": "tr_11G",
+        "code": "bulk-hfcs-verification.transactions.tr_11G.code",
+        "description": "bulk-hfcs-verification.transactions.tr_11G.description",
+        "tco2e": 39216,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "10.000"
+          }
+        ]
+      },
+      {
+        "id": "tr_11R",
+        "code": "bulk-hfcs-verification.transactions.tr_11R.code",
+        "description": "bulk-hfcs-verification.transactions.tr_11R.description",
+        "formula": "bulk-hfcs-verification.transactions.tr_11R.formula",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_12A",
+        "code": "bulk-hfcs-verification.transactions.tr_12A.code",
+        "description": "bulk-hfcs-verification.transactions.tr_12A.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_12aA",
+        "code": "bulk-hfcs-verification.transactions.tr_12aA.code",
+        "description": "bulk-hfcs-verification.transactions.tr_12aA.description",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_13D",
+        "code": "bulk-hfcs-verification.transactions.tr_13D.code",
+        "description": "bulk-hfcs-verification.transactions.tr_13D.description",
+        "formula": "bulk-hfcs-verification.transactions.tr_13D.formula",
+        "option_a_tooltip": "bulk-hfcs-verification.transactions.tr_13D.option_a_tooltip",
+        "option_b_tooltip": "bulk-hfcs-verification.transactions.tr_13D.option_b_tooltip",
+        "option_c_tooltip": "bulk-hfcs-verification.transactions.tr_13D.option_c_tooltip",
+        "tco2e": 0,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "0"
+          }
+        ]
+      },
+      {
+        "id": "tr_11P",
+        "code": "bulk-hfcs-verification.transactions.tr_11P.code",
+        "description": "bulk-hfcs-verification.transactions.tr_11P.description",
+        "description2": "bulk-hfcs-verification.transactions.tr_11P.description2",
+        "tco2e": 78432,
+        "gases": [
+          {
+            "gas_id": "26",
+            "amount": "20.000"
+          }
+        ]
+      }
+    ]
+  }
+}

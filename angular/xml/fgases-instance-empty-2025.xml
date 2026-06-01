@@ -1,0 +1,2883 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<FGasesReporting xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://dd.eionet.europa.eu/schemas/fgases-2025/FGasesReporting.xsd">
+  <GeneralReportData status="incomplete">
+    <Company status="incomplete">
+				<CompanyId />
+				<CompanyName />
+				<PostalAddress>
+					<StreetAddress />
+					<Number />
+					<PostalCode />
+					<City />
+				</PostalAddress>
+				<Country>
+					<Code />
+					<Type />
+					<Name />
+				</Country>
+				<Website />
+				<Telephone />
+				<VATNumber />
+				<EORI />
+				<ContactPersons>
+					<ContactPerson>
+						<UserName />
+						<FirstName />
+						<LastName />
+						<Email />
+					</ContactPerson>
+				</ContactPersons>
+				<EuLegalRepresentativeCompany>
+					<CompanyId />
+					<CompanyName />
+					<PostalAddress>
+						<StreetAddress />
+						<Number />
+						<PostalCode />
+						<City />
+					</PostalAddress>
+					<Country>
+						<Code />
+						<Type />
+						<Name />
+					</Country>
+					<Website />
+					<Telephone />
+					<VATNumber />
+					<EORI />
+					<ContactPerson>
+						<FirstName />
+						<LastName />
+						<Email />
+					</ContactPerson>
+				</EuLegalRepresentativeCompany>
+				<Former_CompanyId_2104 />
+				<Affiliations>
+					<Affiliation>
+						<CompanyName />
+						<isEUBased />
+						<EUVAT />
+						<NonEUCountryOfEstablishment />
+						<NonEUCountryCodeOfEstablishment />
+						<NonEUDgClimaRegCode />
+						<NonEURepresentativeName />
+						<NonEURepresentativeVAT />
+					</Affiliation>
+				</Affiliations>
+			</Company>
+			<SubmissionDate />
+			<TransactionYear />
+			<Activities>
+				<P />
+				<P-HFC />
+				<P-other />
+				<I />
+				<I-HFC />
+				<I-other />
+				<E />
+				<RC />
+				<RQ />
+				<RH />
+				<FU />
+				<D />
+				<Eq-I />
+				<Eq-I-RACHP-HFC />
+				<Eq-I-other />
+				<auth />
+				<auth-NER />
+				<RQA />
+				<NIL-Report />
+			</Activities>
+			<HFCs>
+				<GasName />
+			</HFCs>
+			<PFCs>
+				<GasName />
+			</PFCs>
+			<SF6>
+				<GasName />
+			</SF6>
+			<Inhalation>
+				<GasName />
+			</Inhalation>
+			<NF3>
+				<GasName />
+			</NF3>
+			<UnsaturatedHFCsHCFC>
+				<GasName />
+			</UnsaturatedHFCsHCFC>
+			<FluorinatedEthersAlcohols>
+				<GasName />
+			</FluorinatedEthersAlcohols>
+			<OtherPrefluorinatedCompounds>
+				<GasName />
+			</OtherPrefluorinatedCompounds>
+			<NonFluorinatedRefrigerants>
+				<GasName />
+			</NonFluorinatedRefrigerants>
+			<CommonlyUsedMixtures>
+				<GasName />
+			</CommonlyUsedMixtures>
+		</GeneralReportData>
+		<ReportedGases />
+		<F1_S1_4_ProdImpExp>
+			<tr_02A_Countries>
+				<Country />
+			</tr_02A_Countries>
+			<tr_03A_Countries>
+				<Country />
+			</tr_03A_Countries>
+			<tr_01A_fs_Countries>
+				<Country />
+			</tr_01A_fs_Countries>
+			<Totals>
+				<tr_01ASumAllGases />
+				<tr_01ASumAllGasesCO2Eq />
+				<tr_01ASumRothAllGases />
+				<tr_01ASumRothAllGasesCO2Eq />
+				<tr_02ASumAllGases />
+				<tr_02ASumAllGasesCO2Eq />
+				<tr_02ASumRothAllGases />
+				<tr_02ASumRothAllGasesCO2Eq />
+				<tr_03ASumAllGases />
+				<tr_03ASumAllGasesCO2Eq />
+				<tr_03ASumRothAllGases />
+				<tr_03ASumRothAllGasesCO2Eq />
+			</Totals>
+			<Gas>
+				<GasCode />
+				<tr_01A>
+					<Code>01A</Code>
+					<Amount />
+				</tr_01A>
+				<tr_01Aa>
+					<Code>01Aa</Code>
+					<Amount />
+				</tr_01Aa>
+				<tr_01A_a>
+					<Code>01A_a</Code>
+					<Amount />
+				</tr_01A_a>
+				<tr_01A_a_own>
+					<Code>01A_a_own</Code>
+					<Amount />
+					<Comment />
+				</tr_01A_a_own>
+				<tr_01A_a_other>
+					<Code>01A_a_other</Code>
+					<SumOfPartnerAmounts />
+					<Unit />
+					<Comment />
+					<TradePartner>
+						<TradePartnerID />
+						<amount />
+						<Comment />
+					</TradePartner>
+				</tr_01A_a_other>
+				<tr_01Ab>
+					<Code>01Ab</Code>
+					<Amount />
+				</tr_01Ab>
+				<tr_01B>
+					<Code>01B</Code>
+					<Amount />
+					<Comment />
+				</tr_01B>
+				<tr_01C>
+					<Code>01C</Code>
+					<SumOfPartnerAmounts />
+					<Unit />
+					<Comment />
+					<TradePartner>
+						<TradePartnerID />
+						<amount />
+						<Comment />
+					</TradePartner>
+				</tr_01C>
+				<tr_01D>
+					<Code>01D</Code>
+					<Amount />
+				</tr_01D>
+				<tr_01E>
+					<Code>01E</Code>
+					<Amount />
+				</tr_01E>
+				<tr_01A_fs>
+					<Code>01A_fs</Code>
+					<CountrySpecific>
+						<Country />
+					</CountrySpecific>
+				</tr_01A_fs>
+				<tr_01A_fs1>
+					<Code>01A_fs1</Code>
+					<CountrySpecific>
+						<Country />
+					</CountrySpecific>
+				</tr_01A_fs1>
+				<tr_01A_fs2>
+					<Code>01A_fs2</Code>
+					<CountrySpecific>
+						<Country />
+					</CountrySpecific>
+				</tr_01A_fs2>
+				<tr_01A_ex>
+					<Code>01A_ex</Code>
+					<Amount />
+				</tr_01A_ex>
+				<tr_01F>
+					<Code>01F</Code>
+					<Amount />
+				</tr_01F>
+				<tr_01G>
+					<Code>01G</Code>
+					<Amount />
+				</tr_01G>
+				<tr_01H>
+					<Code>01H</Code>
+					<Amount />
+				</tr_01H>
+				<tr_01I>
+					<Code>01I</Code>
+					<Amount />
+				</tr_01I>
+				<tr_01J>
+					<Code>01J</Code>
+					<Amount />
+				</tr_01J>
+				<tr_01K>
+					<Code>01K</Code>
+					<Amount />
+				</tr_01K>
+				<tr_02A>
+					<Code>02A</Code>
+					<CountrySpecific>
+						<Country />
+					</CountrySpecific>
+				</tr_02A>
+				<tr_02App>
+					<Code>02App</Code>
+					<CountrySpecific>
+						<Country />
+					</CountrySpecific>
+				</tr_02App>
+				<tr_02B>
+					<Code>02B</Code>
+					<Amount />
+				</tr_02B>
+				<tr_02C>
+					<Code>02C</Code>
+					<CountrySpecific>
+						<Country />
+					</CountrySpecific>
+				</tr_02C>
+				<tr_02D>
+					<Code>02D</Code>
+					<CountrySpecific>
+						<Country />
+					</CountrySpecific>
+				</tr_02D>
+				<tr_02E>
+					<Code>02E</Code>
+					<CountrySpecific>
+						<Country />
+					</CountrySpecific>
+				</tr_02E>
+				<tr_02G>
+					<Code>02G</Code>
+					<Amount />
+				</tr_02G>
+				<tr_02H>
+					<Code>02H</Code>
+					<SumOfPartnerAmounts />
+					<Unit />
+					<Comment />
+					<TradePartner>
+						<TradePartnerID />
+						<amount />
+						<Comment />
+					</TradePartner>
+				</tr_02H>
+				<tr_02I>
+					<Code>02I</Code>
+					<Amount />
+					<Comment />
+				</tr_02I>
+				<tr_03A>
+					<Code>03A</Code>
+					<CountrySpecific>
+						<Country />
+					</CountrySpecific>
+				</tr_03A>
+				<tr_03App>
+					<Code>03App</Code>
+					<CountrySpecific>
+						<Country />
+					</CountrySpecific>
+				</tr_03App>
+				<tr_03B>
+					<Code>03B</Code>
+					<Amount />
+				</tr_03B>
+				<tr_03C>
+					<Code>03C</Code>
+					<Amount />
+				</tr_03C>
+				<tr_03G>
+					<Code>03G</Code>
+					<CountrySpecific>
+						<Country />
+					</CountrySpecific>
+				</tr_03G>
+				<tr_03H>
+					<Code>03H</Code>
+					<CountrySpecific>
+						<Country />
+					</CountrySpecific>
+				</tr_03H>
+				<tr_03I>
+					<Code>03I</Code>
+					<CountrySpecific>
+						<Country />
+					</CountrySpecific>
+				</tr_03I>
+				<tr_04A>
+					<Code>04A</Code>
+					<Amount />
+					<Comment />
+				</tr_04A>
+				<tr_04Aa>
+					<Code>04Aa</Code>
+					<Amount />
+					<Comment />
+				</tr_04Aa>
+				<tr_04B>
+					<Code>04B</Code>
+					<Amount />
+					<Comment />
+				</tr_04B>
+				<tr_04C>
+					<Code>04C</Code>
+					<Amount />
+				</tr_04C>
+				<tr_04D>
+					<Code>04D</Code>
+					<Amount />
+				</tr_04D>
+				<tr_04E>
+					<Code>04E</Code>
+					<Amount />
+				</tr_04E>
+				<tr_04F>
+					<Code>04F</Code>
+					<Amount />
+				</tr_04F>
+				<tr_04Fa>
+					<Code>04Fa</Code>
+					<Amount />
+				</tr_04Fa>
+				<tr_04G>
+					<Code>04G</Code>
+					<Amount />
+					<Comment />
+				</tr_04G>
+				<tr_04H>
+					<Code>04H</Code>
+					<Amount />
+					<Comment />
+				</tr_04H>
+				<tr_04I>
+					<Code>04I</Code>
+					<Amount />
+				</tr_04I>
+				<tr_04J>
+					<Code>04J</Code>
+					<Amount />
+				</tr_04J>
+				<tr_04K>
+					<Code>04K</Code>
+					<Amount />
+				</tr_04K>
+				<tr_04M>
+					<Code>04M</Code>
+					<Amount />
+				</tr_04M>
+			</Gas>
+		</F1_S1_4_ProdImpExp>
+		<F2_S5_exempted_HFCs>
+			<tr_05A_TradePartners>
+				<Partner />
+			</tr_05A_TradePartners>
+			<tr_05B_TradePartners>
+				<Partner />
+			</tr_05B_TradePartners>
+			<tr_05C_TradePartners>
+				<Partner />
+			</tr_05C_TradePartners>
+			<tr_05D_TradePartners>
+				<Partner />
+			</tr_05D_TradePartners>
+			<tr_05E_TradePartners>
+				<Partner />
+			</tr_05E_TradePartners>
+			<tr_05F_TradePartners>
+				<Partner />
+			</tr_05F_TradePartners>
+			<tr_05R_TradePartners>
+				<Partner />
+			</tr_05R_TradePartners>
+			<Totals>
+				<tr_05CSumAllGases />
+				<tr_05CSumAllGasesCO2Eq />
+			</Totals>
+
+			<Gas>
+				<GasCode />
+				<tr_05A>
+					<Code>05A</Code>
+					<SumOfPartnerAmounts />
+					<Unit />
+					<Comment />
+					<TradePartner>
+						<TradePartnerID />
+						<amount />
+						<Comment />
+					</TradePartner>
+				</tr_05A>
+				<tr_05B>
+					<Code>05B</Code>
+					<SumOfPartnerAmounts />
+					<Unit />
+					<Comment />
+					<TradePartner>
+						<TradePartnerID />
+						<amount />
+						<Comment />
+					</TradePartner>
+				</tr_05B>
+				<tr_05C>
+					<Code>05C</Code>
+					<SumOfPartnerAmounts />
+					<Unit />
+					<Comment />
+					<TradePartner>
+						<TradePartnerID />
+						<amount />
+						<Comment />
+					</TradePartner>
+				</tr_05C>			
+				<tr_05D>
+					<Code>05D</Code>
+					<SumOfPartnerAmounts />
+					<Unit />
+					<Comment />
+					<TradePartner>
+						<TradePartnerID />
+						<amount />
+						<Comment />
+					</TradePartner>
+				</tr_05D>
+				<tr_05E>
+					<Code>05E</Code>
+					<SumOfPartnerAmounts />
+					<Unit />
+					<Comment />
+					<TradePartner>
+						<TradePartnerID />
+						<amount />
+						<Comment />
+					</TradePartner>
+				</tr_05E>
+				<tr_05F>
+					<Code>05F</Code>
+					<SumOfPartnerAmounts />
+					<Unit />
+					<Comment />
+					<TradePartner>
+						<TradePartnerID />
+						<amount />
+						<Comment />
+					</TradePartner>
+				</tr_05F>
+				<tr_05G>
+					<Code>05G</Code>
+					<Amount />
+				</tr_05G>
+				<tr_05H>
+					<Code>05H</Code>
+					<Amount />
+				</tr_05H>
+				<tr_05I>
+					<Code>05I</Code>
+					<Amount />
+				</tr_05I>
+				<tr_05J>
+					<Code>05J</Code>
+					<Amount />
+				</tr_05J>
+				<tr_05R>
+					<Code>05R</Code>
+					<SumOfPartnerAmounts />
+					<Unit />
+					<Comment />
+					<TradePartner>
+						<TradePartnerID />
+						<amount />
+						<Comment />
+					</TradePartner>
+				</tr_05R>
+			</Gas>
+			<SumOfAllHFCsS1>
+				<tr_05G>      </tr_05G>
+				<tr_05H>
+					<Code>05H</Code>
+					<Amount />
+				</tr_05H>
+				<tr_05I>      </tr_05I>
+				<tr_05J>      </tr_05J>
+			</SumOfAllHFCsS1>
+			<SumOfAllHFCsS2>
+				<tr_05G>      </tr_05G>
+				<tr_05H>
+					<Code>05H</Code>
+					<Amount />
+				</tr_05H>
+				<tr_05I>      </tr_05I>
+				<tr_05J>      </tr_05J>
+			</SumOfAllHFCsS2>
+		</F2_S5_exempted_HFCs>
+		<F2a_S5a_exempted_HFCs>
+			<Gas>
+				<GasCode />
+				<tr_05aD>
+					<Code>05aD</Code>
+					<Amount />
+				</tr_05aD>
+				<tr_05aE>
+					<Code>05aE</Code>
+					<Amount />
+				</tr_05aE>
+				<tr_05aF>
+					<Code>05aF</Code>
+					<Amount />
+				</tr_05aF>
+			</Gas>
+		</F2a_S5a_exempted_HFCs>
+		<F3A_S6A_IA_HFCs>
+			<Gas>
+				<GasCode />
+				<tr_06A>
+					<Code>06A</Code>
+					<Amount />
+				</tr_06A>
+				<tr_06B>
+					<Code>06B</Code>
+					<Amount />
+				</tr_06B>
+				<tr_06C>
+					<Code>06C</Code>
+					<Amount />
+				</tr_06C>
+				<tr_06D>
+					<Code>06D</Code>
+					<Amount />
+				</tr_06D>
+				<tr_06E>
+					<Code>06E</Code>
+					<Amount />
+				</tr_06E>
+				<tr_06F>
+					<Code>06F</Code>
+					<Amount />
+				</tr_06F>
+				<tr_06G>
+					<Code>06G</Code>
+					<Amount />
+				</tr_06G>
+				<tr_06H>
+					<Code>06H</Code>
+					<Amount />
+				</tr_06H>
+				<tr_06I>
+					<Code>06I</Code>
+					<Amount />
+				</tr_06I>
+				<tr_06J>
+					<Code>06J</Code>
+					<Amount />
+				</tr_06J>
+				<tr_06K>
+					<Code>06K</Code>
+					<Amount />
+				</tr_06K>
+				<tr_06L>
+					<Code>06L</Code>
+					<Amount />
+					<Comment />
+				</tr_06L>
+				<tr_06M>
+					<Code>06M</Code>
+					<Amount />
+				</tr_06M>
+				<tr_06N>
+					<Code>06N</Code>
+					<Amount />
+				</tr_06N>
+				<tr_06O>
+					<Code>06O</Code>
+					<Amount />
+				</tr_06O>
+				<tr_06P>
+					<Code>06P</Code>
+					<Amount />
+				</tr_06P>
+				<tr_06Q>
+					<Code>06Q</Code>
+					<Amount />
+				</tr_06Q>
+				<tr_06R>
+					<Code>06R</Code>
+					<Amount />
+				</tr_06R>
+				<tr_06S>
+					<Code>06S</Code>
+					<Amount />
+				</tr_06S>
+				<tr_06S1>
+					<Code>06S1</Code>
+					<Amount />
+				</tr_06S1>
+				<tr_06S2>
+					<Code>06S2</Code>
+					<Amount />
+				</tr_06S2>
+				<tr_06T>
+					<Code>06T</Code>
+					<Amount />
+				</tr_06T>
+				<tr_06U>
+					<Code>06U</Code>
+					<Amount />
+				</tr_06U>
+				<tr_06V>
+					<Code>06V</Code>
+					<Amount />
+				</tr_06V>
+				<tr_06W>
+					<Code>06W</Code>
+					<Amount />
+				</tr_06W>
+				<tr_06X>
+					<Code>06X</Code>
+					<Amount />
+				</tr_06X>
+			</Gas>
+		</F3A_S6A_IA_HFCs>
+		<F4_S9_IssuedAuthQuata>
+			<tr_09A_imp_TradePartners>
+				<Partner />
+			</tr_09A_imp_TradePartners>
+			<tr_09A_add_TradePartners>
+				<Partner />
+			</tr_09A_add_TradePartners>
+			<tr_09A_TradePartners>
+				<Partner />
+			</tr_09A_TradePartners>
+			<tr_09A_imp>
+				<Code>09A_imp</Code>
+				<SumOfPartnerAmounts />
+				<Unit />
+				<Comment />
+				<TradePartner>
+					<TradePartnerID />
+					<amount />
+					<Comment />
+				</TradePartner>
+			</tr_09A_imp>
+			<tr_09A_add>
+				<Code>09A_add</Code>
+				<SumOfPartnerAmounts />
+				<Unit />
+				<Comment />
+				<TradePartner>
+					<TradePartnerID />
+					<amount />
+					<Comment />
+				</TradePartner>
+			</tr_09A_add>
+			<tr_09A>
+				<Code>09A</Code>
+				<SumOfPartnerAmounts />
+				<Unit />
+				<Comment />
+				<TradePartner>
+					<TradePartnerID />
+					<amount />
+					<Comment />
+				</TradePartner>
+			</tr_09A>
+			<tr_09A_imp_date />
+			<tr_09B>
+				<Code>09B</Code>
+				<Amount />
+			</tr_09B>
+			<tr_09C>
+				<Code>09C</Code>
+				<Amount />
+			</tr_09C>
+			<tr_09D>
+				<Code>09D</Code>
+				<Amount />
+			</tr_09D>
+			<tr_09E>
+				<Code>09E</Code>
+				<Amount />
+			</tr_09E>
+			<tr_09F>
+				<Code>09F</Code>
+				<Amount />
+			</tr_09F>
+			<tr_09G>
+				<Code>09G</Code>
+				<Amount />
+			</tr_09G>		
+			<tr_5C_exempted_CO2e>
+				<Code>5C_exempted_CO2e</Code>
+				<Amount />
+			</tr_5C_exempted_CO2e>
+			<NilReportConfirmed />
+			<Verified />
+		</F4_S9_IssuedAuthQuata>	
+		<F6_FUDest>
+			<transactionsConfirmed></transactionsConfirmed>
+			<UISelectedTransactions>
+				<tr_8A1i></tr_8A1i>
+				<tr_8A1ii></tr_8A1ii>
+				<tr_8A1iii></tr_8A1iii>
+				<tr_8A1iv></tr_8A1iv>
+				<tr_8A1v></tr_8A1v>
+				<tr_8A1vi></tr_8A1vi>
+				<tr_8A1other></tr_8A1other>
+				<tr_8A2i></tr_8A2i>
+				<tr_8A2ii></tr_8A2ii>
+				<tr_8A2other></tr_8A2other>
+				<tr_8Ba1i></tr_8Ba1i>
+				<tr_8Ba1ii></tr_8Ba1ii>
+				<tr_8Ba1iii></tr_8Ba1iii>
+				<tr_8Ba1other></tr_8Ba1other>
+				<tr_8Ba2other></tr_8Ba2other>
+				<tr_8Bb1i></tr_8Bb1i>
+				<tr_8Bb1ii></tr_8Bb1ii>
+				<tr_8Bb1iii></tr_8Bb1iii>
+				<tr_8Bb1other></tr_8Bb1other>
+				<tr_8Bb2other></tr_8Bb2other>
+				<tr_8C1other></tr_8C1other>
+				<tr_8C2other></tr_8C2other>
+			</UISelectedTransactions>
+			<Gas>
+				<GasCode></GasCode>
+				<tr_07A>
+					<Code>07A</Code>
+					<Amount></Amount>
+					<Comment></Comment>
+				</tr_07A>
+				<tr_07Aa>
+					<Code>07A_a</Code>
+					<Amount></Amount>
+					<Comment></Comment>
+				</tr_07Aa>
+				<tr_8A>
+					<Code>8A</Code>
+					<Amount></Amount>
+				</tr_8A>
+				<tr_8A1>
+					<Code>8A1</Code>
+					<Amount></Amount>
+				</tr_8A1>
+				<tr_8A1i>
+					<Code>8A1_i</Code>
+					<Amount></Amount>
+				</tr_8A1i>
+				<tr_8A1ia>
+					<Code>8A1_i_a</Code>
+					<Amount></Amount>
+				</tr_8A1ia>
+				<tr_8A1ii>
+					<Code>8A1_ii</Code>
+					<Amount></Amount>
+				</tr_8A1ii>
+				<tr_8A1iia>
+					<Code>8A1_ii_a</Code>
+					<Amount></Amount>
+				</tr_8A1iia>
+				<tr_8A1iii>
+					<Code>8A1_iii</Code>
+					<Amount></Amount>
+				</tr_8A1iii>
+				<tr_8A1iiia>
+					<Code>8A1_iii_a</Code>
+					<Amount></Amount>
+				</tr_8A1iiia>
+				<tr_8A1iv>
+					<Code>8A1_iv</Code>
+					<Amount></Amount>
+				</tr_8A1iv>
+				<tr_8A1iva>
+					<Code>8A1_iv_a</Code>
+					<Amount></Amount>
+				</tr_8A1iva>
+				<tr_8A1v>
+					<Code>8A1_v</Code>
+					<Amount></Amount>
+				</tr_8A1v>
+				<tr_8A1vi>
+					<Code>8A1_vi</Code>
+					<Amount></Amount>
+				</tr_8A1vi>
+				<tr_8A1other>
+					<Code>8A1_other</Code>
+					<Amount></Amount>
+					<Comment></Comment>
+				</tr_8A1other>
+				<tr_8A1othera>
+					<Code>8A1_other_a</Code>
+					<Amount></Amount>
+				</tr_8A1othera>
+				<tr_8A2>
+					<Code>8A2</Code>
+					<Amount></Amount>
+				</tr_8A2>
+				<tr_8A2i>
+					<Code>8A2_i</Code>
+					<Amount></Amount>
+				</tr_8A2i>
+				<tr_8A2ii>
+					<Code>8A2_ii</Code>
+					<Amount></Amount>
+				</tr_8A2ii>
+				<tr_8A2other>
+					<Code>8A2_other</Code>
+					<Amount></Amount>
+					<Comment></Comment>
+				</tr_8A2other>
+				<tr_8A2othera>
+					<Code>8A2_other_a</Code>
+					<Amount></Amount>
+				</tr_8A2othera>
+				<tr_8Aa>
+					<Code>8A_a</Code>
+					<Amount></Amount>
+				</tr_8Aa>
+				<tr_8Ba>
+					<Code>8Ba</Code>
+					<Amount></Amount>
+				</tr_8Ba>
+				<tr_8Ba1>
+					<Code>8Ba1</Code>
+					<Amount></Amount>
+				</tr_8Ba1>
+				<tr_8Ba1i>
+					<Code>8Ba1_i</Code>
+					<Amount></Amount>
+				</tr_8Ba1i>
+				<tr_8Ba1ia>
+					<Code>8Ba1_i_a</Code>
+					<Amount></Amount>
+				</tr_8Ba1ia>
+				<tr_8Ba1ii>
+					<Code>8Ba1_ii</Code>
+					<Amount></Amount>
+				</tr_8Ba1ii>
+				<tr_8Ba1iia>
+					<Code>8Ba1_ii_a</Code>
+					<Amount></Amount>
+				</tr_8Ba1iia>
+				<tr_8Ba1iii>
+					<Code>8Ba1_iii</Code>
+					<Amount></Amount>
+				</tr_8Ba1iii>
+				<tr_8Ba1other>
+					<Code>8Ba1_other</Code>
+					<Amount></Amount>
+					<Comment></Comment>
+				</tr_8Ba1other>
+				<tr_8Ba1othera>
+					<Code>8Ba1_other_a</Code>
+					<Amount></Amount>
+				</tr_8Ba1othera>
+				<tr_8Ba2>
+					<Code>8Ba2</Code>
+					<Amount></Amount>
+				</tr_8Ba2>
+				<tr_8Ba2other>
+					<Code>8Ba2_other</Code>
+					<Amount></Amount>
+					<Comment></Comment>
+				</tr_8Ba2other>
+				<tr_8Ba2othera>
+					<Code>8Ba2_other_a</Code>
+					<Amount></Amount>
+				</tr_8Ba2othera>
+				<tr_8Baa>
+					<Code>8Ba_a</Code>
+					<Amount></Amount>
+				</tr_8Baa>
+				<tr_8Bb>
+					<Code>8Bb</Code>
+					<Amount></Amount>
+				</tr_8Bb>
+				<tr_8Bb1>
+					<Code>8Bb1</Code>
+					<Amount></Amount>
+				</tr_8Bb1>
+				<tr_8Bb1i>
+					<Code>8Bb1_i</Code>
+					<Amount></Amount>
+				</tr_8Bb1i>
+				<tr_8Bb1ia>
+					<Code>8Bb1_i_a</Code>
+					<Amount></Amount>
+				</tr_8Bb1ia>
+				<tr_8Bb1ii>
+					<Code>8Bb1_ii</Code>
+					<Amount></Amount>
+				</tr_8Bb1ii>
+				<tr_8Bb1iia>
+					<Code>8Bb1_ii_a</Code>
+					<Amount></Amount>
+				</tr_8Bb1iia>
+				<tr_8Bb1iii>
+					<Code>8Bb1_iii</Code>
+					<Amount></Amount>
+				</tr_8Bb1iii>
+				<tr_8Bb1other>
+					<Code>8Bb1_other</Code>
+					<Amount></Amount>
+					<Comment></Comment>
+				</tr_8Bb1other>
+				<tr_8Bb1othera>
+					<Code>8Bb1_other_a</Code>
+					<Amount></Amount>
+				</tr_8Bb1othera>
+				<tr_8Bb2>
+					<Code>8Bb2</Code>
+					<Amount></Amount>
+				</tr_8Bb2>
+				<tr_8Bb2other>
+					<Code>8Bb2_other</Code>
+					<Amount></Amount>
+					<Comment></Comment>
+				</tr_8Bb2other>
+				<tr_8Bb2othera>
+					<Code>8Bb2_other_a</Code>
+					<Amount></Amount>
+				</tr_8Bb2othera>
+				<tr_8Bba>
+					<Code>8Bb_a</Code>
+					<Amount></Amount>
+				</tr_8Bba>
+				<tr_8C>
+					<Code>8C</Code>
+					<Amount></Amount>
+					<Comment></Comment>
+				</tr_8C>
+				<tr_8C1>
+					<Code>8C1</Code>
+					<Amount></Amount>
+				</tr_8C1>
+				<tr_8C1other>
+					<Code>8C1_other</Code>
+					<Amount></Amount>
+					<Comment></Comment>
+				</tr_8C1other>
+				<tr_8C1othera>
+					<Code>8C1_other_a</Code>
+					<Amount></Amount>
+				</tr_8C1othera>
+				<tr_8C2>
+					<Code>8C2</Code>
+					<Amount></Amount>
+				</tr_8C2>
+				<tr_8C2other>
+					<Code>8C2_other</Code>
+					<Amount></Amount>
+					<Comment></Comment>
+				</tr_8C2other>
+				<tr_8C2othera>
+					<Code>8C2_other_a</Code>
+					<Amount></Amount>
+				</tr_8C2othera>
+				<tr_8Ca>
+					<Code>8C_a</Code>
+					<Amount></Amount>
+				</tr_8Ca>
+				<tr_8D>
+					<Code>8D</Code>
+					<Amount></Amount>
+				</tr_8D>
+				<tr_8Da>
+					<Code>8D_a</Code>
+					<Amount></Amount>
+				</tr_8Da>
+				<tr_8E>
+					<Code>8E</Code>
+					<Amount></Amount>
+				</tr_8E>
+				<tr_8F>
+					<Code>8F</Code>
+					<Amount></Amount>
+				</tr_8F>
+			</Gas>
+			<Totals>
+				<tr_07ASumAllGases />
+				<tr_07ASumAllGasesCO2Eq />
+				<tr_07ASumRothAllGases />
+				<tr_07ASumRothAllGasesCO2Eq />
+				<tr_08DSumAllGases />
+				<tr_08DSumAllGasesCO2Eq />
+				<tr_08DSumRothAllGases />
+				<tr_08DSumRothAllGasesCO2Eq />
+			</Totals>
+		</F6_FUDest>
+		<F7_s11EquImportTable>
+			<transactionsConfirmed></transactionsConfirmed>
+			<UISelectedTransactions>
+				<tr_11A1a1></tr_11A1a1>
+				<tr_11A1a2></tr_11A1a2>
+				<tr_11A1a3></tr_11A1a3>
+				<tr_11A1a4></tr_11A1a4>
+				<tr_11A1b1></tr_11A1b1>
+				<tr_11A1b2></tr_11A1b2>
+				<tr_11A1b3></tr_11A1b3>
+				<tr_11A1b4></tr_11A1b4>
+				<tr_11A1c1></tr_11A1c1>
+				<tr_11A1c2></tr_11A1c2>
+				<tr_11A1c3></tr_11A1c3>
+				<tr_11A1c4></tr_11A1c4>
+				<tr_11A2a1i></tr_11A2a1i>
+				<tr_11A2a1ii></tr_11A2a1ii>
+				<tr_11A2a1iii></tr_11A2a1iii>
+				<tr_11A2a2i></tr_11A2a2i>
+				<tr_11A2a2ii></tr_11A2a2ii>
+				<tr_11A2a2iii></tr_11A2a2iii>
+				<tr_11A2a3i></tr_11A2a3i>
+				<tr_11A2a3ii></tr_11A2a3ii>
+				<tr_11A2a3iii></tr_11A2a3iii>
+				<tr_11A2b1i></tr_11A2b1i>
+				<tr_11A2b1ii></tr_11A2b1ii>
+				<tr_11A2b1iii></tr_11A2b1iii>
+				<tr_11A2b2i></tr_11A2b2i>
+				<tr_11A2b2ii></tr_11A2b2ii>
+				<tr_11A2b2iii></tr_11A2b2iii>
+				<tr_11A2b3i></tr_11A2b3i>
+				<tr_11A2b3ii></tr_11A2b3ii>
+				<tr_11A2b3iii></tr_11A2b3iii>
+				<tr_11B1></tr_11B1>
+				<tr_11B2></tr_11B2>
+				<tr_11B3></tr_11B3>
+				<tr_11B4></tr_11B4>
+				<tr_11B5></tr_11B5>
+				<tr_11C1a></tr_11C1a>
+				<tr_11C1b></tr_11C1b>
+				<tr_11C2a></tr_11C2a>
+				<tr_11C2b></tr_11C2b>
+				<tr_11D></tr_11D>
+				<tr_11E1></tr_11E1>
+				<tr_11E2></tr_11E2>
+				<tr_11E3></tr_11E3>
+				<tr_11E4></tr_11E4>
+				<tr_11F1></tr_11F1>
+				<tr_11F2></tr_11F2>
+				<tr_11F3></tr_11F3>
+				<tr_11F4></tr_11F4>
+				<tr_11F5></tr_11F5>
+				<tr_11F6></tr_11F6>
+				<tr_11F7></tr_11F7>
+				<tr_11F8></tr_11F8>
+				<tr_11F9></tr_11F9>
+				<tr_11H1></tr_11H1>
+				<tr_11H2></tr_11H2>
+				<tr_11H3></tr_11H3>
+				<tr_11H4></tr_11H4>
+				<tr_11I></tr_11I>
+				<tr_11J1></tr_11J1>
+				<tr_11J2></tr_11J2>
+				<tr_11K></tr_11K>
+				<tr_11L1></tr_11L1>
+				<tr_11L2></tr_11L2>
+				<tr_11L3></tr_11L3>
+				<tr_11M1></tr_11M1>
+				<tr_11M2></tr_11M2>
+				<tr_11M3></tr_11M3>
+				<tr_11M4></tr_11M4>
+				<tr_11M5></tr_11M5>
+				<tr_11N></tr_11N>
+				<tr_11O1></tr_11O1>
+				<tr_11O2></tr_11O2>
+				<tr_11O3></tr_11O3>
+				<tr_11O4></tr_11O4>
+				<tr_11P></tr_11P>
+			</UISelectedTransactions>
+			<Category>
+				<tr_11A1a1></tr_11A1a1>
+				<tr_11A1a2></tr_11A1a2>
+				<tr_11A1a3></tr_11A1a3>
+				<tr_11A1a4></tr_11A1a4>
+				<tr_11A1b1></tr_11A1b1>
+				<tr_11A1b2></tr_11A1b2>
+				<tr_11A1b3></tr_11A1b3>
+				<tr_11A1b4></tr_11A1b4>
+				<tr_11A1c1></tr_11A1c1>
+				<tr_11A1c2></tr_11A1c2>
+				<tr_11A1c3></tr_11A1c3>
+				<tr_11A1c4></tr_11A1c4>
+				<tr_11A2a1i></tr_11A2a1i>
+				<tr_11A2a1ii></tr_11A2a1ii>
+				<tr_11A2a1iii></tr_11A2a1iii>
+				<tr_11A2a2i></tr_11A2a2i>
+				<tr_11A2a2ii></tr_11A2a2ii>
+				<tr_11A2a2iii></tr_11A2a2iii>
+				<tr_11A2a3i></tr_11A2a3i>
+				<tr_11A2a3ii></tr_11A2a3ii>
+				<tr_11A2a3iii></tr_11A2a3iii>
+				<tr_11A2b1i></tr_11A2b1i>
+				<tr_11A2b1ii></tr_11A2b1ii>
+				<tr_11A2b1iii></tr_11A2b1iii>
+				<tr_11A2b2i></tr_11A2b2i>
+				<tr_11A2b2ii></tr_11A2b2ii>
+				<tr_11A2b2iii></tr_11A2b2iii>
+				<tr_11A2b3i></tr_11A2b3i>
+				<tr_11A2b3ii></tr_11A2b3ii>
+				<tr_11A2b3iii></tr_11A2b3iii>
+				<tr_11B1></tr_11B1>
+				<tr_11B2></tr_11B2>
+				<tr_11B3></tr_11B3>
+				<tr_11B4></tr_11B4>
+				<tr_11B5></tr_11B5>
+				<tr_11C1a></tr_11C1a>
+				<tr_11C1b></tr_11C1b>
+				<tr_11C2a></tr_11C2a>
+				<tr_11C2b></tr_11C2b>
+				<tr_11D></tr_11D>
+				<tr_11E1></tr_11E1>
+				<tr_11E2></tr_11E2>
+				<tr_11E3></tr_11E3>
+				<tr_11E4></tr_11E4>
+				<tr_11F1></tr_11F1>
+				<tr_11F2></tr_11F2>
+				<tr_11F3></tr_11F3>
+				<tr_11F4></tr_11F4>
+				<tr_11F5></tr_11F5>
+				<tr_11F6></tr_11F6>
+				<tr_11F7></tr_11F7>
+				<tr_11F8></tr_11F8>
+				<tr_11F9></tr_11F9>
+				<tr_11H1></tr_11H1>
+				<tr_11H2></tr_11H2>
+				<tr_11H3></tr_11H3>
+				<tr_11H4></tr_11H4>
+				<tr_11I></tr_11I>
+				<tr_11J1></tr_11J1>
+				<tr_11J2></tr_11J2>
+				<tr_11K></tr_11K>
+				<tr_11L1></tr_11L1>
+				<tr_11L2></tr_11L2>
+				<tr_11L3></tr_11L3>
+				<tr_11M1></tr_11M1>
+				<tr_11M2></tr_11M2>
+				<tr_11M3></tr_11M3>
+				<tr_11M4></tr_11M4>
+				<tr_11M5></tr_11M5>
+				<tr_11N></tr_11N>
+				<tr_11O1></tr_11O1>
+				<tr_11O2></tr_11O2>
+				<tr_11O3></tr_11O3>
+				<tr_11O4></tr_11O4>
+				<tr_11P></tr_11P>
+			</Category>
+			<Comment>
+				<tr_11A1a1></tr_11A1a1>
+				<tr_11A1a2></tr_11A1a2>
+				<tr_11A1a3></tr_11A1a3>
+				<tr_11A1a4></tr_11A1a4>
+				<tr_11A1b1></tr_11A1b1>
+				<tr_11A1b2></tr_11A1b2>
+				<tr_11A1b3></tr_11A1b3>
+				<tr_11A1b4></tr_11A1b4>
+				<tr_11A1c1></tr_11A1c1>
+				<tr_11A1c2></tr_11A1c2>
+				<tr_11A1c3></tr_11A1c3>
+				<tr_11A1c4></tr_11A1c4>
+				<tr_11A2a1i></tr_11A2a1i>
+				<tr_11A2a1ii></tr_11A2a1ii>
+				<tr_11A2a1iii></tr_11A2a1iii>
+				<tr_11A2a2i></tr_11A2a2i>
+				<tr_11A2a2ii></tr_11A2a2ii>
+				<tr_11A2a2iii></tr_11A2a2iii>
+				<tr_11A2a3i></tr_11A2a3i>
+				<tr_11A2a3ii></tr_11A2a3ii>
+				<tr_11A2a3iii></tr_11A2a3iii>
+				<tr_11A2b1i></tr_11A2b1i>
+				<tr_11A2b1ii></tr_11A2b1ii>
+				<tr_11A2b1iii></tr_11A2b1iii>
+				<tr_11A2b2i></tr_11A2b2i>
+				<tr_11A2b2ii></tr_11A2b2ii>
+				<tr_11A2b2iii></tr_11A2b2iii>
+				<tr_11A2b3i></tr_11A2b3i>
+				<tr_11A2b3ii></tr_11A2b3ii>
+				<tr_11A2b3iii></tr_11A2b3iii>
+				<tr_11B1></tr_11B1>
+				<tr_11B2></tr_11B2>
+				<tr_11B3></tr_11B3>
+				<tr_11B4></tr_11B4>
+				<tr_11B5></tr_11B5>
+				<tr_11C1a></tr_11C1a>
+				<tr_11C1b></tr_11C1b>
+				<tr_11C2a></tr_11C2a>
+				<tr_11C2b></tr_11C2b>
+				<tr_11D></tr_11D>
+				<tr_11E1></tr_11E1>
+				<tr_11E2></tr_11E2>
+				<tr_11E3></tr_11E3>
+				<tr_11E4></tr_11E4>
+				<tr_11F1></tr_11F1>
+				<tr_11F2></tr_11F2>
+				<tr_11F3></tr_11F3>
+				<tr_11F4></tr_11F4>
+				<tr_11F5></tr_11F5>
+				<tr_11F6></tr_11F6>
+				<tr_11F7></tr_11F7>
+				<tr_11F8></tr_11F8>
+				<tr_11F9></tr_11F9>
+				<tr_11H1></tr_11H1>
+				<tr_11H2></tr_11H2>
+				<tr_11H3></tr_11H3>
+				<tr_11H4></tr_11H4>
+				<tr_11I></tr_11I>
+				<tr_11J1></tr_11J1>
+				<tr_11J2></tr_11J2>
+				<tr_11K></tr_11K>
+				<tr_11L1></tr_11L1>
+				<tr_11L2></tr_11L2>
+				<tr_11L3></tr_11L3>
+				<tr_11M1></tr_11M1>
+				<tr_11M2></tr_11M2>
+				<tr_11M3></tr_11M3>
+				<tr_11M4></tr_11M4>
+				<tr_11M5></tr_11M5>
+				<tr_11N></tr_11N>
+				<tr_11O1></tr_11O1>
+				<tr_11O2></tr_11O2>
+				<tr_11O3></tr_11O3>
+				<tr_11O4></tr_11O4>
+				<tr_11P></tr_11P>
+			</Comment>
+			<TR_11P_Unit></TR_11P_Unit>
+			<TR_11H4_Unit></TR_11H4_Unit>
+			<TR_11L1_Unit></TR_11L1_Unit>
+			<TR_11L3_Unit></TR_11L3_Unit>
+			<Gas>
+				<GasCode></GasCode>
+				<tr_11A>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A>
+				<tr_11A1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1>
+				<tr_11A1a>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a>
+				<tr_11A1a1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a1>
+				<tr_11A1a2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a2>
+				<tr_11A1a3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a3>
+				<tr_11A1a4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a4>
+				<tr_11A1b>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b>
+				<tr_11A1b1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b1>
+				<tr_11A1b2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b2>
+				<tr_11A1b3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b3>
+				<tr_11A1b4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b4>
+				<tr_11A1c>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c>
+				<tr_11A1c1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c1>
+				<tr_11A1c2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c2>
+				<tr_11A1c3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c3>
+				<tr_11A1c4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c4>
+				<tr_11A2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2>
+				<tr_11A2a>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a>
+				<tr_11A2a1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a1>
+				<tr_11A2a1i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a1i>
+				<tr_11A2a1ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a1ii>
+				<tr_11A2a1iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a1iii>
+				<tr_11A2a2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a2>
+				<tr_11A2a2i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a2i>
+				<tr_11A2a2ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a2ii>
+				<tr_11A2a2iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a2iii>
+				<tr_11A2a3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a3>
+				<tr_11A2a3i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a3i>
+				<tr_11A2a3ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a3ii>
+				<tr_11A2a3iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a3iii>
+				<tr_11A2b>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b>
+				<tr_11A2b1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b1>
+				<tr_11A2b1i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b1i>
+				<tr_11A2b1ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b1ii>
+				<tr_11A2b1iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b1iii>
+				<tr_11A2b2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b2>
+				<tr_11A2b2i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b2i>
+				<tr_11A2b2ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b2ii>
+				<tr_11A2b2iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b2iii>
+				<tr_11A2b3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b3>
+				<tr_11A2b3i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b3i>
+				<tr_11A2b3ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b3ii>
+				<tr_11A2b3iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b3iii>
+				<tr_11B>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B>
+				<tr_11B1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B1>
+				<tr_11B2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B2>
+				<tr_11B3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B3>
+				<tr_11B4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B4>
+				<tr_11B5>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B5>
+				<tr_11C>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C>
+				<tr_11C1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C1>
+				<tr_11C1a>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C1a>
+				<tr_11C1b>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C1b>
+				<tr_11C2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C2>
+				<tr_11C2a>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C2a>
+				<tr_11C2b>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C2b>
+				<tr_11D>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11D>
+				<tr_11E>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E>
+				<tr_11E1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E1>
+				<tr_11E2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E2>
+				<tr_11E3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E3>
+				<tr_11E4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E4>
+				<tr_11F>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F>
+				<tr_11F1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F1>
+				<tr_11F2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F2>
+				<tr_11F3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F3>
+				<tr_11F4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F4>
+				<tr_11F5>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F5>
+				<tr_11F6>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F6>
+				<tr_11F7>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F7>
+				<tr_11F8>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F8>
+				<tr_11F9>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F9>
+				<tr_11G>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11G>
+				<tr_11H>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H>
+				<tr_11H1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H1>
+				<tr_11H2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H2>
+				<tr_11H3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H3>
+				<tr_11H4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H4>
+				<tr_11I>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11I>
+				<tr_11J>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11J>
+				<tr_11J1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11J1>
+				<tr_11J2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11J2>
+				<tr_11K>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11K>
+				<tr_11L>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11L>
+				<tr_11L1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11L1>
+				<tr_11L2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11L2>
+				<tr_11L3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11L3>
+				<tr_11M>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M>
+				<tr_11M1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M1>
+				<tr_11M2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M2>
+				<tr_11M3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M3>
+				<tr_11M4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M4>
+				<tr_11M5>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M5>
+				<tr_11N>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11N>
+				<tr_11O>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O>
+				<tr_11O1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O1>
+				<tr_11O2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O2>
+				<tr_11O3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O3>
+				<tr_11O4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O4>
+				<tr_11P>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11P>
+				<tr_11Q>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11Q>
+				<tr_11R>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11R>
+			</Gas>
+			<AmountOfImportedEquipment>
+				<tr_11A>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A>
+				<tr_11A1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1>
+				<tr_11A1a>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a>
+				<tr_11A1a1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a1>
+				<tr_11A1a2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a2>
+				<tr_11A1a3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a3>
+				<tr_11A1a4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a4>
+				<tr_11A1b>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b>
+				<tr_11A1b1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b1>
+				<tr_11A1b2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b2>
+				<tr_11A1b3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b3>
+				<tr_11A1b4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b4>
+				<tr_11A1c>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c>
+				<tr_11A1c1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c1>
+				<tr_11A1c2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c2>
+				<tr_11A1c3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c3>
+				<tr_11A1c4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c4>
+				<tr_11A2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2>
+				<tr_11A2a>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a>
+				<tr_11A2a1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a1>
+				<tr_11A2a1i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a1i>
+				<tr_11A2a1ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a1ii>
+				<tr_11A2a1iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a1iii>
+				<tr_11A2a2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a2>
+				<tr_11A2a2i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a2i>
+				<tr_11A2a2ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a2ii>
+				<tr_11A2a2iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a2iii>
+				<tr_11A2a3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a3>
+				<tr_11A2a3i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a3i>
+				<tr_11A2a3ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a3ii>
+				<tr_11A2a3iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a3iii>
+				<tr_11A2b>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b>
+				<tr_11A2b1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b1>
+				<tr_11A2b1i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b1i>
+				<tr_11A2b1ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b1ii>
+				<tr_11A2b1iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b1iii>
+				<tr_11A2b2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b2>
+				<tr_11A2b2i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b2i>
+				<tr_11A2b2ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b2ii>
+				<tr_11A2b2iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b2iii>
+				<tr_11A2b3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b3>
+				<tr_11A2b3i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b3i>
+				<tr_11A2b3ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b3ii>
+				<tr_11A2b3iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b3iii>
+				<tr_11B>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B>
+				<tr_11B1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B1>
+				<tr_11B2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B2>
+				<tr_11B3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B3>
+				<tr_11B4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B4>
+				<tr_11B5>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B5>
+				<tr_11C>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C>
+				<tr_11C1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C1>
+				<tr_11C1a>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C1a>
+				<tr_11C1b>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C1b>
+				<tr_11C2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C2>
+				<tr_11C2a>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C2a>
+				<tr_11C2b>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C2b>
+				<tr_11D>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11D>
+				<tr_11E>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E>
+				<tr_11E1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E1>
+				<tr_11E2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E2>
+				<tr_11E3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E3>
+				<tr_11E4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E4>
+				<tr_11F>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F>
+				<tr_11F1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F1>
+				<tr_11F2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F2>
+				<tr_11F3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F3>
+				<tr_11F4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F4>
+				<tr_11F5>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F5>
+				<tr_11F6>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F6>
+				<tr_11F7>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F7>
+				<tr_11F8>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F8>
+				<tr_11F9>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F9>
+				<tr_11G>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11G>
+				<tr_11H>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H>
+				<tr_11H1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H1>
+				<tr_11H2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H2>
+				<tr_11H3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H3>
+				<tr_11H4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H4>
+				<tr_11I>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11I>
+				<tr_11J>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11J>
+				<tr_11J1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11J1>
+				<tr_11J2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11J2>
+				<tr_11K>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11K>
+				<tr_11L>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11L>
+				<tr_11L1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11L1>
+				<tr_11L2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11L2>
+				<tr_11L3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11L3>
+				<tr_11M>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M>
+				<tr_11M1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M1>
+				<tr_11M2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M2>
+				<tr_11M3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M3>
+				<tr_11M4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M4>
+				<tr_11M5>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M5>
+				<tr_11N>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11N>
+				<tr_11O>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O>
+				<tr_11O1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O1>
+				<tr_11O2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O2>
+				<tr_11O3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O3>
+				<tr_11O4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O4>
+				<tr_11P>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11P>
+				<tr_11Q>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11Q>
+				<tr_11R>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11R>
+			</AmountOfImportedEquipment>
+			<SumOfAllGasesS1>
+				<tr_11A1a1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a1>
+				<tr_11A1a2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a2>
+				<tr_11A1a3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a3>
+				<tr_11A1a4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a4>
+				<tr_11A1b1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b1>
+				<tr_11A1b2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b2>
+				<tr_11A1b3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b3>
+				<tr_11A1b4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b4>
+				<tr_11A1c1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c1>
+				<tr_11A1c2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c2>
+				<tr_11A1c3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c3>
+				<tr_11A1c4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c4>
+				<tr_11A2a1i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a1i>
+				<tr_11A2a1ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a1ii>
+				<tr_11A2a1iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a1iii>
+				<tr_11A2a2i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a2i>
+				<tr_11A2a2ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a2ii>
+				<tr_11A2a2iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a2iii>
+				<tr_11A2a3i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a3i>
+				<tr_11A2a3ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a3ii>
+				<tr_11A2a3iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a3iii>
+				<tr_11A2b1i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b1i>
+				<tr_11A2b1ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b1ii>
+				<tr_11A2b1iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b1iii>
+				<tr_11A2b2i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b2i>
+				<tr_11A2b2ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b2ii>
+				<tr_11A2b2iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b2iii>
+				<tr_11A2b3i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b3i>
+				<tr_11A2b3ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b3ii>
+				<tr_11A2b3iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b3iii>
+				<tr_11B1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B1>
+				<tr_11B2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B2>
+				<tr_11B3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B3>
+				<tr_11B4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B4>
+				<tr_11B5>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B5>
+				<tr_11C1a>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C1a>
+				<tr_11C1b>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C1b>
+				<tr_11C2a>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C2a>
+				<tr_11C2b>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C2b>
+				<tr_11D>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11D>
+				<tr_11E1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E1>
+				<tr_11E2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E2>
+				<tr_11E3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E3>
+				<tr_11E4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E4>
+				<tr_11F1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F1>
+				<tr_11F2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F2>
+				<tr_11F3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F3>
+				<tr_11F4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F4>
+				<tr_11F5>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F5>
+				<tr_11F6>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F6>
+				<tr_11F7>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F7>
+				<tr_11F8>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F8>
+				<tr_11F9>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F9>
+				<tr_11G>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11G>
+				<tr_11H1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H1>
+				<tr_11H2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H2>
+				<tr_11H3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H3>
+				<tr_11H4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H4>
+				<tr_11I>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11I>
+				<tr_11J1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11J1>
+				<tr_11J2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11J2>
+				<tr_11K>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11K>
+				<tr_11L1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11L1>
+				<tr_11L2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11L2>
+				<tr_11L3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11L3>
+				<tr_11M1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M1>
+				<tr_11M2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M2>
+				<tr_11M3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M3>
+				<tr_11M4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M4>
+				<tr_11M5>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M5>
+				<tr_11N>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11N>
+				<tr_11O1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O1>
+				<tr_11O2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O2>
+				<tr_11O3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O3>
+				<tr_11O4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O4>
+				<tr_11P>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11P>
+				<tr_11Q>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11Q>
+				<tr_11R>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11R>
+			</SumOfAllGasesS1>
+			<SumOfAllGasesS2>
+				<tr_11A1a1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a1>
+				<tr_11A1a2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a2>
+				<tr_11A1a3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a3>
+				<tr_11A1a4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1a4>
+				<tr_11A1b1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b1>
+				<tr_11A1b2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b2>
+				<tr_11A1b3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b3>
+				<tr_11A1b4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1b4>
+				<tr_11A1c1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c1>
+				<tr_11A1c2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c2>
+				<tr_11A1c3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c3>
+				<tr_11A1c4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A1c4>
+				<tr_11A2a1i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a1i>
+				<tr_11A2a1ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a1ii>
+				<tr_11A2a1iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a1iii>
+				<tr_11A2a2i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a2i>
+				<tr_11A2a2ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a2ii>
+				<tr_11A2a2iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a2iii>
+				<tr_11A2a3i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a3i>
+				<tr_11A2a3ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a3ii>
+				<tr_11A2a3iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2a3iii>
+				<tr_11A2b1i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b1i>
+				<tr_11A2b1ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b1ii>
+				<tr_11A2b1iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b1iii>
+				<tr_11A2b2i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b2i>
+				<tr_11A2b2ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b2ii>
+				<tr_11A2b2iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b2iii>
+				<tr_11A2b3i>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b3i>
+				<tr_11A2b3ii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b3ii>
+				<tr_11A2b3iii>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11A2b3iii>
+				<tr_11B1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B1>
+				<tr_11B2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B2>
+				<tr_11B3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B3>
+				<tr_11B4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B4>
+				<tr_11B5>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11B5>
+				<tr_11C1a>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C1a>
+				<tr_11C1b>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C1b>
+				<tr_11C2a>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C2a>
+				<tr_11C2b>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11C2b>
+				<tr_11D>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11D>
+				<tr_11E1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E1>
+				<tr_11E2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E2>
+				<tr_11E3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E3>
+				<tr_11E4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11E4>
+				<tr_11F1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F1>
+				<tr_11F2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F2>
+				<tr_11F3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F3>
+				<tr_11F4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F4>
+				<tr_11F5>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F5>
+				<tr_11F6>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F6>
+				<tr_11F7>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F7>
+				<tr_11F8>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F8>
+				<tr_11F9>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11F9>
+				<tr_11G>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11G>
+				<tr_11H1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H1>
+				<tr_11H2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H2>
+				<tr_11H3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H3>
+				<tr_11H4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11H4>
+				<tr_11I>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11I>
+				<tr_11J1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11J1>
+				<tr_11J2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11J2>
+				<tr_11K>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11K>
+				<tr_11L1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11L1>
+				<tr_11L2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11L2>
+				<tr_11L3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11L3>
+				<tr_11M1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M1>
+				<tr_11M2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M2>
+				<tr_11M3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M3>
+				<tr_11M4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M4>
+				<tr_11M5>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11M5>
+				<tr_11N>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11N>
+				<tr_11O1>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O1>
+				<tr_11O2>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O2>
+				<tr_11O3>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O3>
+				<tr_11O4>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11O4>
+				<tr_11P>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11P>
+				<tr_11Q>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11Q>
+				<tr_11R>
+					<Code></Code>
+					<Amount></Amount>
+				</tr_11R>
+			</SumOfAllGasesS2>
+			<Totals>
+				<tr_11GSumAllGasesCO2Eq />
+				<tr_11QSumAllGasesCO2Eq />
+			</Totals>
+			<SupportingDocuments>
+				<Document>
+					<Url />
+					<Title />
+				</Document>
+			</SupportingDocuments>
+		</F7_s11EquImportTable>
+		<F8_S12>
+			<Gas>
+				<GasCode />
+				<tr_12A>
+					<Code>12A</Code>
+					<SumOfPartnersAmount />
+					<Unit />
+					<Transaction>
+						<TransactionID />
+						<Amount />
+						<Exporter>
+							<TradePartnerID />
+							<Year />
+						</Exporter>
+						<POM>
+							<TradePartnerID />
+							<Year />
+						</POM>
+						<Comment />
+					</Transaction>
+				</tr_12A>
+				<tr_12aA>
+					<Code>12aA</Code>
+					<SumOfPartnersAmount />
+					<Unit />
+					<Transaction>
+						<TransactionID />
+						<Amount />
+						<Exporter>
+							<TradePartnerID />
+							<Year />
+						</Exporter>
+						<POM>
+							<TradePartnerID />
+							<Year />
+						</POM>
+						<Comment />
+					</Transaction>
+				</tr_12aA>
+				<tr_12B>
+					<Code>12B</Code>
+					<SumOfPartnersAmount />
+					<Unit />
+					<Transaction>
+						<TransactionID />
+						<Amount />
+						<Exporter>
+							<TradePartnerID />
+							<Year />
+						</Exporter>
+						<POM>
+							<TradePartnerID />
+							<Year />
+						</POM>
+						<Comment />
+					</Transaction>
+				</tr_12B>
+				<tr_12aB>
+					<Code>12aB</Code>
+					<SumOfPartnersAmount />
+					<Unit />
+					<Transaction>
+						<TransactionID />
+						<Amount />
+						<Exporter>
+							<TradePartnerID />
+							<Year />
+						</Exporter>
+						<POM>
+							<TradePartnerID />
+							<Year />
+						</POM>
+						<Comment />
+					</Transaction>
+				</tr_12aB>
+				<Totals>
+					<tr_12bA />
+					<tr_12cA />
+					<tr_12bB />
+					<tr_12cB />
+					<tr_12Ca />
+					<tr_12C />
+				</Totals>
+			</Gas>
+			<tr_12A_TradePartners>
+				<Partner />
+			</tr_12A_TradePartners>
+			<tr_12aA_TradePartners>
+				<Partner />
+			</tr_12aA_TradePartners>
+			<tr_12B_TradePartners>
+				<Partner />
+			</tr_12B_TradePartners>
+			<tr_12aB_TradePartners>
+				<Partner />
+			</tr_12aB_TradePartners>
+		</F8_S12>		
+		<F9_S13>
+			<AuthBalance>
+				<Code />
+				<Amount />
+				<Unit>CO2e</Unit>
+			</AuthBalance>
+			<Totals>
+				<tr_13B>
+					<Code>tr_13B</Code>
+					<Amount />
+					<Unit>CO2e</Unit>
+				</tr_13B>
+				<tr_13Ba>
+					<Code>tr_13Ba</Code>
+					<Amount />
+					<Unit>CO2e</Unit>
+				</tr_13Ba>
+				<tr_13Bb>
+					<Code>tr_13Bb</Code>
+					<Amount />
+					<Unit>CO2e</Unit>
+				</tr_13Bb>
+				<tr_13C>
+					<Code>tr_13C</Code>
+					<Amount />
+					<Unit>CO2e</Unit>
+				</tr_13C>
+				<tr_13Ca>
+					<Code>tr_13Ca</Code>
+					<Amount />
+					<Unit>CO2e</Unit>
+				</tr_13Ca>
+				<tr_13D>
+					<Code>tr_13D</Code>
+					<Amount />
+					<Unit>CO2e</Unit>
+				</tr_13D>
+			</Totals>
+			<Verified />
+		</F9_S13>
+	</FGasesReporting>

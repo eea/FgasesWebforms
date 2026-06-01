@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html id="ng-app" ng-app="FGases" ng-controller="questionnaire"> 
+<head>
+    <title>FGases Verification Questionnaire</title>
+    <meta name="Publisher" content="EEA, The European Environment Agency" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- EIONET 2007 styles -->
+    <link type="text/css" rel="stylesheet" media="screen" href="//www.eionet.europa.eu/styles/eionet2007/screen.css" title="Eionet 2007 style" />
+    <link rel="stylesheet" type="text/css" href="//www.eionet.europa.eu/styles/eionet2007/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="//www.eionet.europa.eu/styles/eionet2007/handheld.css" media="handheld" />
+
+    <!--[if IE 8]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.0.6/es5-shim.map"></script>
+    <![endif]-->
+    <!--[if lte IE 9]>
+    <script type="text/javascript">
+        window['isIE9'] = true;
+    </script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.js"></script>
+    <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="bower_components/angular-promise-tracker/promise-tracker.js"></script>
+    <script src="bower_components/angular-promise-tracker/promise-tracker-http-interceptor.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/angular-elastic/elastic.js"></script>
+    <script src="bower_components/angular-file-upload/dist/angular-file-upload.min.js"></script>
+
+    <script src="scripts/multiselect.js"></script>
+    <script src="scripts/navigation-blocker.js"></script>
+    <script src="scripts/language-changer.js"></script>
+    <script src="scripts/form-tabs.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/error-mapper.js"></script>
+    <script src="scripts/notification/notification.js"></script>
+    <script src="scripts/fxparser.min.js"></script>
+    <link rel="stylesheet" href="scripts/notification/notification.css" />
+
+    <link rel="stylesheet" href="css/webform.css" />
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/questionnaire.js"></script>
+    <script type="text/javascript" src="js/controllers/identificationCtrl.js"></script>
+    <script type="text/javascript" src="js/controllers/bulk_hfcs_verification_controller.js"></script>
+    <script type="text/javascript" src="js/controllers/equipment_verification_controller.js"></script>
+
+    <script type="text/javascript" src="js/controllers/hfcs-cofirmation-modal.js"></script>
+
+    <script type="text/javascript" src="js/directives/static-include.js"></script>
+    <script type="text/javascript" src="js/filters/amount-tonnes.js"></script>
+    <script type="text/javascript" src="js/filters/thousand-separator.js"></script>
+    <script type="text/javascript" src="js/services/data/data-prefill.js"></script>
+    <script type="text/javascript" src="js/services/data/data-repository.js"></script>
+    <script type="text/javascript" src="js/services/data/json-normalizer.js"></script>
+    <script type="text/javascript" src="js/services/data/report-structure-helper.js"></script>
+    <script type="text/javascript" src="js/services/data/report-structure-normalizer.js"></script>
+    <script type="text/javascript" src="js/services/data/parse-FGasesReporting-xml.js"></script>
+    <script type="text/javascript" src="js/services/ui/focus.js"></script>
+    <script type="text/javascript" src="js/services/ui/highlight.js"></script>
+    <script type="text/javascript" src="js/services/ui/modal-adapter.js"></script>
+    <script type="text/javascript" src="js/services/util/object-util.js"></script>
+    <script type="text/javascript" src="js/services/util/arrayUtil.js"></script>
+    <script type="text/javascript" src="js/services/util/string-util.js"></script>
+    <script type="text/javascript" src="js/services/util/numeric-util.js"></script>
+    <script type="text/javascript" src="js/services/validation/qcs/sheet-transaction-validator.js"></script>
+    <script type="text/javascript" src="js/services/validation/qcs/sheet-validation-object-factory.js"></script>
+    <script type="text/javascript" src="js/services/validation/qcs/sheet-general-validator.js"></script>
+    <script type="text/javascript" src="js/services/validation/qcs/confirm-validator.js"></script>
+    <script type="text/javascript" src="js/services/validation/qcs/section3-validator.js"></script>
+    <script type="text/javascript" src="js/services/validation/qcs/section-ii-4-validtor.js"></script>
+    <script type="text/javascript" src="js/services/validation/qcs/upload-verification-report.js"></script>
+    <script type="text/javascript" src="js/services/validation/qcs/sheet-bulk-hfcs-validator.js"></script>
+    <script type="text/javascript" src="js/services/validation/qcs/sheet-equipment-validator.js"></script>
+
+    <script type="text/javascript" src="js/viewmodel/view-model-activities.js"></script>
+    <script type="text/javascript" src="js/viewmodel/view-model-submission.js"></script>
+    <script type="text/javascript" src="js/viewmodel/view-model-object-base.js"></script>
+    <script type="text/javascript" src="js/viewmodel/view-model-identification.js"></script>
+    <script type="text/javascript" src="js/viewmodel/view-model-bulk_hfcs_verification.js"></script>
+    <script type="text/javascript" src="js/viewmodel/view-model-equipment_verification.js"></script>
+
+    <script type="text/javascript" src="js/viewmodel/view-model.js"></script>
+    <script type="text/javascript" src="mock/js/services/data/data-proxy.js"></script>
+    <script type="text/javascript" src="mock/js/services/data/transaction-year-provider.js"></script>
+    <!--ant-includes
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" />
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.20/angular.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.20/angular-animate.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.1.0/angular-translate.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-loader-static-files/2.1.0/angular-translate-loader-static-files.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap-tpls.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-elastic/2.3.3/elastic.min.js"></script>
+
+        <script type="text/javascript" src="promise-tracker.js"></script>
+        <script type="text/javascript" src="promise-tracker-http-interceptor.js"></script>
+        <script type="text/javascript" src="angular-file-upload.min.js"></script>
+
+        <link rel="stylesheet" href="webform.css" />
+        <link rel="stylesheet" href="notification.css" />
+         <script type="text/javascript" src="fxparser.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+
+        ant-includes-->
+</head>
+<body id="beginning" class="fullscreen">
+    <div class="ng-modal-overlay animate-show" ng-show="showInfo || $parent.loadingTracker.active()"></div>
+    <div id="container">
+        <div id="toolribbon">
+            <div id="lefttools">
+                <a id="eealink" href="http://www.eea.europa.eu/">EEA</a>
+                <a id="ewlink" href="http://www.ewindows.eu.org/">EnviroWindows</a>
+            </div>
+            <div id="righttools">
+                <a id="printlink" title="Print this page" href="javascript:this.print();"><span>Print</span></a>
+            </div>
+
+        </div> <!-- toolribbon -->
+
+        <div id="pagehead">
+            <a href="/" accesskey="1"><img src="/images/eea-print-logo.gif" alt="Logo" id="logo" /></a>
+            <div id="networktitle">Eionet</div>
+            <div id="sitetitle">European Environment Information and Observation Network</div>
+            <div id="sitetagline">Web questionnaires</div>
+        </div>  <!-- page head -->
+
+        <div id="menuribbon"></div>
+        <!-- <div class="breadcrumbtrail">
+            <div class="breadcrumbhead">You are here:</div>
+            <div class="breadcrumbitem eionetaccronym"><a href="http://www.eionet.europa.eu/">Eionet</a></div>
+            <div class="breadcrumbitem">CDR</div>
+            <div class="breadcrumbitemlast">WebForm</div>
+            <div class="breadcrumbtail"></div>
+        </div> -->
+        <div id="workarea">
+            <div style="display:none" data-language-changer></div>
+            <div ng-form="appForm" novalidate class="css-form" ng-class="{ 'submitted' : submitted }" block-form-navigation>
+                <h1><span data-translate="Questionnaire-title"></span></h1>
+                <div class="loading-box animate-show" ng-show="$parent.loadingTracker.active()">
+                    <img src="//webforms.eionet.europa.eu/images/loader.gif" width="60" height="60" /><br />
+                </div>
+                <ul tabset ng-cloak ng-controller="TabController">
+                    <div ng-class="{'invalidTab' : isInvalidTab('Intro')}">
+                        <li tab heading="Instructions" active="tabs[getTabIndex('Intro')].active" ng-controller="TabController" ng-click="onTabChange('Intro')">
+                            <div class="indentLi" static-include="markup/intro_tab_contents.html"></div>
+                        </li>
+                    </div>
+                    <div ng-class="{'invalidTab' : isInvalidTab('CompanyInfo')}">
+                        <li tab heading="Auditor information" active="tabs[getTabIndex('CompanyInfo')].active" ng-controller="TabController"
+                            ng-if="isTabVisible('CompanyInfo')" ng-click="onTabChange('CompanyInfo')">
+                            <div class="indentLi" ng-form="CompanyInfo" static-include="markup/company_info_tab_contents.html"></div>
+                        </li>
+                    </div>
+                    <div ng-class="{'invalidTab' : isInvalidTab('ReportIdentification')}">
+                        <li tab heading="Verification scope" active="tabs[getTabIndex('ReportIdentification')].active" ng-controller="TabController"
+                            ng-if="isTabVisible('ReportIdentification')" ng-click="onTabChange('ReportIdentification')">
+                            <div class="indentLi" ng-form="ReportIdentificationSelection" static-include="markup/report_identification_tab_contents.html"></div>
+                        </li>
+                    </div>
+
+                    <div ng-class="{'invalidTab' : isInvalidTab('BulkHFCsVerification')}">
+                        <li tab heading="I - Bulk HFCs verification"
+                            active="tabs[getTabIndex('BulkHFCsVerification')].active"
+                            ng-controller="TabController"
+                            ng-if="isTabVisible('BulkHFCsVerification')" ng-click="onTabChange('BulkHFCsVerification')">
+                            <div ng-form="BulkHFCsVerificationForm" static-include="markup/bulk_hfcs_verification_tab_contents.html"></div>
+                        </li>
+                    </div>
+                    <div ng-class="{'invalidTab' : isInvalidTab('EquipmentVerification')}">
+                        <li tab heading="II - Equipment verification"
+                            active="tabs[getTabIndex('EquipmentVerification')].active"
+                            ng-controller="TabController"
+                            ng-if="isTabVisible('EquipmentVerification')" ng-click="onTabChange('EquipmentVerification')">
+                            <div ng-form="EquipmentVerificationForm" static-include="markup/equipment_verification_tab_contents.html"></div>
+                        </li>
+                    </div>
+                    <div ng-class="{'invalidTab' : isInvalidTab('Submission')}"
+                        ng-if="isTabVisible('Submission')">
+                        <li tab heading="Finish" active="tabs[getTabIndex('Submission')].active" ng-controller="TabController" ng-click="onTabChange('Submission')">
+                            <div ng-form="Submission" static-include="markup/submission.html"></div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="menu_space"></div>
+            <div class="menu_space"></div>
+        </div>
+        <div data-notifications="bottom right"></div>
+        <div ng-controller="TabController">
+            <div class="col-md-11 menu-buttons" style="margin-bottom: 1em;" ng-show="hasActiveTabValidationMessages()">
+                <div>
+                    <div ng-show="isShowValidationMessages()" style="float:left; width: 100%">
+                        <div class="alert {{ getCurrentValidationMessage().isBlocker ? 'alert-danger' : 'alert-warning' }}">
+                            <span style="display:inline-block;width:97%">
+                                <button type="button" class="error-navigation" ng-click="setPrevMsgIndex();">
+                                    <span class="glyphicon glyphicon-circle-arrow-left"></span>
+                                </button>
+                                <span>{{getValMsgIndex() + 1}} / {{getActiveValidationMessages().length}}</span>
+                                <button type="button" class="error-navigation" ng-click="setNextMsgIndex();">
+                                    <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                </button>
+
+                                <span class="{{ getCurrentValidationMessage().isBlocker ? 'glyphicon glyphicon-exclamation-sign' : 'glyphicon glyphicon-warning-sign' }}" aria-hidden="true"></span>
+                                <a href="#" class="alert-link" ng-click="goToValidationMessageCause(getCurrentValidationMessage());">
+                                    <span>{{getCurrentValidationMessage().transactionLabel}}</span>
+                                    <span ng-if="validGasIndexForValidationMessage(getCurrentValidationMessage())">
+                                        <span> - </span>
+                                        <span data-translate="common.gas"> </span>
+                                        <span>{{instance.FGasesReporting.ReportedGases[getCurrentValidationMessage().gasIndex].Name}}</span>
+                                    </span>
+                                    <span ng-if="validTradePartnerForValidationMessage(getCurrentValidationMessage())">
+                                        <span> - (</span>
+                                        <span data-translate="common.trade-partner"> </span>
+                                        <span>{{getCurrentValidationMessage().tradePartnerId}})</span>
+                                    </span>
+                                    <span class="glyphicon glyphicon-new-window" data-tooltip="{{getGoToFieldLabel()}}"></span>
+                                </a>
+                                <span ng-switch="getCurrentValidationMessage().message == null">
+                                    <span ng-switch-when="true">: {{'validation_messages.qc_' + getCurrentValidationMessage().qccode + '.error_text' | translate}}</span>
+                                    <span ng-switch-when="false">: {{ getCurrentValidationMessage().message }}</span>
+                                </span>
+                                <span> [QC {{getCurrentValidationMessage().qccode}}]</span>
+                            </span>
+                            <button type="button" ng-click="hideValidationMessages()" class="close">
+                                <span aria-hidden="true">x</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-11 menu-buttons">
+                <div>
+                    <div style="float:left">
+                        <button type="button" ng-click="showMenu = !showMenu" class="btn {{showMenu ? 'btn-default' : 'btn-success'}} menu-button" ng-init="showMenu=true" title="{{showMenu ? 'Hide menu' : 'Show menu'}}">
+                            <span>{{showMenu ? '<' : '>'}}</span>
+                        </button>
+                    </div>
+                    <div class=" animate-show" ng-show="showMenu" style="float:left">
+                        <button type="button" ng-click="saveInstance()" class="btn btn-sm btn-success">Save report</button>
+                        <button type="button" ng-click="close()" class="btn btn-sm btn-primary" ng-if="!isLastTab() || instance.Verification.GeneralReportData['@status'] == 'completed'">Close report</button>
+                        <div style="display:inline-block" ng-if="isLastTab() && instance.Verification.GeneralReportData['@status'] != 'completed'" tooltip="Please click on 'Close report and proceed to BDR' button above to close the webform and proceed to submission.">
+                            <button type="button" class="btn btn-sm btn-primary" ng-disabled="true">Close report</button>
+                        </div>
+                        <button type="button" ng-click="printPreview()" class="btn btn-sm btn-primary">Print report</button>
+                        <button type="button" ng-click="validateActiveForm(); setShowValidationMessages();"
+                                ng-show="hasActiveTabValidation()"
+                                class="btn btn-sm btn-primary">
+                            <span data-translate="common.validate-current-form"></span>
+                        </button>
+                    </div>
+                    <div class="animate-show" ng-show="showMenu" style="float:right">
+                        <button type="button" ng-click="gotoPreviousTab();" class="btn btn-sm btn-primary" ng-disabled="getActiveTabIndex() == 0">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span>Previous form</span>
+                        </button>
+                        <button type="button" ng-click="gotoNextTab();" class="btn btn-sm btn-primary" ng-disabled="isLastTab()">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span>Next form</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <br /><br /><br /><br />
+        </div>
+    </div> <!-- workarea -->
+
+    <div id="pagefoot" class="animate-show" ng-show="showMenu">
+        <p><a href="http://www.eea.europa.eu/"><b>European Environment Agency</b></a> | Kgs. Nytorv 6, DK-1050 Copenhagen K, Denmark - Phone: +45 3336 7100</p>
+    </div>
+
+    </div> <!-- container -->
+</body>
+</html>

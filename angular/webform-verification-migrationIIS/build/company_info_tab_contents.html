@@ -1,0 +1,66 @@
+<!-- html subform [ng-form="CompanyInfo"] for intro tab -->
+<!--<h2><span data-translate="generals"></span></h2>-->
+<h2><span data-translate="company-info.info"></span></h2>
+<div class="row">
+    <span class="col-md-1"><label data-translate="company-info.auditor-id"></label></span>
+    <span class="col-md-2">{{instance.Verification.GeneralReportData.Auditor.Auditor_uid}}</span>
+    <span class="col-md-1"><label data-translate="company-info.name"></label></span>
+    <span class="col-md-2">{{instance.Verification.GeneralReportData.Auditor.Company.CompanyName}}</span>
+    <span class="col-md-1"><label data-translate="company-info.contact-tel"></label></span>
+    <span class="col-md-1">{{instance.Verification.GeneralReportData.Auditor.Phone}}</span>
+    <span class="col-md-1"><label data-translate="company-info.website"></label></span>
+    <span class="col-md-1">{{instance.Verification.GeneralReportData.Auditor.Website}}</span>
+</div>
+<div class="row">
+    <span class="col-md-1"><label data-translate="company-info.address-street"></label></span>
+    <span class="col-md-2">{{instance.Verification.GeneralReportData.Auditor.Adress.Street}}</span>
+    <span class="col-md-1"><label data-translate="company-info.address-number"></label></span>
+    <span class="col-md-1">{{instance.Verification.GeneralReportData.Auditor.Adress.Number}}</span>
+    <span class="col-md-1"><label data-translate="company-info.address-postcode"></label></span>
+    <span class="col-md-1">{{instance.Verification.GeneralReportData.Auditor.Adress.PostalCode}}</span>
+    <span class="col-md-1"><label data-translate="company-info.address-city"></label></span>
+    <span class="col-md-1">{{instance.Verification.GeneralReportData.Auditor.Company.City}}</span>
+    <span class="col-md-1"><label data-translate="company-info.country"></label></span>
+    <span class="col-md-2">{{instance.Verification.GeneralReportData.Auditor.Country.Name}}</span>
+</div>
+<!-- <div class="row">
+     <span class="col-md-3"><label data-translate="company-info.vat"></label></span>
+     <span class="col-md-4">{{instance.Verification.GeneralReportData.Company.VATNumber}}</span>
+     <span class="col-md-1"><label data-translate="company-info.eori"></label></span>
+     <span class="col-md-1">{{instance.Verification.GeneralReportData.Company.EORI}}</span>
+ </div>-->
+
+<h2><span data-translate="company-info.auditor-info"></span></h2>
+<div class="row">
+    <!--ng-repeat="person in instance.Verification.GeneralReportData.Company.ContactPersons.ContactPerson"-->
+    <span class="col-md-1"><label data-translate="company-info.contact-first-name"></label></span>
+    <span class="col-md-2">{{instance.Verification.GeneralReportData.Auditor.leadAuditorFirstName}}</span>
+    <span class="col-md-1"><label data-translate="company-info.contact-last-name"></label></span>
+    <span class="col-md-2">{{instance.Verification.GeneralReportData.Auditor.leadAuditorLastName}}</span>
+    <span class="col-md-1"><label data-translate="company-info.contact-email"></label></span>
+    <span class="col-md-2">{{instance.Verification.GeneralReportData.Auditor.LeadAuditorEmail}}</span>
+</div>
+<br />
+
+<div style="margin-top: 1em;" ng-show="instance.Verification.GeneralReportData.Company['@status'] == 'incomplete'">
+    <button type="button" ng-click="instance.Verification.GeneralReportData.Company['@status'] = 'confirmed'; gotoTab('ReportIdentification');" class="btn btn-sm btn-primary">
+        <!--ng-click="confirmCompanyInfo()"-->
+        <span>Confirm</span>
+    </button>
+    <button type="button" ng-click="modifyCompanyInfo()" class="btn btn-sm btn-warning">
+        <span>Modify</span>
+    </button>
+</div>
+
+<div class="alert alert-success" ng-show="instance.Verification.GeneralReportData.Company['@status'] == 'infoconfirmed' || instance.Verification.GeneralReportData.Company['@status'] == 'confirmed'"><strong>Confirmed!</strong> <span data-translate="company-info.details-confirmed"></span></div>
+<div class="alert alert-danger" ng-show="instance.Verification.GeneralReportData.Company['@status'] == 'modified'"><strong>Not confirmed!</strong> <span data-translate="company-info.details-modified"></span></div>
+
+<div ng-show="instance.Verification.GeneralReportData.Company['@status'] == 'modified'">
+    <button type="button" ng-click="loadAuditorData();instance.Verification.GeneralReportData.Company['@status']='incomplete';auditorInfoConfirmed = false" class="btn btn-sm btn-primary">
+        <span class="glyphicon glyphicon-refresh"></span>
+        <span data-translate="company-info.details-reload"></span>
+    </button>
+</div>
+
+
+

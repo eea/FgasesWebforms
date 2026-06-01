@@ -1,0 +1,111 @@
+[
+    {
+        "@type" : "FGASUndertaking",
+        "id" : 2222,
+        "name" : "orgTest222",
+        "address" : {
+            "street" : "street",
+            "number" : "11",
+            "zipCode" : "1234",
+            "city" : "asdfsafsaf",
+            "country" : {
+                "code" : "CN",
+                "name" : "China",
+                "type" : "NONEU_TYPE"
+            }
+        },
+        "website" : "http://website",
+        "phone" : "+3234343",
+        "domain" : "FGAS",
+        "contactPersons" : [ {
+            "userName" : "user1",
+            "firstName" : "User 1",
+            "lastName" : "User 1",
+            "emailAddress" : "user1@mock.ec.europa.eu"
+        } ],
+        "status" : "VALID",
+        "euLegalRepresentativeCompany" : {
+            "name" : "eulegalrep org",
+            "address" : {
+                "street" : "street",
+                "number" : "12",
+                "zipCode" : "1233",
+                "city" : "asdfafd",
+                "country" : {
+                    "code" : "BE",
+                    "name" : "Belgium",
+                    "type" : "EU_TYPE"
+                }
+            },
+            "website" : "http://website",
+            "phone" : "+3234343",
+            "vatNumber" : "VAT23424",
+            "contactPersonFirstName" : "fname--9270",
+            "contactPersonLastName" : "lname--9270",
+            "contactPersonEmailAddress" : "email@email.com"
+        },
+        "vat" : "VAT23424",
+        "Former_Company_no_2007-2010": "fgas00000"
+    }
+,{
+    "@type" : "FGASUndertaking",
+    "id" : 1111,
+    "name" : "orgTest1111",
+    "address" : {
+        "street" : "street",
+        "number" : "11",
+        "zipCode" : "1234",
+        "city" : "asdfsafsaf",
+        "country" : {
+            "code" : "EE",
+            "name" : "Estonia",
+            "type" : "EU_TYPE"
+        }
+    },
+    "website" : "http://website",
+    "phone" : "+3234343",
+    "domain" : "FGAS",
+    "contactPersons" : [ {
+        "userName" : "user1",
+        "firstName" : "User 1",
+        "lastName" : "User 1",
+        "emailAddress" : "user1@mock.ec.europa.eu"
+    } ],
+    "status" : "VALID",
+    "vat" : "VAT23424",
+    "Former_Company_no_2007-2010": "fgas30000"
+},
+{
+    "@type": "FGASUndertaking",
+    "id": 1234,
+    "name": "orgTestFis",
+    "address": {
+        "street": "street",
+        "number": "11",
+        "zipCode": "1234",
+        "city": "London",
+        "country": {
+            "code": "UK",
+            "name": "Scotland",
+            "type": "EU_TYPE"
+        }
+    },
+    "types": "FGAS_PRODUCER_IMPORTER_EXPORTER_NON_HFCS,FGAS_RECEIVER_EXEMPTED_HFCS,FGAS_EXPORTER_HFCS,FGAS_FEEDSTOCK_USER_HFCS,FGAS_DESTROYER_HFCS",
+    "website": "http://website",
+    "phone": "+3234343",
+    "businessProfile": "fgas.importer.of.other.products.and.equipment,fgas.export,fgas.feedstock.use,fgas.importer.of.refrigeration.ac..and.heatpump.equipment.containing.hfcs",
+    "domain": "FGAS",
+    "contactPersons": [
+        {
+            "userName": "user1",
+            "firstName": "User 1",
+            "lastName": "User 1",
+            "emailAddress": "user1@mock.ec.europa.eu"
+        }
+    ],
+    "status": "VALID",
+    "vat": "VAT24324",
+    "Former_Company_no_2007-2010": "fgas30001"
+}
+
+]

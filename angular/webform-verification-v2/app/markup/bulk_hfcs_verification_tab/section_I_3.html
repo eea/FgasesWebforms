@@ -1,0 +1,111 @@
+<style>
+    table.section-I-3 th.confirmed-a {
+        width: 33%;
+        vertical-align: top;
+        text-wrap-mode: nowrap;
+        text-align: center;
+    } 
+    table.section-I-3 th.confirmed-b, 
+    table.section-I-3 th.confirmed-c {
+        width: 33%;
+        vertical-align: top;
+        text-align: center;
+    }
+    table.section-I-3 td div.confirmation-summary {
+        text-align: left;
+    }
+    table.section-I-3 td label.form-check-label {
+        display: unset;
+    }
+</style>
+<table class="table table-hover table-bordered fixed-table section-I-3">
+    <thead>
+        <tr>
+            <th class="confirmed-a">
+                <span>(a)</span>
+                <br/>
+                <span data-translate="bulk-hfcs-verification.table-confirmed-a"></span>
+            </th>
+            <th class="confirmed-b">
+                <span>(b)</span>
+                <br/>
+                <span data-translate="bulk-hfcs-verification.table-confirmed-b"></span>
+            </th>
+            <th class="confirmed-c">
+                <span>(c)</span>
+                <br/>
+                <span data-translate="bulk-hfcs-verification.table-confirmed-c"></span>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="bulk-hfcs-verification-section-3-confirmation">
+            <td id="bulk-hfcs-verification-section-3-confirmation-a" class="confirmation">
+                <input class="form-check-input" type="checkbox"
+                        id="verification-confirm-I-3-a"
+                        ng-if="instance.Verification.BulkHFCs.section_I_3"
+                        ng-model="instance.Verification.BulkHFCs.section_I_3.confirmation_a.checked"
+                        ng-change="onConfirmation_a_Changed(instance.Verification.BulkHFCs.section_I_3)">
+                <label class="form-check-label" for="verification-confirm-I-3-a" data-bs-toggle="tooltip"
+                        data-tooltip="{{'bulk-hfcs-verification.section-I-3-table-option-a-tooltip' | translate}}"
+                        class="form-check-label">{{'bulk-hfcs-verification.section-I-3-table-option-a' | translate}}</label>
+            </td>
+            <td id="bulk-hfcs-verification-section-3-confirmation-b" class="confirmation">
+                <input class="form-check-input" type="checkbox"
+                        id="verification-confirm-I-3-b"
+                        ng-if="instance.Verification.BulkHFCs.section_I_3"
+                        ng-model="instance.Verification.BulkHFCs.section_I_3.confirmation_b.checked"
+                        ng-change="onConfirmation_b_Changed('bulk-hfcs-verification.section-I-2-table;section_I_3', instance.Verification.BulkHFCs.section_I_3)">
+                <label class="form-check-label" for="verification-confirm-I-3-b" data-bs-toggle="tooltip"
+                        data-tooltip="{{'bulk-hfcs-verification.section-I-3-table-option-b-tooltip' | translate}}"
+                        class="form-check-label">{{'bulk-hfcs-verification.section-I-3-table-option-b' | translate}}</label>
+                <div class="confirmation-summary" ng-if="instance.Verification.BulkHFCs.section_I_3.confirmation_b.checked">
+                    <br>
+                    <div ng-if="instance.Verification.BulkHFCs.section_I_3.confirmation_b.option_1">
+                        <span data-translate="bulk-hfcs-verification.section-I-2-table-option-b1"></span>
+                    </div>
+                    <div ng-if="instance.Verification.BulkHFCs.section_I_3.confirmation_b.option_2">
+                        <span data-translate="bulk-hfcs-verification.section-I-2-table-option-b2"></span>
+                    </div>
+                    <div ng-if="instance.Verification.BulkHFCs.section_I_3.confirmation_b.option_3">
+                        <span data-translate="bulk-hfcs-verification.section-I-2-table-option-b3"></span>
+                    </div>
+                    <div ng-if="instance.Verification.BulkHFCs.section_I_3.confirmation_b.option_4">
+                        <span data-translate="bulk-hfcs-verification.section-I-2-table-option-b4"></span>
+                    </div>
+                    <div ng-if="instance.Verification.BulkHFCs.section_I_3.confirmation_b.option_4">
+                        <span>{{instance.Verification.BulkHFCs.section_I_3.confirmation_b.option_4_reason}}</span>
+                    </div>
+                </div>
+            </td>
+            <td id="bulk-hfcs-verification-section-3-confirmation-c" class="confirmation">
+                <input class="form-check-input" type="checkbox"
+                        id="verification-confirm-I-3-c"
+                        ng-if="instance.Verification.BulkHFCs.section_I_3"
+                        ng-model="instance.Verification.BulkHFCs.section_I_3.confirmation_c.checked"
+                        ng-change="onConfirmation_c_Changed('bulk-hfcs-verification.section-I-2-table;section_I_3', instance.Verification.BulkHFCs.section_I_3)">
+                <label class="form-check-label" for="verification-confirm-I-3-c" data-bs-toggle="tooltip"
+                        data-tooltip="{{'bulk-hfcs-verification.section-I-3-table-option-c-tooltip' | translate}}"
+                        class="form-check-label">{{'bulk-hfcs-verification.section-I-3-table-option-c' | translate}}</label>
+                <div class="confirmation-summary" ng-if="instance.Verification.BulkHFCs.section_I_3.confirmation_c.checked">
+                    <br>
+                    <div ng-if="instance.Verification.BulkHFCs.section_I_3.confirmation_c.option_1">
+                        <span data-translate="bulk-hfcs-verification.section-I-2-table-option-c1"></span>
+                    </div>
+                    <div ng-if="instance.Verification.BulkHFCs.section_I_3.confirmation_c.option_2">
+                        <span data-translate="bulk-hfcs-verification.section-I-2-table-option-c2"></span>
+                    </div>
+                    <div ng-if="instance.Verification.BulkHFCs.section_I_3.confirmation_c.option_3">
+                        <span data-translate="bulk-hfcs-verification.section-I-2-table-option-c3"></span>
+                    </div>
+                    <div ng-if="instance.Verification.BulkHFCs.section_I_3.confirmation_c.option_4">
+                        <span data-translate="bulk-hfcs-verification.section-I-2-table-option-c4"></span>
+                    </div>
+                    <div ng-if="instance.Verification.BulkHFCs.section_I_3.confirmation_c.option_4">
+                        <span>{{instance.Verification.BulkHFCs.section_I_3.confirmation_c.option_4_reason}}</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

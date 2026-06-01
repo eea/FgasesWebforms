@@ -1,0 +1,237 @@
+<div class="feedbacktext">
+  <style type="text/css">
+        
+
+.red {
+  color:red;
+}
+
+.red-bold {
+  color:red;
+  font-weight:bold;
+}
+
+.orange {
+  color:orange;
+}
+
+.blue {
+  color:blue;
+  font-size:0.8em;
+}
+
+.block {
+    display:block;
+}
+
+ul.items-list li {
+  list-style-type:none;
+}
+
+ul.errors-list li span.error-red,
+ul.errors-list li span.error-orange {
+  font-size: 0.8em;
+  color: white;
+  padding-left:12px;
+  padding-right:12px;
+  text-align:center;
+}
+
+ul.errors-list li span.error-red {
+  background-color: red;
+}
+
+ul.errors-list li span.error-orange {
+  background-color: orange;
+}
+
+ul.errors-list li span.error-name {
+  font-weight:bold;
+}
+
+.datatable {
+  width:100%;
+  text-align:left;
+}
+
+.datatable tr th {
+  width:250px;
+  font-weight:normal;
+  text-align:left;
+}
+
+.datatable tr td sup {
+  font-size:0.7em;
+  color:blue;
+}
+.error-details {
+    margin-left: 37px;
+    padding-top: 5px;
+}
+.error-details ul {
+    margin-top: 5px;
+    padding-top: 0px;
+}
+.errors {
+    width:100%;
+    margin-top: 10px;
+}
+.errors h4 {
+    font-weight: bold;
+    padding: 0.2em 0.4em;
+    background-color: rgb(240, 244, 245);
+    color: #000000;
+    border-top: 1px solid rgb(224, 231, 215);
+}
+      
+    </style>
+  <span id="feedbackStatus" class="BLOCKER" style="display:none"> 
+    The delivery is not acceptable. Please see the QA output.</span>
+  <h2 xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">Validation report for F-Gases Compliance Checks</h2>
+  <p>
+    <span xmlns:i18n="http://namespaces.zope.org/i18n" class="red block" i18n:translate="">Your delivery did not pass some important checks. In the following sections you will find more information on these errors.</span>
+    <span xmlns:i18n="http://namespaces.zope.org/i18n" class="red-bold block" i18n:translate="">It is necessary that you correct the blocking errors found by changing your questionnaire before finalizing the delivery!</span>
+  </p>
+  <div id="feedBackDiv" style="display:block">
+    <div class="errors">
+      <h4>Error details</h4>
+      <ul>
+        <li style="list-style-type:none;list-style-image: none;">
+          <span style="background-color: red; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="3 errors within this type of rule - Blocking errors:">3</span>  <span style="font-weight:bold">
+            <span xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">Blocking errors:</span>
+          </span> <span xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">The quality check found important inconsistencies and/or errors in the reported data which need to be fixed.</span> 
+            </li>
+        <li style="list-style-type:none;list-style-image: none;">
+          <span style="background-color: blue; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="1 error within this type of rule - HFC quota compliance warnings:">1</span>  <span style="font-weight:bold">
+            <span xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">HFC quota compliance warnings:</span>
+          </span> <span xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">Data reported implies that your company might not be in compliance with the HFC quota/authorisation requirements laid down in the F-Gas Regulation 517/2014. Please check the detailed warning messages below and consider a resubmission.</span> 
+            </li>
+        <li style="list-style-type:none;list-style-image: none;">
+          <span style="background-color: orange; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="9 errors within this type of rule - Other potential errors:">9</span>  <span style="font-weight:bold">
+            <span xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">Other potential errors:</span>
+          </span> <span xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">The quality check found some potential errors in your report that may be followed up with your company at a later stage during manual quality control. However you are invited to doublecheck your data now and resubmit a corrected report in case of errors identified.</span> 
+            </li>
+      </ul>
+      <h4 class="error-caption">Blocking errors details</h4>
+      <div data-errLevel="BLOCKER">
+        <div>
+          <span style="background-color: red; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="1 error within this type of rule - ">1</span>
+          <span>For a successful submission, the result of automatic validation of consistency must be acknowledged in the Finish tab of the reporting form by clicking the ‘Close web form and proceed to BDR’ button which is green if your reporting has passed the automatic validation.
+    If any blocking errors are displayed on that page, they must be corrected first before the report can be successfully submitted.</span>
+          <span> (code=status)</span>
+        </div>
+        <span errorFlag="ERRORFLAG" errorCode="status" errorLevel="BLOCKER" style="display:none"/>
+      </div>
+      <div data-errLevel="BLOCKER">
+        <div>
+          <span style="background-color: red; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="1 error within this type of rule - ">1</span>
+          <strong>Transaction 1A - </strong>
+          <span>You selected "HFC producer"in the activity selection. Please report on production of HFCs in section 1A or unselect the activity.</span>
+          <span> (code=2002)</span>
+        </div>
+        <span errorFlag="ERRORFLAG" errorCode="2002" errorLevel="BLOCKER" style="display:none"/>
+      </div>
+      <div data-errLevel="BLOCKER">
+        <div>
+          <span style="background-color: red; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="1 error within this type of rule - ">1</span>
+          <strong>Transaction auth-NER - </strong>
+          <span>According to the HFC Registry, your company received its HFC quota through a declaration for the New Entrants Reserve (NER). Please select the corresponding option just below the "Authorisations provider" section of the Year &amp; Activities page.</span>
+          <span> (code=2015)</span>
+        </div>
+        <span errorFlag="ERRORFLAG" errorCode="2015" errorLevel="BLOCKER" style="display:none"/>
+      </div>
+      <h4 class="compliance-caption">HFC quota compliance warnings details</h4>
+      <div data-errLevel="COMPLIANCE">
+        <div>
+          <span style="background-color: blue; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="1 error within this type of rule - ">1</span>
+          <strong>Transaction 09A_add - </strong>
+          <span>Please note that authorisations issued to your own company are not deemed acceptable by the European Commission. Thus, the use of such self-authorisations to cover equipment imports charged with HFCs may be rejected during quota compliance checks.</span>
+          <span> (code=2405)</span>
+        </div>
+        <span errorFlag="COMPLIANCEFLAG" errorCode="2405" errorLevel="COMPLIANCE" style="display:none"/>
+      </div>
+      <h4 class="warning-caption">Other potential errors details</h4>
+      <div data-errLevel="WARNING">
+        <div>
+          <span style="background-color: orange; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="1 error within this type of rule - ">1</span>
+          <strong>Transaction 09F - </strong>
+          <span>Based on the reported numbers, your available HFC quota (9G) may not suffice to cover the amount of HFCs that was placed on the market. Please check your reported data in order to avoid erroneous reporting. Note that the European Commission (DG CLIMA) will assess your company’s quota compliance in co-operation with your Member State’s competent authorities. Failure to comply may result in reductions in future quota allocation and in penalties according to national law of the Member State concerned.</span>
+          <span> (code=2403)</span>
+        </div>
+        <span errorFlag="WARNINGFLAG" errorCode="2403" errorLevel="WARNING" style="display:none"/>
+      </div>
+      <div data-errLevel="WARNING">
+        <div>
+          <span style="background-color: orange; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="1 error within this type of rule - ">1</span>
+          <strong>Transaction Gas selection - </strong>
+          <span>Stocks were reported for HFC-23 (trifluoromethane, fluoroform) on 31 Dec 2017 (245.476; refer to 4F in report on 2017), but HFC-23 (trifluoromethane, fluoroform) is not included in this report. Please make sure that your gas selection for activities in 2018 is complete before submitting your report.</span>
+          <span> (code=2056)</span>
+        </div>
+        <span errorFlag="WARNINGFLAG" errorCode="2056" errorLevel="WARNING" style="display:none"/>
+      </div>
+      <div data-errLevel="WARNING">
+        <div>
+          <span style="background-color: orange; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="1 error within this type of rule - ">1</span>
+          <strong>Transaction Gas selection - </strong>
+          <span>Stocks were reported for R-401A on 31 Dec 2017 (237; refer to 4F in report on 2017), but R-401A is not included in this report. Please make sure that your gas selection for activities in 2018 is complete before submitting your report.</span>
+          <span> (code=2056)</span>
+        </div>
+        <span errorFlag="WARNINGFLAG" errorCode="2056" errorLevel="WARNING" style="display:none"/>
+      </div>
+      <div data-errLevel="WARNING">
+        <div>
+          <span style="background-color: orange; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="1 error within this type of rule - ">1</span>
+          <strong>Transaction Gas selection - </strong>
+          <span>Stocks were reported for HFC-23 (trifluoromethane, fluoroform) on 31 Dec 2017 (108.571; refer to 4G in report on 2017), but HFC-23 (trifluoromethane, fluoroform) is not included in this report. Please make sure that your gas selection for activities in 2018 is complete before submitting your report.</span>
+          <span> (code=2056)</span>
+        </div>
+        <span errorFlag="WARNINGFLAG" errorCode="2056" errorLevel="WARNING" style="display:none"/>
+      </div>
+      <div data-errLevel="WARNING">
+        <div>
+          <span style="background-color: orange; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="1 error within this type of rule - ">1</span>
+          <strong>Transaction Gas selection - </strong>
+          <span>Stocks were reported for R-401A on 31 Dec 2017 (125; refer to 4G in report on 2017), but R-401A is not included in this report. Please make sure that your gas selection for activities in 2018 is complete before submitting your report.</span>
+          <span> (code=2056)</span>
+        </div>
+        <span errorFlag="WARNINGFLAG" errorCode="2056" errorLevel="WARNING" style="display:none"/>
+      </div>
+      <div data-errLevel="WARNING">
+        <div>
+          <span style="background-color: orange; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="1 error within this type of rule - ">1</span>
+          <strong>Transaction Gas selection - </strong>
+          <span>Stocks were reported for HFC-23 (trifluoromethane, fluoroform) on 31 Dec 2017 (30.238; refer to 4H in report on 2017), but HFC-23 (trifluoromethane, fluoroform) is not included in this report. Please make sure that your gas selection for activities in 2018 is complete before submitting your report.</span>
+          <span> (code=2056)</span>
+        </div>
+        <span errorFlag="WARNINGFLAG" errorCode="2056" errorLevel="WARNING" style="display:none"/>
+      </div>
+      <div data-errLevel="WARNING">
+        <div>
+          <span style="background-color: orange; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="1 error within this type of rule - ">1</span>
+          <strong>Transaction Gas selection - </strong>
+          <span>Stocks were reported for R-401A on 31 Dec 2017 (42.381; refer to 4H in report on 2017), but R-401A is not included in this report. Please make sure that your gas selection for activities in 2018 is complete before submitting your report.</span>
+          <span> (code=2056)</span>
+        </div>
+        <span errorFlag="WARNINGFLAG" errorCode="2056" errorLevel="WARNING" style="display:none"/>
+      </div>
+      <div data-errLevel="WARNING">
+        <div>
+          <span style="background-color: orange; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="1 error within this type of rule - ">1</span>
+          <strong>Transaction Gas selection - </strong>
+          <span>Stocks were reported as waiting for destruction for HFC-23 (trifluoromethane, fluoroform) on 31 Dec 2017 (24.524; refer to 8F in report on 2017), but HFC-23 (trifluoromethane, fluoroform) is not included in this report. Please make sure that your gas selection for activities in 2018 is complete before submitting your report.</span>
+          <span> (code=2056)</span>
+        </div>
+        <span errorFlag="WARNINGFLAG" errorCode="2056" errorLevel="WARNING" style="display:none"/>
+      </div>
+      <div data-errLevel="WARNING">
+        <div>
+          <span style="background-color: orange; font-size: 0.8em; color: white; padding-left:12px;padding-right:12px;text-align:center;margin-right:9px" title="1 error within this type of rule - ">1</span>
+          <strong>Transaction Gas selection - </strong>
+          <span>Stocks were reported as waiting for destruction for R-401A on 31 Dec 2017 (6.429; refer to 8F in report on 2017), but R-401A is not included in this report. Please make sure that your gas selection for activities in 2018 is complete before submitting your report.</span>
+          <span> (code=2056)</span>
+        </div>
+        <span errorFlag="WARNINGFLAG" errorCode="2056" errorLevel="WARNING" style="display:none"/>
+      </div>
+    </div>
+  </div>
+</div>

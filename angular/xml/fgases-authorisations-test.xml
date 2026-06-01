@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataRoot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2018-01-11T13:25:41">
+  <authorisation companyId="9401">
+    <AuthBalance>94011049</AuthBalance>
+    <ExtractDate>19/12/17</ExtractDate>
+  </authorisation>
+  <authorisation companyId="9914">
+    <AuthBalance>99144199</AuthBalance>
+    <ExtractDate>19/12/17</ExtractDate>
+  </authorisation>
+  <authorisation companyId="11729">
+    <AuthBalance>1172992711</AuthBalance>
+    <ExtractDate>19/12/17</ExtractDate>
+  </authorisation>
+  <authorisation companyId="9914">
+    <AuthBalance>9837593847</AuthBalance>
+    <ExtractDate>20/11/17</ExtractDate>
+  </authorisation>
+  <authorisation companyId="1234">
+    <AuthBalance>-4500</AuthBalance>
+    <ExtractDate>20/11/18</ExtractDate>
+  </authorisation>
+</dataRoot>

@@ -1,0 +1,116 @@
+<div class="feedbacktext">
+  <style type="text/css">
+        
+
+.red {
+  color:red;
+}
+
+.red-bold {
+  color:red;
+  font-weight:bold;
+}
+
+.orange {
+  color:orange;
+}
+
+.blue {
+  color:blue;
+  font-size:0.8em;
+}
+
+.block {
+    display:block;
+}
+
+ul.items-list li {
+  list-style-type:none;
+}
+
+ul.errors-list li span.error-red,
+ul.errors-list li span.error-orange {
+  font-size: 0.8em;
+  color: white;
+  padding-left:12px;
+  padding-right:12px;
+  text-align:center;
+}
+
+ul.errors-list li span.error-red {
+  background-color: red;
+}
+
+ul.errors-list li span.error-orange {
+  background-color: orange;
+}
+
+ul.errors-list li span.error-name {
+  font-weight:bold;
+}
+
+.datatable {
+  width:100%;
+  text-align:left;
+}
+
+.datatable tr th {
+  width:250px;
+  font-weight:normal;
+  text-align:left;
+}
+
+.datatable tr td sup {
+  font-size:0.7em;
+  color:blue;
+}
+.error-details {
+    margin-left: 37px;
+    padding-top: 5px;
+}
+.error-details ul {
+    margin-top: 5px;
+    padding-top: 0px;
+}
+.errors {
+    width:100%;
+    margin-top: 10px;
+}
+.errors h4 {
+    font-weight: bold;
+    padding: 0.2em 0.4em;
+    background-color: rgb(240, 244, 245);
+    color: #000000;
+    border-top: 1px solid rgb(224, 231, 215);
+}
+      
+    </style>
+  <span id="feedbackStatus" class="INFO" style="display:none"> 
+    The delivery is acceptable.</span>
+  <h2 xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">Validation report for F-Gases Compliance Checks</h2>
+  <p>
+    <span style="background-color: green; font-size: 0.8em; color: white; padding-left:7px;padding-right:7px;text-align:center">OK</span> <span xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">Your reported data has successfully passed the quality check.</span>
+  </p>
+  <div id="feedBackDiv" style="display:none">
+    <div class="errors">
+      <h4>Error details</h4>
+      <ul>
+        <li style="list-style-type:none;list-style-image: none;">
+          <span style="background-color: green; font-size: 0.8em; color: white; padding-left:3px;padding-right:9px;text-align:center" title="No errors within this type of rule - Blocking errors:">OK</span>  <span style="font-weight:bold">
+            <span xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">Blocking errors:</span>
+          </span> <span xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">No blocking errors have been found.</span> 
+            </li>
+        <li style="list-style-type:none;list-style-image: none;">
+          <span style="background-color: green; font-size: 0.8em; color: white; padding-left:3px;padding-right:9px;text-align:center" title="No errors within this type of rule - HFC quota compliance warnings:">OK</span>  <span style="font-weight:bold">
+            <span xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">HFC quota compliance warnings:</span>
+          </span> <span xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">No HFC quota compliance warnings</span> 
+            </li>
+        <li style="list-style-type:none;list-style-image: none;">
+          <span style="background-color: green; font-size: 0.8em; color: white; padding-left:3px;padding-right:9px;text-align:center" title="No errors within this type of rule - Other potential errors:">OK</span>  <span style="font-weight:bold">
+            <span xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">Other potential errors:</span>
+          </span> <span xmlns:i18n="http://namespaces.zope.org/i18n" i18n:translate="">No other potential errors have been found</span> 
+            </li>
+      </ul>
+    </div>
+  </div>
+</div>

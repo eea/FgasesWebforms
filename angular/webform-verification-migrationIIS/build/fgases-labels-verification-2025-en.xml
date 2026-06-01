@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<labels xml:lang="en">
+   
+      <Questionnaire-title>Questionnaire on verification reporting pursuant to Article 26(7) and 26(8) of the F-gas Regulation (Regulation (EU) 2024/573)</Questionnaire-title>
+      <bulk-hfcs-verification>
+         <confirmation-modal-title>Confirmation on gas selection</confirmation-modal-title>
+         <introduction-text-1>On this sheet, the lead auditor reports on the results of the verification pursuant to Article 26(8) of Regulation (EU) 2024/573 covering HFCs placed on the market as reported by the undertaking in its report pursuant to Article 26(1), as identified in the tab ‘report identification’.</introduction-text-1>
+         <introduction-text-2>Expected are:</introduction-text-2>
+         <introduction-text-3>in section I-1: a verification statement on the gas selection in the undertaking’s report pursuant to Article 26(1)</introduction-text-3>
+         <introduction-text-4>in section I-2: verification statements on HFC amounts reported in relevant sections of the undertaking’s report pursuant to Article 26(1)</introduction-text-4>
+         <introduction-text-5>in section I-3: a summary verification statement pursuant to Article 26(8) on the undertaking’s report pursuant to Article 26(1)</introduction-text-5>
+         <introduction-text-6>in section I-4: the upload of an electronic copy of the auditor’s full verification report on the undertaking’s report pursuant to Article 26(1)</introduction-text-6>
+         <introduction-text-7>In Sections I-1 - I-3, the lead auditor should tick boxes reflecting the audit results and provide a comment/explanation where prompted in the questionnaire.</introduction-text-7>
+         <introduction-text-8>In case the auditor cannot provide reasonable assurance that the data reported by the undertaking is free from material misstatement, the respective boxes should be ticked by the lead auditor and the reporting undertaking would be encouraged to submit the verification report nevertheless. In consequence of issues identified by the auditor, however, the undertaking should submit a corrected data report pursuant to Article 26(1) which may again be subject to mandatory verification pursuant to Article 26(8).</introduction-text-8>
+         <introduction-title>Introduction </introduction-title>
+         <section-I-1-section-title>Section I-1: Confirmation on gas selection (bulk HFCs)</section-I-1-section-title>
+         <section-I-1-table-component-component>Component</section-I-1-table-component-component>
+         <section-I-1-table-component-composition>Composition of mixture:</section-I-1-table-component-composition>
+         <section-I-1-table-component-gwp>GWP</section-I-1-table-component-gwp>
+         <section-I-1-table-component-not-applicable>Not applicable.</section-I-1-table-component-not-applicable>
+         <section-I-1-table-component-percentage>Percentage</section-I-1-table-component-percentage>
+         <section-I-1-table-header1>Auditor’s verification statements with respect to HFC selection</section-I-1-table-header1>
+         <section-I-1-table-header2>Identification of hydrofluorocarbons reported for</section-I-1-table-header2>
+         <section-I-1-table-no-hydrofluorocarbons>No hydrofluorocarbons were reported for transactions in {{transaction_year}} with relevance to quota calculation</section-I-1-table-no-hydrofluorocarbons>
+         <section-I-1-table-option-b1>b1) Minor inconsistencies noted in the selection of bulk hydrofluorocarbons</section-I-1-table-option-b1>
+         <section-I-1-table-option-b1-tooltip>Example situation: Slightly different naming conventions for HFC-152a across documents, leading to minor inconsistencies</section-I-1-table-option-b1-tooltip>
+         <section-I-1-table-option-b2>b2) Specific bulk hydrofluorocarbons require further clarification</section-I-1-table-option-b2>
+         <section-I-1-table-option-b2-tooltip>Example situation: The GWP used in the BDR questionnaire for HFC mixture XXX, selected as a user-defined blend in the BDR questionnaire, deviates from the GWP provided in the original supplier documentation. However, that deviation can be explained by rounding effects</section-I-1-table-option-b2-tooltip>
+         <section-I-1-table-option-b3>b3) Minor gaps in bulk hydrofluorocarbon documentation that do not impact overall accuracy</section-I-1-table-option-b3>
+         <section-I-1-table-option-b3-tooltip>Example situation: The bulk import records for HFC-32 lack detailed batch numbers, but the total quantities align with reported values, indicating no impact on overall accuracy</section-I-1-table-option-b3-tooltip>
+         <section-I-1-table-option-b4>b4) Other</section-I-1-table-option-b4>
+         <section-I-1-table-option-b4-tooltip>Example situation: Documentation for HFC-125 is partially missing; however, quantities in other records appear consistent</section-I-1-table-option-b4-tooltip>
+         <section-I-1-table-option-c1>c1) Insufficient documentation to confirm the selection of bulk hydrofluorocarbons as complete and accurate.</section-I-1-table-option-c1>
+         <section-I-1-table-option-c1-tooltip>Example situation: Documentation for HFC-134a is missing, preventing confirmation that the selection is complete and accurate.</section-I-1-table-option-c1-tooltip>
+         <section-I-1-table-option-c2>c2) Data discrepancies prevent full assurance on bulk hydrofluorocarbon selection accuracy.</section-I-1-table-option-c2>
+         <section-I-1-table-option-c2-tooltip>Example situation: The composition and GWP of HFC mixture XXX, selected as a user-defined blend in the BDR questionnaire, does not align with the composition and GWP calculation provided in the original supplier documentation, impacting our confidence in the selection’s accuracy.</section-I-1-table-option-c2-tooltip>
+         <section-I-1-table-option-c3>c3) Documentation gaps prevent complete confirmation of bulk hydrofluorocarbon selection.</section-I-1-table-option-c3>
+         <section-I-1-table-option-c3-tooltip>Example situation: Documentation for the bulk import of HFC-32 lacks supporting invoices, preventing a full confirmation of the selection.</section-I-1-table-option-c3-tooltip>
+         <section-I-1-table-option-c4>c4) Other</section-I-1-table-option-c4>
+         <section-I-1-table-option-c4-tooltip>Example situation: HFC-134 has been selected instead of HFC-134a, affecting the selection verification.</section-I-1-table-option-c4-tooltip>
+         <section-I-1-table-title>HFC in products/equipment verification table (Part 1: HFC selection)</section-I-1-table-title>
+         <section-I-2-section-title>Section I-2: Confirmation on reported HFC amounts (bulk HFCs)</section-I-2-section-title>
+         <section-I-2-table-header1>Auditor’s verification statements with respect to reported HFC amounts per transaction</section-I-2-table-header1>
+         <section-I-2-table-header4>Reported amounts for</section-I-2-table-header4>
+         <section-I-2-table-option-b1>b1) Minor variances observed in data, no material misstatements.</section-I-2-table-option-b1>
+         <section-I-2-table-option-b2>b2) Specific entries require further clarification, no material misstatements.</section-I-2-table-option-b2>
+         <section-I-2-table-option-b3>b3) Minor discrepancies in data due to differing sources, no material misstatements.</section-I-2-table-option-b3>
+         <section-I-2-table-option-b4>b4) Other (please specify)</section-I-2-table-option-b4>
+         <section-I-2-table-option-b1-tooltip>Example situation: Bulk import data for HFC-134a shows minor variances in rounding, but there are no material misstatements.</section-I-2-table-option-b1-tooltip>
+         <section-I-2-table-option-b2-tooltip>Example situation: HFC-134a entries need clarification due to slightly varying quantities in different shipment records, but no material misstatements were found.</section-I-2-table-option-b2-tooltip>
+         <section-I-2-table-option-b3-tooltip>Example situation: There are minor discrepancies between supplier and customs data for HFC-125. However, these do not lead to material misstatements.</section-I-2-table-option-b3-tooltip>
+         <section-I-2-table-option-b4-tooltip>Example situation: Data for HFC-143a across multiple shipments shows slight inconsistencies, but impact is minimal.</section-I-2-table-option-b4-tooltip>
+         <section-I-2-table-option-c1>c1) Insufficient data to confirm that data is free from material misstatement.</section-I-2-table-option-c1>
+         <section-I-2-table-option-c2>c2) Significant discrepancies in data affecting accuracy assurance.</section-I-2-table-option-c2>
+         <section-I-2-table-option-c3>c3) Calculated data substantially differs from reported values.</section-I-2-table-option-c3>
+         <section-I-2-table-option-c4>c4) Other (please specify)</section-I-2-table-option-c4>
+         <section-I-2-table-option-c1-tooltip>Example situation: Missing data for HFC-134a prevents confirmation that bulk import figures are free from material misstatement.</section-I-2-table-option-c1-tooltip>
+         <section-I-2-table-option-c2-tooltip>Example situation: Quantities for HFC-32 from different data sources vary significantly, affecting confidence in data accuracy.</section-I-2-table-option-c2-tooltip>
+         <section-I-2-table-option-c3-tooltip>Example situation: Reported quantities of HFC-134a differ from calculated totals, impacting assurance on bulk import accuracy.</section-I-2-table-option-c3-tooltip>
+         <section-I-2-table-option-c4-tooltip>Example situation: Recorded values for HFC-143a from separate shipments are inconsistent, affecting accuracy confirmation.</section-I-2-table-option-c4-tooltip>
+         <section-I-2-table-confirmed-a-description>Auditor’s statement, option a: We confirm with reasonable assurance that the data reported in the section defined by the respective transaction code is accurate, complete, and free from material misstatement.</section-I-2-table-confirmed-a-description>
+         <section-I-2-table-confirmed-b-description>Auditor’s statement, option b: We provide reasonable assurance that the data reported in the section defined by the respective transaction code is accurate, complete, and free from material misstatement, though the following observations warrant attention.</section-I-2-table-confirmed-b-description>
+         <section-I-2-table-confirmed-c-description>Auditor’s statement, option c: Based on the verification conducted, we cannot provide reasonable assurance that the data reported in the section defined by the respective transaction code is free from material misstatement.</section-I-2-table-confirmed-c-description>
+         <section-I-2-table-title>HFC in products/equipment verification table (Part 2: transactions)</section-I-2-table-title>
+         <section-I-2-table-tones-gas>[tonnes of gas]</section-I-2-table-tones-gas>
+         <section-I-2-table-total-hfcs>Total hydrofluoro-carbons</section-I-2-table-total-hfcs>
+         <section-I-2-table-transaction>Transaction</section-I-2-table-transaction>
+         <section-I-2-table-transaction-code>Transaction code</section-I-2-table-transaction-code>
+         <section-I-3-section-title>Section I-3: Summary verification statement on bulk HFC verification pursuant to Art 26(8) of Regulation (EU) 2024/573</section-I-3-section-title>
+         <section-I-3-table-option-a>a) We confirm with reasonable assurance, in accordance with Regulation (EU) 2024/573, that the reported data summarised in parts 1 and 2 of the bulk HFC verification table above is accurate, complete, and free from material misstatement.</section-I-3-table-option-a>
+         <section-I-3-table-option-a-tooltip>This option can only be chosen if the HFC selection and all bulk HFC transactions were fully confirmed.</section-I-3-table-option-a-tooltip>
+         <section-I-3-table-option-b>b) We provide reasonable assurance, in accordance with Regulation (EU) 2024/573, that the reported data summarised in parts 1 and 2 of the bulk HFC verification table above is accurate, complete, and free from material misstatement, though the following observations warrant attention.</section-I-3-table-option-b>
+         <section-I-3-table-option-b-tooltip>This option cannot be chosen if reasonable assurance was denied for the HFC selection or any bulk HFC transaction.</section-I-3-table-option-b-tooltip>
+         <section-I-3-table-option-c>c) Based on the verification conducted, we cannot provide reasonable assurance, in accordance with Regulation (EU) 2024/573, that the reported data in parts 1 and 2 of the bulk HFC verification table above is free from material misstatement</section-I-3-table-option-c>
+         <section-I-3-table-option-c-tooltip>This option must be chosen if reasonable assurance was denied for the HFC selection or any bulk HFC transaction.</section-I-3-table-option-c-tooltip>
+         <section-I-4-section-title>Section I-4: Upload of bulk verification report</section-I-4-section-title>
+         <section-I-4-upload-document-text>Please upload a copy of the full verification report. In case the verification report covers both placing on the market of bulk HFCs (Article 26(8) of the Regulation) and placing on the market of HFCs in imported products/equipment (Article 26(7) of the Regulation), the same document may need to be uploaded twice, i.e. separately for both verification reporting obligations.</section-I-4-upload-document-text>
+         <table-confirmed-a>Fully confirmed</table-confirmed-a>
+         <table-confirmed-a-description>Auditor’s statement, option c: Based on the verification conducted, we cannot provide reasonable assurance that the selection of hydrofluorocarbons is accurate and complete.</table-confirmed-a-description>
+         <table-confirmed-b>Confirmed with reservations</table-confirmed-b>
+         <table-confirmed-b-description>Auditor’s statement, option b: We provide reasonable assurance that the selection of hydrofluorocarbons is accurate and complete, though the observations as indicated warrant attention.</table-confirmed-b-description>
+         <table-confirmed-c>Not confirmed</table-confirmed-c>
+         <table-confirmed-c-description>Auditor’s statement, option a: We confirm with reasonable assurance that the selection of hydrofluorocarbons is accurate and complete.</table-confirmed-c-description>
+         <table-confirmed-note>See full wording of auditor’s statements at the bottom of the table</table-confirmed-note>
+         <transactions>
+            <no-gas>No gas-specific data can be reported for this transaction</no-gas>
+            <tr_01A>
+               <code>1A</code>
+               <description>Total quantity of production from facilities in the Union, including amounts produced as by-products and amounts not captured</description>
+            </tr_01A>
+            <tr_01A_a_other>
+               <code>1A_a_other</code>
+               <description>thereof:
+Amounts not captured, in-line destruction by another undertaking</description>
+            </tr_01A_a_other>
+            <tr_01A_a_own>
+               <code>1A_a_own</code>
+               <description>thereof:
+Amounts not captured, in-line destruction by reporting company</description>
+            </tr_01A_a_own>
+            <tr_01B>
+               <code>1B</code>
+               <description>thereof:
+Quantity of production from facilities in the Union consisting of recovered by-production or unwanted products, where that by-production or those products have been destroyed in the facilities prior to the placing on the market</description>
+            </tr_01B>
+            <tr_01C>
+               <code>1C</code>
+               <description>thereof:
+Quantity of production from facilities in the Union consisting of recovered by-production or unwanted products where that by-production or those products have been handed over to other undertakings for destruction and had not been placed on the market previously.</description>
+            </tr_01C>
+            <tr_02A>
+               <code>2A</code>
+               <description>Total amount imported into the Union in bulk (all imports except goods under temporary storage)</description>
+            </tr_02A>
+            <tr_02B>
+               <code>2B</code>
+               <description>thereof:
+Amount imported into the Union by the reporting undertaking, including amounts purchased or received from other undertakings under a special customs procedure, not released for free circulation, and re-exported by the reporting undertaking contained in products or equipment (not in bulk)</description>
+            </tr_02B>
+            <tr_02G>
+               <code>2G</code>
+               <description>Amounts under special customs procedures, purchased/received from other undertakings</description>
+            </tr_02G>
+            <tr_02H>
+               <code>2H</code>
+               <description>Amounts under special customs procedures that have been sold or supplied to other undertakings</description>
+            </tr_02H>
+            <tr_02I>
+               <code>2I</code>
+               <description>Amount emitted under special customs procedures</description>
+            </tr_02I>
+            <tr_03B>
+               <code>3B</code>
+               <description>Export of amounts previously not placed on the market</description>
+            </tr_03B>
+            <tr_04C>
+               <code>4C</code>
+               <description>Stocks on 1 January of quantities from own import or production or from own purchases under special customs procedures, previously not placed on the EU market, excluding goods under temporary storage</description>
+            </tr_04C>
+            <tr_04H>
+               <code>4H</code>
+               <description>Stocks on 31 December of quantities from own import or production or from own purchases under special customs procedures, previously not placed on the EU market, excluding goods under temporary storage </description>
+            </tr_04H>
+            <tr_04M>
+               <code>4M</code>
+               <description>Total amount physically placed on the market</description>
+               <formula>Calculated: [4M = 1A – 1B – 1C – 1A_a_own – 1A_a_other + 2A – 2B + 2G – 2H – 2I – 3B + 4C – 4H]</formula>
+            </tr_04M>
+            <tr_05A>
+               <code>5A</code>
+               <description>Quantity imported into the Union for destruction</description>
+            </tr_05A>
+            <tr_05B>
+               <code>5B</code>
+               <description>Quantity used by a producer or importer in feedstock applications or supplied directly by a producer or an importer to undertakings for use in feedstock applications</description>
+            </tr_05B>
+            <tr_5C_exempted_CO2e>
+               <code>5C_exempted</code>
+               <description>Quantity supplied directly to undertakings for export out of the Union, where those quantities were not subsequently made available to another party within the Union prior to export</description>
+            </tr_5C_exempted_CO2e>
+            <tr_05D>
+               <code>5D</code>
+               <description>Quantity supplied directly for use in military equipment</description>
+            </tr_05D>
+            <tr_05E>
+               <code>5E</code>
+               <description>Quantity supplied directly to an undertaking using it for the etching of semiconductor material or the cleaning of chemicals vapour deposition chambers within the semiconductor manufacturing sector</description>
+            </tr_05E>
+            <tr_05F>
+               <code>5F</code>
+               <description>Quantity supplied directly to an undertaking producing metered dose inhalers for the delivery of pharmaceutical ingredients</description>
+            </tr_05F>
+            <tr_05I>
+               <code>5I</code>
+               <description>Total quantities of exempted uses of hydrofluorocarbons </description>
+               <formula>Calculated: [5I = 5A + 5B + 5C_exempted + 5D + 5E]</formula>
+            </tr_05I>
+            <tr_05J>
+               <code>5J</code>
+               <description>Calculated amount of hydrofluorocarbons physically placed on the market, excluding exempted uses </description>
+               <formula>Calculated: [5J = 4M – 5I]</formula>
+            </tr_05J>
+            <tr_09A>
+               <code>9A</code>
+               <description>Quota authorisations given to importers of refrigeration, air conditioning and heat pump equipment charged with hydrofluorocarbons</description>
+               <formula>Calculated: [9A = 9A_imp + 9A_add]</formula>
+            </tr_09A>
+            <tr_09A_add>
+               <code>9A_add</code>
+               <description>Quota authorisations given to importers of refrigeration, air conditioning and heat pump equipment charged with hydrofluorocarbons (additional to registry data)</description>
+            </tr_09A_add>
+            <tr_09A_imp>
+               <code>9A_imp</code>
+               <description>Quota authorisations given to importers of refrigeration, air conditioning and heat pump equipment charged with hydrofluorocarbons (automatically imported from the HFC registry)</description>
+            </tr_09A_imp>
+            <tr_09C>
+               <code>9C</code>
+               <description>Total amount of hydrofluorocarbons regarded as placed on the EU market (including authorisations)</description>
+               <formula>Calculated: [9C = 4M + 9A]</formula>
+            </tr_09C>
+            <tr_09F>
+               <code>9F</code>
+               <description>Total calculated need of quota for hydrofluorocarbons placed on the market</description>
+               <formula>Calculated: [9F = 5J + 9A]</formula>
+               <option_a_tooltip>This option for 9F can only be chosen if the HFC selection and all other transactions impacting 9F results were fully confirmed.</option_a_tooltip>
+               <option_b_tooltip>This option for 9F cannot be chosen if reasonable assurance was denied for the HFC selection or any other transaction impacting 9F results.</option_b_tooltip>
+               <option_c_tooltip>This option for 9F must be chosen if reasonable assurance was denied for the HFC selection or any other transaction impacting 9F results.</option_c_tooltip>
+            </tr_09F>
+            <tr_11G>
+               <code>11_G</code>
+               <description>Total refrigeration, air conditioning or heat pump equipment</description>
+            </tr_11G>
+            <tr_11J1>
+               <code>11_J1</code>
+               <description>Metered dose inhalers for the delivery of pharmaceutical ingredients</description>
+            </tr_11J1>
+            <tr_11P>
+               <code>11_P</code>
+               <description>Other products and equipment containing gases listed in Annexes I, II or III to Regulation (EU) 2024/573
+
+(other than reportable in sections 11_A – 11_O)</description>
+               <description2>Reported category explanation:
+
+{{category}}</description2>
+            </tr_11P>
+            <tr_11R>
+               <code>11_R</code>
+               <description>Total products and equipment covered by Article 19(1) of Regulation (EU) 2024/573</description>
+               <formula>Calculated: [11_R = 13Bb = 11_G + 11_J1]</formula>
+            </tr_11R>
+            <tr_12A>
+               <code>12A</code>
+               <description>Amount of hydrofluorocarbons charged into the imported refrigeration equipment, air conditioning equipment or heat pumps, released by customs for free circulation in the EU, for which the hydrofluorocarbons had previously been exported from the Union and which had been subject to the hydrofluorocarbon quota limitation for placing on the Union market</description>
+            </tr_12A>
+            <tr_12aA>
+               <code>12aA</code>
+               <description>Amount of hydrofluorocarbons charged into the imported refrigeration equipment, air conditioning equipment or heat pumps, where the equipment (including the charge of hydrofluorocarbons) had previously been placed on the Union market and subsequently been exported from the Union prior to the re-import</description>
+            </tr_12aA>
+            <tr_12B>
+               <code>12B</code>
+               <description>Amount of hydrofluorocarbons charged into the imported metered dose inhalers, released by customs for free circulation in the Union, for which the hydrofluorocarbons had previously been exported from the Union and which had been subject to the hydrofluorocarbon quota limitation for placing on the Union market</description>
+               
+            </tr_12B>
+            <tr_12aB>
+               <code>12aB</code>
+               <description>Amount of hydrofluorocarbons charged into the imported metered dose inhalers, where the inhalers (including the charge of hydrofluorocarbons) had previously been placed on the Union market and subsequently been exported from the Union prior to the re-import</description>
+            </tr_12aB>
+            <tr_13D>
+               <code>13D</code>
+               <description>Calculated amount of imported hydrofluorocarbons in need of authorisation to use HFC quota</description>
+               <formula>Calculated: [13D = 12C = 11_R - 12A -12aA - 12B - 12aB]</formula>
+               <option_a_tooltip>This option for 13D can only be chosen if the HFC selection and all other transactions impacting 13D results were fully confirmed.</option_a_tooltip>
+               <option_b_tooltip>This option for 13D cannot be chosen if reasonable assurance was denied for the HFC selection or any other transaction impacting 13D results.</option_b_tooltip>
+               <option_c_tooltip>This option for 13D must be chosen if reasonable assurance was denied for the HFC selection or any other transaction impacting 13D results.</option_c_tooltip>
+            </tr_13D>
+         </transactions>
+      </bulk-hfcs-verification>
+      <common>
+         <add>Add</add>
+         <add-country-placeholder>Please type Country</add-country-placeholder>
+         <add-edit-comment-tooltip>Add/Edit Comment</add-edit-comment-tooltip>
+         <add-explanation>Add Explanation</add-explanation>
+         <amount>Amount</amount>
+         <auth-should-be-selected>Before entering data here, please first select "Quota authoriser" in the activity selection.</auth-should-be-selected>
+         <cancel>Cancel</cancel>
+         <click-to-enable>Click to enable</click-to-enable>
+         <comment-add-modal-title>Add Comment</comment-add-modal-title>
+         <comment-edit-modal-title>Edit Comment</comment-edit-modal-title>
+         <comment-should-contain-alpha-numeric-characters>Comment must have at least one Latin character and be at least 2 characters.</comment-should-contain-alpha-numeric-characters>
+         <country>Country</country>
+         <country-specific-modal-title> Add Country</country-specific-modal-title>
+         <countryExportedOf>thereof exported from</countryExportedOf>
+         <countryImportedOf>thereof imported from</countryImportedOf>
+         <countryNotSpecified>Not Specified</countryNotSpecified>
+         <delete-value>Delete Value</delete-value>
+         <discard-changes>Discard Changes</discard-changes>
+         <edit>Edit</edit>
+         <gas>gas</gas>
+         <gas-input-mmt-threshold-violation>Caution: You are entering a number above 1000. Please make sure you report in units of metric tonnes, not in kilograms. 
+
+Revise data by pressing "Cancel", Confirm data by pressing "OK".</gas-input-mmt-threshold-violation>
+         <gas-input-mmt-threshold-violation-dissmiss-dialog>Don't show this confirmation again.</gas-input-mmt-threshold-violation-dissmiss-dialog>
+         <gas-input-thousand-separator-error>Please use points, not commas, as decimal separators, and do not enter any thousand separators in your values.</gas-input-thousand-separator-error>
+         <go-to-field>Go to Field</go-to-field>
+         <go-to-tab>Go to Tab</go-to-tab>
+         <hfc-only>Applicable only for HFC gases</hfc-only>
+         <hide-validation-messages>Hide Validation Messages</hide-validation-messages>
+         <mixture>Mixture</mixture>
+         <no>No</no>
+         <no-documents>No documents uploaded</no-documents>
+         <no-mixture>This transaction applies only to pure substances, it cannot be reported for F-gas mixtures.</no-mixture>
+         <no-pure-gas>This transaction applies only to F-gas mixtures, it cannot be reported for pure substances.</no-pure-gas>
+         <no-unspecified-mix>For this transaction, there can be no unspecified mix reported.</no-unspecified-mix>
+         <ok>OK</ok>
+         <other>Other</other>
+         <remove>Remove</remove>
+         <save-changes>Save Changes</save-changes>
+         <select-i-hfc-to-report-on-transaction>Please select HFC import in the activity selection before reporting this transaction.</select-i-hfc-to-report-on-transaction>
+         <select-i-other-to-report-on-transaction>Please select import of non-HFCs in the activity selection before reporting this transaction.</select-i-other-to-report-on-transaction>
+         <select-i-p-hfc-to-report-on-transaction>Please select production or import of HFCs in the activity selection before reporting this transaction.</select-i-p-hfc-to-report-on-transaction>
+         <select-i-p-other-to-report-on-transaction>Please select production or import of non-HFCs in the activity selection before reporting this transaction.</select-i-p-other-to-report-on-transaction>
+         <select-i-p-to-report-on-transaction>Please select a production or an import activity in the activity selection before reporting this transaction.</select-i-p-to-report-on-transaction>
+         <select-p-hfc-to-report-on-transaction>Please select HFC production in the activity selection before reporting this transaction.</select-p-hfc-to-report-on-transaction>
+         <select-p-other-to-report-on-transaction>Please select production of non-HFCs in the activity selection before reporting this transaction.</select-p-other-to-report-on-transaction>
+         <sheet-transactions-header>Transactions/(metric tonnes)</sheet-transactions-header>
+         <sheet-transactions-header-metric-co2eq>Transactions/(t CO2-equivalents)</sheet-transactions-header-metric-co2eq>
+         <show-validation-messages>Show Validation Messages</show-validation-messages>
+         <stocks-auto-import-info>The 1st January stocks data for gas {{ gasName }} were automatically pasted into section 4A/B/C based on the 31st December stocks data reported last year in section 4F/G/H. You have the option to edit those numbers.</stocks-auto-import-info>
+         <trade-partner>trade partner</trade-partner>
+         <trade-partner-modal-title>Trade Partner Add/Update</trade-partner-modal-title>
+         <trading-partner-all-fields-should-be-set>All fields should be defined</trading-partner-all-fields-should-be-set>
+         <trading-partner-already-exist>Please report on this trading partner only once per reporting section.</trading-partner-already-exist>
+         <trading-partner-company-name>Company name</trading-partner-company-name>
+         <trading-partner-company-name-should-be-at-least-two-characters>Company name must be at least two characters long</trading-partner-company-name-should-be-at-least-two-characters>
+         <trading-partner-company-name-should-contain-alpha-numeric-characters>Company name must consist of alphanumeric characters only and have at least one Latin character. The first character must be alphanumeric.</trading-partner-company-name-should-contain-alpha-numeric-characters>
+         <trading-partner-country>Country of establishment</trading-partner-country>
+         <trading-partner-country-does-not-match-for-given-reg-code>The data provided for the portal code, country and VAT of Only Representative of this non-EU company do not match with our database. Please revise the entered data and/or make sure your trade partner completed their registration. Please note that, for verification purposes, a delay of approx. one working day may apply before new registrations are fully functional.</trading-partner-country-does-not-match-for-given-reg-code>
+         <trading-partner-country-placeholder>Please type country</trading-partner-country-placeholder>
+         <trading-partner-eu-based>Based in EU?</trading-partner-eu-based>
+         <trading-partner-must-be-eu>Only EU-based companies can be named as trade partners for this transaction.</trading-partner-must-be-eu>
+         <trading-partner-name-does-not-match-for-given-country-code>The company you entered could not be found among the companies in the specified country in our database.</trading-partner-name-does-not-match-for-given-country-code>
+         <trading-partner-name-does-not-match-for-given-reg-code>Company name should match with the company name belonging to the portal registration No.</trading-partner-name-does-not-match-for-given-reg-code>
+         <trading-partner-name-does-not-match-for-given-vat-no>Company name should match with the company name belonging to the VAT No</trading-partner-name-does-not-match-for-given-vat-no>
+         <trading-partner-own-id>It seems as if you entered your own company's portal code here. Please specify the portal code of a third party. Own exports of own imports or own production should be reported in section 3B, sheet I.</trading-partner-own-id>
+         <trading-partner-own-vat>It seems as if you entered your own company's VAT number here. Please specify the VAT no. of a third party. Own exports of own imports or own production should be reported in section 3B, sheet I.</trading-partner-own-vat>
+         <trading-partner-reg-code>Registration code in the DG CLIMA F-gas portal</trading-partner-reg-code>
+         <trading-partner-reg-code-not-registered>The entered code is not registered in the DG CLIMA HFC registry / F-gas portal. Please verify the number entered and/or make sure your trade partner completed their registration. Please note that, for verification purposes, a delay of approx. one working day may apply before new registrations are fully functional.</trading-partner-reg-code-not-registered>
+         <trading-partner-representative-name>EU Only Representative</trading-partner-representative-name>
+         <trading-partner-representative-vat>EU Only Representative VAT No.</trading-partner-representative-vat>
+         <trading-partner-set-eu-based-field>Please set "Based in EU" Field</trading-partner-set-eu-based-field>
+         <trading-partner-vat-no>EU VAT No.</trading-partner-vat-no>
+         <trading-partner-vat-not-registered>The entered VAT No. is not registered in the DG CLIMA HFC registry / F-gas portal. Please verify the number entered and/or make sure your trade partner completed their registration. Please note that, for verification purposes, a delay of approx. one working day may apply before new registrations are fully functional.</trading-partner-vat-not-registered>
+         <trading-partner-year>Year</trading-partner-year>
+         <trading-partner-year-error>Please specify a valid year between 2015 and the current transaction year.</trading-partner-year-error>
+         <transaction>Transaction</transaction>
+         <unit>tonnes (total)</unit>
+         <unit-co2eq>t CO2e</unit-co2eq>
+         <validate-current-form>Validate current form</validate-current-form>
+         <yes>Yes</yes>
+      </common>
+      <company-info>
+         <address>Address</address>
+         <address-city>City</address-city>
+         <address-number>Number</address-number>
+         <address-postcode>Postal Code</address-postcode>
+         <address-region>Region</address-region>
+         <address-street>Street</address-street>
+         <affiliation-add>Add Affiliation</affiliation-add>
+         <affiliation-add-tooltip>Voluntarily, you can add affiliation(s) with this button</affiliation-add-tooltip>
+         <affiliation-confirm>Confirm company affiliations</affiliation-confirm>
+         <affiliation-confirmed-message>You have confirmed the company affiliations</affiliation-confirmed-message>
+         <affiliation-confirmed-nothing>You have chosen to NOT report on company affiliations</affiliation-confirmed-nothing>
+         <affiliation-edit>Edit Affiliations</affiliation-edit>
+         <affiliation-header>Voluntary identification of members of own company group</affiliation-header>
+         <affiliation-intro>The European Commission and the EEA have established procedures to ensure that reported data will be kept strictly confidential. Aggregated data will not be published unless significantly relying on data reported by companies of at least three company groups.
+            In case you wish to be treated jointly with other reporting companies as belonging to the same company group for the purpose of confidentiality analysis of aggregated data, you are invited to identify other reporting companies of your "company group".
+            &lt;br/&gt;
+            Please note that affiliations can only be reported for companies which already registered in the DG CLIMA F-gas portal at &lt;a target="_blank" href="https://webgate.ec.europa.eu/ods2/"&gt;https://webgate.ec.europa.eu/ods2/&lt;/a&gt;.
+            &lt;br/&gt;
+            Please note that a reported affiliation in one company group will not be accepted unless reported here by both parties.
+        </affiliation-intro>
+         <affiliation-modal-title>Add Affiliation</affiliation-modal-title>
+         <affiliation-nothing-to-report>I do not wish to report on company affiliations</affiliation-nothing-to-report>
+         <affiliations-error>Problem fetching data from remote repository. Please try again later.</affiliations-error>
+         <affiliations-load>Load affiliations from previous reporting year</affiliations-load>
+         <affiliations-load-tooltip>Load affiliations from previous reporting year</affiliations-load-tooltip>
+         <affiliations-overwrite>Current list of affiliations will be overwritten. Do you want to procceed?</affiliations-overwrite>
+         <auditor-id>Auditor ID</auditor-id>
+         <auditor-info>Responsible lead auditor</auditor-info>
+         <contact-email>E-mail</contact-email>
+         <contact-fax>Fax</contact-fax>
+         <contact-first-name>First Name</contact-first-name>
+         <contact-last-name>Last Name</contact-last-name>
+         <contact-person>Contact person</contact-person>
+         <contact-tel>Telephone</contact-tel>
+         <country>Country</country>
+         <country-tooltip>Please select a Member State</country-tooltip>
+         <details-confirmed>You have confirmed the organisation details</details-confirmed>
+         <details-modified>You have chosen to modify the organisation details in DG CLIMA F-gas portal</details-modified>
+         <details-reload>Reload organisation details from DG CLIMA F-gas portal</details-reload>
+         <eu-country>EU Country</eu-country>
+         <eu-legal-representative>Eu Only Representative details</eu-legal-representative>
+         <eu-legal-representative-contact>Only representative contact person name</eu-legal-representative-contact>
+         <eu-legal-representative-email>Only representative contact person e-mail</eu-legal-representative-email>
+         <eu-legal-representative-name>Only representative name</eu-legal-representative-name>
+         <eu-vat>Eu VAT number of the Only Representative</eu-vat>
+         <info>Auditor details</info>
+         <modify-confirmation>Modify organisation details?</modify-confirmation>
+         <modify-text>The reporting will end at this stage and you are forwarded to DG CLIMA F-gas portal where organisation information can be changed. Are you sure you want to proceed with modifying company information?</modify-text>
+         <name>Organisation name</name>
+         <non-eu-country>Non-EU Country</non-eu-country>
+         <number-of-affiliations>Number of reported affiliated companies is  </number-of-affiliations>
+         <vat>VAT number (for a company)</vat>
+         <website>Website</website>
+      </company-info>
+      <equipment-verification>
+         <introduction-text-1>On this sheet, the lead auditor reports on the results of the verification pursuant to Article 19(3) and Article 26(7) of Regulation (EU) 2024/573 covering HFCs placed on the market as reported by the undertaking in its report pursuant to Article 26(4), as identified in the tab ‘report identification’.</introduction-text-1>
+         <introduction-text-2>Expected are:</introduction-text-2>
+         <introduction-text-3>in section II-1: a verification statement on the gas selection in the undertaking’s report pursuant to Article 26(4)</introduction-text-3>
+         <introduction-text-4>in section II-2: verification statements on HFC amounts reported in relevant sections of the undertaking’s report pursuant to Article 26(4)</introduction-text-4>
+         <introduction-text-5>in section II-3: a summary verification statement pursuant to Article 19(3) on the accuracy of the documentation of the undertaking’s compliance with Article 19(1)</introduction-text-5>
+         <introduction-text-6>in section II-4: a summary verification statement pursuant to Article 19(3) on the Declarations of Conformity required under Article 19(2)</introduction-text-6>
+         <introduction-text-7>in section II-5: the upload of the auditor’s full verification report (pdf format) on the undertaking’s report pursuant to Article 26(4) and the undertaking’s compliance with Article 19</introduction-text-7>
+         <introduction-text-8>In Sections II-1 - II-4, the lead auditor should tick boxes reflecting the audit results and provide a comment/explanation where prompted in the questionnaire.</introduction-text-8>
+         <introduction-text-9>In case the auditor cannot provide reasonable assurance that the data reported by the undertaking in its report pursuant to Article 26(4) is free from material misstatement, the respective boxes should be ticked by the lead auditor and the reporting undertaking would be encouraged to submit the verification report nevertheless. In consequence of issues identified by the auditor, however, the undertaking should submit a corrected data report pursuant to Article 26(4) which may again be subject to mandatory verification pursuant to Article 26(8).</introduction-text-9>
+         <introduction-title>Introduction </introduction-title>
+         <section-II-1-section-title>Section II-1: Confirmation on gas selection (HFCs imported in products/equipment)</section-II-1-section-title>
+         <section-II-1-table-component-component>Component</section-II-1-table-component-component>
+         <section-II-1-table-component-composition>Composition of mixture:</section-II-1-table-component-composition>
+         <section-II-1-table-component-gwp>GWP</section-II-1-table-component-gwp>
+         <section-II-1-table-component-not-applicable>Not applicable.</section-II-1-table-component-not-applicable>
+         <section-II-1-table-component-percentage>Percentage</section-II-1-table-component-percentage>
+         <section-II-1-table-header-confirmed1>Fully confirmed</section-II-1-table-header-confirmed1>
+         <section-II-1-table-header-confirmed2>Confirmed with reservations</section-II-1-table-header-confirmed2>
+         <section-II-1-table-header-confirmed3>Not confirmed</section-II-1-table-header-confirmed3>
+         <section-II-1-table-header1>Auditor's verification statements with respect to HFC selection</section-II-1-table-header1>
+         <section-II-1-table-header2>Identification of hydrofluorocarbons reported for</section-II-1-table-header2>
+         <section-II-1-table-header3>See full wording of auditor's statements at the bottom of the table</section-II-1-table-header3>
+         <section-II-1-table-option-a-description>Auditor's statement, option c: Based on the verification conducted, we cannot provide reasonable assurance that the selection of hydrofluorocarbons is accurate and complete.</section-II-1-table-option-a-description>
+         <section-II-1-table-option-b-description>Auditor's statement, option b: We provide reasonable assurance that the selection of hydrofluorocarbons is accurate and complete, though the observations as indicated warrant attention.</section-II-1-table-option-b-description>
+         <section-II-1-table-option-b1>b1) Minor inconsistencies noted in the selection of hydrofluorocarbons in pre-charged equipment or products.</section-II-1-table-option-b1>
+         <section-II-1-table-option-b2>b2) Specific hydrofluorocarbons in pre-charged equipment or products require further clarification.</section-II-1-table-option-b2>
+         <section-II-1-table-option-b3>b3) Minor gaps in documentation of pre-charged hydrofluorocarbons that do not impact overall accuracy.</section-II-1-table-option-b3>
+         <section-II-1-table-option-b4>b4) Other (please specify)</section-II-1-table-option-b4>  
+         <section-II-1-table-option-b1-tooltip>Example situation: Slightly different naming conventions for R-410A across documents, leading to minor inconsistencies.</section-II-1-table-option-b1-tooltip>
+         <section-II-1-table-option-b2-tooltip>Example situation: The GWP used in the BDR questionnaire for HFC mixture XXX, selected as a user-defined blend in the BDR questionnaire, deviates from th</section-II-1-table-option-b2-tooltip>
+         <section-II-1-table-option-b3-tooltip>Example situation: Records for equipment containing HFC-32 lack shipment tracking data, but the total quantities align with reported values, indicating n</section-II-1-table-option-b3-tooltip>
+         <section-II-1-table-option-b4-tooltip>Example situation: The documentation lists HFC blends without specifying individual components, though total GWP aligns with expected values.</section-II-1-table-option-b4-tooltip>
+         <section-II-1-table-option-c-description>Auditor's statement, option a: We confirm with reasonable assurance that the selection of hydrofluorocarbons is accurate and complete.</section-II-1-table-option-c-description>
+         <section-II-1-table-option-c1>c1) Insufficient documentation to confirm the selection of pre-charged hydrofluorocarbons as complete and accurate.</section-II-1-table-option-c1>
+         <section-II-1-table-option-c2>c2) Data discrepancies prevent full assurance on the selection of pre-filled hydrofluorocarbons in equipment / products.</section-II-1-table-option-c2>
+         <section-II-1-table-option-c3>c3) Documentation gaps prevent complete confirmation of the selection of pre-filled hydrofluorocarbons in equipment / products.</section-II-1-table-option-c3>
+         <section-II-1-table-option-c4>c4) Other (please specify)</section-II-1-table-option-c4>  
+         <section-II-1-table-option-c1-tooltip>Example situation: Documentation for R-410A is missing, preventing confirmation that the selection is complete and accurate.</section-II-1-table-option-c1-tooltip>
+         <section-II-1-table-option-c2-tooltip>Example situation: Quantities for HFC-32 in pre-filled equipment do not match between customs and import records, limiting assurance.</section-II-1-table-option-c2-tooltip>
+         <section-II-1-table-option-c3-tooltip>Example situation: Shipment documents for R-410A in equipment are incomplete, affecting our ability to fully confirm the selection.</section-II-1-table-option-c3-tooltip>
+         <section-II-1-table-option-c4-tooltip>Example situation: Data on HFC-134a in small imported units is only partially available, impacting verification of the full selection.</section-II-1-table-option-c4-tooltip>
+         <section-II-1-table-title>HFC in products/equipment verification table (Part 1: HFC selection) </section-II-1-table-title>
+         <section-II-2-section-title>Section II-2: Confirmation on reported HFC amounts (HFCs imported in products/equipment)</section-II-2-section-title>
+         <section-II-2-table-title>HFCs imported in products/equipment verification table (Part 2: transactions)</section-II-2-table-title>
+         <section-II-2-table-option-b1>b1) Minor variances observed in data, no material misstatements.</section-II-2-table-option-b1>
+         <section-II-2-table-option-b2>b2) Specific entries require further clarification, no material misstatements.</section-II-2-table-option-b2>
+         <section-II-2-table-option-b3>b3) Minor discrepancies in data due to differing sources, no material misstatements.</section-II-2-table-option-b3>
+         <section-II-2-table-option-b4>b4) Other (please specify)</section-II-2-table-option-b4>
+         <section-II-2-table-option-b1-tooltip>Example situation: Equipment import data for R-410A shows minor variances in rounding, but there are no material misstatements.</section-II-2-table-option-b1-tooltip>
+         <section-II-2-table-option-b2-tooltip>Some entries for HFC-32 quantities in pre-filled equipment imports require clarification, but do not constitute material misstatements.</section-II-2-table-option-b2-tooltip>
+         <section-II-2-table-option-b3-tooltip>Example situation: There are minor discrepancies in R-407C reporting methods between internal and supplier documents, though accuracy is not materiall</section-II-2-table-option-b3-tooltip>
+         <section-II-2-table-option-b4-tooltip>Example situation: Data for HFC-32 pre-filled in some equipment shows minor inconsistencies but is largely accurate.</section-II-2-table-option-b4-tooltip>
+         <section-II-2-table-option-c1>c1) Insufficient data to confirm that data is free from material misstatement.</section-II-2-table-option-c1>
+         <section-II-2-table-option-c2>c2) Significant discrepancies in data affecting accuracy assurance.</section-II-2-table-option-c2>
+         <section-II-2-table-option-c3>c3) Calculated data substantially differs from reported values.</section-II-2-table-option-c3>
+         <section-II-2-table-option-c4>c4) Other (please specify)</section-II-2-table-option-c4>
+         <section-II-2-table-option-c1-tooltip>Example situation: Data gaps in shipments for equipment charged with R-410A prevent full confirmation of data accuracy for pre-filled equipment.</section-II-2-table-option-c1-tooltip>
+         <section-II-2-table-option-c2-tooltip>Example situation: HFC-134a quantities in equipment data show significant discrepancies between customs and supplier records, impacting assurance.</section-II-2-table-option-c2-tooltip>
+         <section-II-2-table-option-c3-tooltip>Example situation: Calculated values for R-407C pre-filled equipment imports differ significantly from reported values, limiting verification accuracy.</section-II-2-table-option-c3-tooltip>
+         <section-II-2-table-option-c4-tooltip>Example situation: Reported and calculated quantities for R-410A in equipment imports are inconsistent, affecting assurance.</section-II-2-table-option-c4-tooltip>
+         <section-II-2-table1-confirmed-a-description>Auditor’s statement, option c: Based on the verification conducted, we cannot provide reasonable assurance that the data reported in the section defined by the respective transaction code is free from material misstatement.</section-II-2-table1-confirmed-a-description>
+         <section-II-2-table1-confirmed-b-description>Auditor’s statement, option b: We provide reasonable assurance that the data reported in the section defined by the respective transaction code is accurate, complete, and free from material misstatement, though the observations as indicated warrant attention.</section-II-2-table1-confirmed-b-description>
+         <section-II-2-table1-confirmed-c-description>Auditor’s statement, option a: We confirm with reasonable assurance that the data reported in the section defined by the respective transaction code is accurate, complete, and free from material misstatement.</section-II-2-table1-confirmed-c-description>
+         <section-II-2-table2-confirmed-a-description>Auditor’s statement, option c: Based on the verification conducted, we cannot provide reasonable assurance that the products / equipment reported in section 11_P are not covered by Article 19(1) of Regulation (EU) 2024/573.</section-II-2-table2-confirmed-a-description>
+         <section-II-2-table2-confirmed-b-description>Auditor’s statement, option b: We provide reasonable assurance that the products / equipment reported in section 11_P are not covered by Article 19(1) of Regulation (EU) 2024/573, though the observations as indicated warrant attention.</section-II-2-table2-confirmed-b-description>
+         <section-II-2-table2-confirmed-c-description>Auditor’s statement, option a: We confirm with reasonable assurance that the products / equipment reported in section 11_P are not covered by Article 19(1) of Regulation (EU) 2024/573.</section-II-2-table2-confirmed-c-description>
+         <section-II-3-section-title>Section II-3: Summary verification statement pursuant to Article 19(3) of Regulation (EU) 2024/573 on the accuracy of the documentation of compliance with Article 19(1) of that Regulation</section-II-3-section-title>
+         <section-II-3-table-option-a>a) We confirm with reasonable assurance that the documentation of compliance with Article 19(1) of the Regulation is accurate, complete, free from material misstatement and consistent to the data reported pursuant to Article 26 of that Regulation.</section-II-3-table-option-a>
+         <section-II-3-table-option-a-tooltip>This option can only be chosen if also the veracity of 13D HFC data reported for products/equipment transactions was fully confirmed.</section-II-3-table-option-a-tooltip>
+         <section-II-3-table-option-b>b) We provide reasonable assurance that the documentation of compliance with Article 19(1) of the Regulation is accurate, complete, free from material misstatement and consistent to the data reported pursuant to Article 26 of that Regulation, though the following observations warrant attention:</section-II-3-table-option-b>
+         <section-II-3-table-option-b-tooltip>This option must be chosen if the accuracy of the documentation of compliance with Article 19(1) cannot be confirmed and/or reasonable assurance was denied for the veracity of 13D HFC data reported for products/equipment transactions.</section-II-3-table-option-b-tooltip>
+         <section-II-3-table-option-c>c) Based on the verification conducted, we cannot provide reasonable assurance, that the documentation of compliance with Article 19(1) of the Regulation is accurate, complete, free from material misstatement and consistent to the data reported pursuant to Article 26 of that Regulation.</section-II-3-table-option-c>
+         <section-II-3-table-option-c-tooltip>This option cannot be chosen if reasonable assurance was denied for the veracity of 13D HFC data reported for products/equipment transactions.</section-II-3-table-option-c-tooltip>
+         <section-II-4-part-1-option-1>Yes</section-II-4-part-1-option-1>
+         <section-II-4-part-1-option-1-comment>In section II-4, part 1 of this questionnaire, choosing “Yes” indicates the auditor confirms sufficient availability of quota authorisations for all cases where Option A was used in declaration(s) of conformity (DoC).
+However, in section II-2 of this questionnaire, the auditor has selected option c) (confirmation denied) for the verification statement on data reported in section 13 D of the data report (or no HFCs were reported in section 13D of the data report and confirmed by the auditor in section II-2 of this questionnaire). HFCs reported in section 13D of the data report correspond to authorisation need to be reflected by option A of the DoC.
+This combination of auditor’s selections in section II-2 and II-4 of the questionnaire does not appear plausible.
+The auditor is requested to enter a comment to explain:</section-II-4-part-1-option-1-comment>
+         <section-II-4-part-1-option-1-comment-tooltip>To be edited only in case the identified conditions apply</section-II-4-part-1-option-1-comment-tooltip>
+         <section-II-4-part-1-option-2>No</section-II-4-part-1-option-2>
+         <section-II-4-part-1-option-2-comment>In section II-4, part 1 of this questionnaire, choosing “No” indicates the auditor does not confirm sufficient availability of quota authorisations for all cases where Option A was used in declaration(s) of conformity (DoC).
+However, in section II-2 of this questionnaire, the auditor confirmed that no HFCs were reported in section 13D of the data report. HFCs reported in section 13D of the data report correspond to authorisation need to be reflected by option A of the DoC.
+This combination of auditor’s selections in section II-2 and II-4 of the questionnaire does not appear plausible.
+The auditor is requested to enter a comment to explain:
+</section-II-4-part-1-option-2-comment>
+         <section-II-4-part-1-option-2-comment-tooltip>To be edited only in case the identified conditions apply</section-II-4-part-1-option-2-comment-tooltip>
+         <section-II-4-part-1-option-3>Option A was not used in any declaration of conformity.</section-II-4-part-1-option-3>
+         <section-II-4-part-1-option-3-comment>In section II-4, part 1, of this questionnaire, the auditor states that Option A was not used in declaration(s) of conformity (DoC).
+However, in section II-2 of this questionnaire, the auditor selected options a) or b) (full confirmation or confirmation with reservations) for the verification statement on data reported in section 13D of the data report. HFCs reported in section 13D of the data report correspond to authorisation need to be reflected by option A of the DoC.
+This combination of auditor’s selections in section II-2 and II-4 of the questionnaire does not appear plausible.
+The auditor is requested to enter a comment to explain:</section-II-4-part-1-option-3-comment>
+         <section-II-4-part-1-option-3-comment-tooltip>To be edited only in case the identified conditions apply</section-II-4-part-1-option-3-comment-tooltip>
+         <section-II-4-part-1-text>In the F-gas Portal, by 31 December of the calendar year specified above there was sufficient availability of authorisations for all cases where option A was chosen in the declaration(s) of conformity</section-II-4-part-1-text>
+         <section-II-4-part-1-title>Part 1: option A of DoCs:</section-II-4-part-1-title>
+         <section-II-4-part-2-option-1>Yes</section-II-4-part-2-option-1>
+         <section-II-4-part-2-option-1-comment>In section II-4, part 2 of this questionnaire, the auditor confirms that a declaration is available by the undertaking that placed the hydrofluorocarbons on the market (as referred to in Article 2(2)(d) of Commission Implementing Regulation (EU) 2025/2155), for all cases where option B was chosen in the declaration(s) of conformity (DoC), covering the relevant quantities.
+However, in section II-2 of this questionnaire, the auditor has selected option c) (confirmation denied) for the verification statement on data reported in section 12B and/or 12B of the data report (or no HFCs were reported in section 12A/12B of the data report and confirmed by the auditor in section II-2 of this questionnaire). HFCs reported in sections 12A and 12B of the data report correspond to quantities to be reflected by option B of the DoC.
+This combination of auditor’s selections in section II-2 and II-4 of the questionnaire does not appear plausible.
+The auditor is requested to enter a comment to explain:</section-II-4-part-2-option-1-comment>
+         <section-II-4-part-2-option-1-comment-tooltip>To be edited only in case the identified conditions apply</section-II-4-part-2-option-1-comment-tooltip>
+         <section-II-4-part-2-option-2>No</section-II-4-part-2-option-2>
+         <section-II-4-part-2-option-2-comment>In section II-4, part 2 of this questionnaire, choosing “No” indicates the auditor does not confirm the availability of supporting declarations for all cases where Option B was used in declaration(s) of conformity (DoC).
+However, in section II-2 of this questionnaire, the auditor confirmed that no HFCs were reported in sections 12A and/or 12B of the data report. HFCs reported in section 12A/12B of the data report correspond to quantities to be reflected by option B of the DoC.
+This combination of auditor’s selections in section II-2 and II-4 of the questionnaire does not appear plausible.
+The auditor is requested to enter a comment to explain:</section-II-4-part-2-option-2-comment>
+         <section-II-4-part-2-option-2-comment-tooltip>To be edited only in case the identified conditions apply</section-II-4-part-2-option-2-comment-tooltip>
+         <section-II-4-part-2-option-3>Option B was not used in any declaration of conformity.</section-II-4-part-2-option-3>
+         <section-II-4-part-2-option-3-comment>In section II-4, part 2, of this questionnaire, the auditor states that Option B was not used in declaration(s) of conformity (DoC).
+However, in section II-2 of this questionnaire, the auditor selected options a) or b) (full confirmation or confirmation with reservations) for the verification statement on data reported in sections 12A and/or 12B of the data report. HFCs reported in section 12A and/or 12B of the data report correspond to quantities needing to be reflected by option B of the DoC.
+This combination of auditor’s selections in section II-2 and II-4 of the questionnaire does not appear plausible.
+The auditor is requested to enter a comment to explain:</section-II-4-part-2-option-3-comment>
+         <section-II-4-part-2-option-3-comment-tooltip>To be edited only in case the identified conditions apply</section-II-4-part-2-option-3-comment-tooltip>
+         <section-II-4-part-2-text>There is a declaration by the undertaking that placed the hydrofluorocarbons on the market, as referred to in Article 2(2)(d) of Commission Implementing Regulation (EU) 2025/2155, for all cases where option B was chosen in the declaration(s) of conformity, covering the relevant quantities</section-II-4-part-2-text>
+         <section-II-4-part-2-title>Part 2: option B of DoCs:</section-II-4-part-2-title>
+         <section-II-4-part-3-title>Part 3: option C of DoCs, for products or equipment imported into the Union:</section-II-4-part-3-title>
+         <section-II-4-part-3-text>There is a declaration by the undertaking that placed the hydrofluorocarbons on the market, as referred to in Article 2(2)(e) of Commission Implementing Regulation (EU) 2025/2155, for all cases where option C was chosen in the declaration(s) of conformity for products or equipment imported into the Union, covering the relevant quantities</section-II-4-part-3-text>
+         <section-II-4-part-3-tooltip>The presence of a declaration is necessary to be checked only in case option C of a DoC was used for products or equipment imported into the Union. No check of presence of declaration is required where option C was used for products or equipment manufactured in the Union.</section-II-4-part-3-tooltip>
+         <section-II-4-part-3-option-1>Yes</section-II-4-part-3-option-1>
+         <section-II-4-part-3-option-2>No</section-II-4-part-3-option-2>
+         <section-II-4-part-3-option-3>Option C for products or equipment imported into the Union was not used in any declaration of conformity.</section-II-4-part-3-option-3>
+         <section-II-4-part-3-option-3-tooltip>This box should also be ticked in case option C was used, but referred in all cases to products or equipment manufactured in the Union.</section-II-4-part-3-option-3-tooltip>
+         <section-II-4-part-3-option-1-comment>In section II-4, part 3 of this questionnaire, the auditor confirms that a declaration is available by the undertaking that placed the hydrofluorocarbons on the market (as referred to in Article 2(2)(d) of Commission Implementing Regulation (EU) 2025/2155), for all cases where option C was chosen in the declaration(s) of conformity (DoC), covering the relevant quantities.
+However, in section II-2 of this questionnaire, the auditor has selected option c) (confirmation denied) for the verification statement on data reported in section 12aA and/or 12aB of the data report (or no HFCs were reported in section 12A/12B of the data report and confirmed by the auditor in section II-2 of this questionnaire). HFCs reported in sections 12aA and 12aB of the data report correspond to quantities to be reflected by option C of the DoC.
+This combination of auditor’s selections in section II-2 and II-4 of the questionnaire does not appear plausible.
+The auditor is requested to enter a comment to explain:</section-II-4-part-3-option-1-comment>
+         <section-II-4-part-3-option-2-comment>In section II-4, part 3 of this questionnaire, choosing “No” indicates the auditor does not confirm the availability of supporting declarations for all cases where Option C was used in declaration(s) of conformity (DoC).
+However, in section II-2 of this questionnaire, the auditor confirmed that no HFCs were reported in sections 12aA and/or 12aB of the data report. HFCs reported in section 12aA/12aB of the data report correspond to quantities to be reflected by option C of the DoC.
+This combination of auditor’s selections in section II-2 and II-4 of the questionnaire does not appear plausible.
+The auditor is requested to enter a comment to explain:</section-II-4-part-3-option-2-comment>
+         <section-II-4-part-3-option-3-comment>In section II-4, part 3, of this questionnaire, the auditor states that Option C was not used in declaration(s) of conformity (DoC).
+However, in section II-2 of this questionnaire, the auditor selected options a) or b) (full confirmation or confirmation with reservations) for the verification statement on data reported in sections 12aA and/or 12aB of the data report. HFCs reported in section 12aA and/or 12aB of the data report correspond to quantities needing to be reflected by option C of the DoC.
+This combination of auditor’s selections in section II-2 and II-4 of the questionnaire does not appear plausible.
+The auditor is requested to enter a comment to explain:</section-II-4-part-3-option-3-comment>
+         <section-II-4-part-3-option-1-comment-tooltip>To be edited only in case the identified conditions apply</section-II-4-part-3-option-1-comment-tooltip>
+         <section-II-4-part-3-option-2-comment-tooltip>To be edited only in case the identified conditions apply</section-II-4-part-3-option-2-comment-tooltip>
+         <section-II-4-part-3-option-3-comment-tooltip>To be edited only in case the identified conditions apply</section-II-4-part-3-option-3-comment-tooltip>
+         <section-II-4-section-title>Section II-4: Summary verification statement pursuant to Article 19(3) of Regulation (EU) 2024/573 on the Declarations of Conformity required under Article 19(2) of that Regulation:</section-II-4-section-title>
+         <section-II-5-section-title>Section II-5: Upload of equipment verification report</section-II-5-section-title>
+         <section-II-5-upload-document-text>Please upload a copy of the full verification report. In case the verification report covers both placing on the market of bulk HFCs (Article 26(8) of the Regulation) and placing on the market of HFCs in imported products/equipment (Article 26(7) of the Regulation), the same document may need to be uploaded twice, i.e. separately for both verification reporting obligations.</section-II-5-upload-document-text>
+      </equipment-verification>
+      <intro>
+         <ident-intro>Please specify the data report pursuant to Article 26(1)-(6) of Regulation (EU) No 2024/573 to which the verification refers</ident-intro>
+         <instructions>After updating and/or confirming your Company Information form (from the tab above), the "Years &amp; Activities" tab will then be visible. Based upon your selections for activities conducted in the previous calendar year, appropriate reporting forms will be automatically available. Activities conducted in any year should be reported and submitted, no later than 31 March of the following year. For your reference, a &lt;a href="http://ec.europa.eu/clima/policies/f-gas/docs/faq_reporting_en.pdf"&gt;'Frequently Asked Questions' (FAQ) list&lt;/a&gt; is available from the help section of the BDR.</instructions>
+         <instructions-2>Please note that for producers and importers the 1st January stocks will be automatically imported into section 4A/B/C based on the 31st December stocks data reported last year in section 4F/G/H. You have the option to manually edit those numbers.</instructions-2>
+         <instructions-h>INSTRUCTIONS</instructions-h>
+         <intro-1>The &lt;a href="http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.150.01.0195.01.ENG"&gt;(Regulation (EU) 2024/573)&lt;/a&gt;, requires</intro-1>
+         <intro-2>The present questionnaire facilitates the verification reporting by undertakings both under Article 26(7) (‘equipment/products import verification’) and under Article 26(8) (‘bulk HFCs verification’).</intro-2>
+         <intro-h>INTRODUCTION</intro-h>
+         <leadauditor>In this verification questionnaire.</leadauditor>
+         <leadauditor-2>Communication between the reporting company and the lead auditor with respect to handing over the workflow should be organised individually outside the BDR system.</leadauditor-2>
+         <leadauditor-h>INSTRUCTIONS FOR LEAD AUDITORS</leadauditor-h>
+         <li-1>in Article 26(7) that by 30 April “each importer of equipment that placed on the market pre-charged equipment as referred to in Article 19 containing at least 1000 tonnes of CO2 equivalent hydrofluorocarbons, and where those hydrofluorocarbons have not been placed on the market prior to the charging of the equipment, shall submit to the Commission a verification report issued pursuant to Article 19(3).</li-1>
+         <li-2>in Article 26(8) that by 30 April “each undertaking which, under paragraph 1 [of Article 26], reports on the placing on the market of 1000 tonnes of CO2 equivalent or more of hydrofluorocarbons during the preceding calendar year shall, in addition, ensure that the veracity of its report is confirmed, at a reasonable level of assurance, by an independent auditor.</li-2>
+         <li-3>you confirm the name and contact details auf your auditor company (tab ‘ auditor information ’); once this is confirmed,</li-3>
+         <li-4>you can view an identification of the data report to be verified and the scope of verification (bulk HFCs and/or HFCs in equipment/products) as selected by the reporting company (tab ‘ verification scope ’),</li-4>
+         <li-5>you complete a form summarising the verification results in tabs ' I - Bulk HFCs verification ' and /or ' II - HFCs in equipment/products verification ', as appropriate, depending on the verification scope,</li-5>
+         <li-6>you upload an electronic copy of the full verification report in tabs ' I - Bulk HFCs verification ' and /or ' II - HFCs in equipment/products verification ',</li-6>
+         <li-7>in tab ‘Finish’ you receive automated feedback on completeness and consistency of your information reported in tabs ' I - Bulk HFCs verification ' and /or ' II - HFCs in equipment/products verification ', any you can close the questionnaire to hand back the verification reporting workflow to the reporting company for review of your data and submission to DG CLIMA and EEA.</li-7>
+         <reporting-ident>Subject to verification</reporting-ident>
+      </intro>
+      <submission>
+         <activities_errors>Validation errors on form "Year and Activities".</activities_errors>
+         <bulk_errors>Validation errors on form "I -Bulk HFCs verification". </bulk_errors>
+         <close_text>To hand back to the reporting company for a final submission of verification results, please first click "close report and proceed to BDR". This will let you return to the BDR envelope where you need to click "Hand report back to company". Afterwards, the reporting company will have the opportunity to review the the verification results as reported by you before their final submission to DG CLIMA/EEA.</close_text>
+         <equipment_errors>Validation errors on form "II -Equipment verification". </equipment_errors>
+         <error-level-blocker>Blocking error</error-level-blocker>
+         <error-level-warning>Potential error</error-level-warning>
+         <general_errors>General validation errors</general_errors>
+         <header>Review of the webform</header>
+         <ready_for_submission>The form has no blocking errors and is ready for submission.</ready_for_submission>
+         <reopen-text>The report containing verification results is closed and stored in BDR's envelope. Continue with BDR envelope to hand back the report to the reporting company. Click "Reopen form" button to re-edit the verification results before handing back to the reporting company.</reopen-text>
+         <reopen_button>Reopen form</reopen_button>
+         <submit_button>Close report and proceed to BDR</submit_button>
+         <submitted>The report has been finished, no changes allowed anymore.</submitted>
+         <validation_category>Category</validation_category>
+         <validation_failed>There are validation errors (blocking errors) that must be repaired before an acceptable submission of this report. Please check the blocking errors in the list of errors and solutions below. In case you need further assistance, please contact the BDR Helpdesk at &lt;a href="mailto:bdr.helpdesk@eea.europa.eu"&gt; bdr.helpdesk@eea.europa.eu.&lt;/a&gt;  In case you hand over the verification results at this stage back to the reporting company, this will be automatically rejected as not acceptable.</validation_failed>
+         <validation_violation>Violation description</validation_violation>
+         <column-error-category-header>Validation error category</column-error-category-header>
+      </submission>
+      <validation_messages>
+         <qc_3000>
+            <error_text>Please select one of the boxes a), b) or c) in {{section}}.</error_text>
+            <warning_flag null="true" />
+         </qc_3000>
+         <qc_3001>
+            <error_text>Option a) can not be selected in case for any of the statements of Table 1 and 2 option a) was not selected. Please revise your selection in {{section}}.</error_text>
+            <warning_flag null="true" />
+         </qc_3001>
+         <qc_3002>
+            <error_text>Option b) can not be selected in case for any of the statements of Table 1 and 2 option c) was selected. Please revise your selection in {{section}}.</error_text>
+            <warning_flag null="true" />
+         </qc_3002>
+         <qc_3003>
+            <error_text>Option c) can not be selected in case for none of the statements of Tables 1 and 2 option c) was selected. Please revise your selection in {{section}}.</error_text>
+            <warning_flag null="true" />
+         </qc_3003>
+         <qc_3004>
+            <error_text>Please note that you must not upload XML documents here. Please use a different format.</error_text>
+            <warning_flag null="true" />
+         </qc_3004>
+         <qc_3005>
+            <error_text>Please upload a verification report in section {{section}}. Please note that your report can not be accepted if no document has been uploaded.</error_text>
+            <warning_flag null="true" />
+         </qc_3005>
+         <qc_3006>
+            <error_text>Please select one of the boxes a), b) or c) in {{table}} in {{section}}.</error_text>
+            <warning_flag null="true" />
+         </qc_3006>
+         <qc_3007>
+            <error_text>Please select at least one of the tickboxes under b) in {{table}} in {{section}}.</error_text>
+            <modal_error_text>Please select at least one of the tickboxes</modal_error_text>
+            <warning_flag null="true" />
+         </qc_3007>
+         <qc_3008>
+            <error_text>Please enter a comment into the textbox b4 in {{table}} in {{section}}.</error_text>
+            <modal_error_text>Please enter a comment into the textbox b4</modal_error_text>
+            <warning_flag null="true" />
+         </qc_3008>
+         <qc_3009>
+            <error_text>Please select at least one of the tickboxes under c) in {{table}} in {{section}}.</error_text>
+            <modal_error_text>Please select at least one of the tickboxes</modal_error_text>
+            <warning_flag null="true" />
+         </qc_3009>
+         <qc_3010>
+            <error_text>Please enter a comment into the textbox c4 in {{table}} in {{section}}.</error_text>
+            <modal_error_text>Please enter a comment into the textbox c4</modal_error_text>
+            <warning_flag null="true" />
+         </qc_3010>
+         <qc_3011>
+            <error_text>Option a) can only be chosen for 9F if option a) was chosen for all other transactions impacting 9F. Please revise.</error_text>
+            <warning_flag null="true" />
+         </qc_3011>
+         <qc_3012>
+            <error_text>Option b) can not be chosen for 9F if reasonable assurance was denied for the HFC selection or any other transaction impacting 9F results. Please revise.</error_text>
+            <warning_flag null="true" />
+         </qc_3012>
+         <qc_3013>
+            <error_text>Option a) can not be selected in Section II-3 if the veracity of 13D HFC data reported for products/equipment transactions was not fully confirmed for 13D in Table 2 in section II-2. Please revise.</error_text>
+            <warning_flag null="true" />
+         </qc_3013>
+         <qc_3014>
+            <error_text>Option b) can not be selected in Section II-3 if reasonable assurance was denied for the veracity of 13D HFC data reported for products/equipment transactions in Table 2 in section II-2. Please revise.</error_text>
+            <warning_flag null="true" />
+         </qc_3014>
+         <qc_3015>
+            <error_text>Please enter a comment in section II-3.</error_text>
+            <warning_flag null="true" />
+         </qc_3015>
+         <qc_3016>
+            <error_text>You must select one of the boxes in section II-3.</error_text>
+            <warning_flag null="true" />
+         </qc_3016>
+         <qc_3017>
+            <error_text>One of the boxes in section II-4, {{part}} must be selected.</error_text>
+            <warning_flag null="true" />
+         </qc_3017>
+         <qc_3018>
+            <error_text>Please enter a comment for Option 1 in Part 1 in Section II-4.</error_text>
+            <warning_flag null="true" />
+         </qc_3018>
+         <qc_3019>
+            <error_text>Please enter a comment for Option 2 in Part 1 in Section II-4.</error_text>
+            <warning_flag null="true" />
+         </qc_3019>
+         <qc_3020>
+            <error_text>Please enter a comment for Option 3 in Part 1 in Section II-4.</error_text>
+            <warning_flag null="true" />
+         </qc_3020>
+         <qc_3021>
+            <error_text>It is not plausible that you choose option (2) for the Declaration of Conformity when HFCs >0 are reported for 13D and options a) or b) were selected for the veracity statement on 13D.</error_text>
+            <warning_flag null="true" />
+         </qc_3021>
+         <qc_3022>
+            <error_text>Please enter a comment for Option 1 in in Part 2 Section II-4.</error_text>
+            <warning_flag null="true" />
+         </qc_3022>
+         <qc_3023>
+            <error_text>Please enter a comment for Option 2 in Part 2 in Section II-4.</error_text>
+            <warning_flag null="true" />
+         </qc_3023>
+         <qc_3024>
+            <error_text>Please enter a comment for Option 3 in Part 2 in Section II-4.</error_text>
+            <warning_flag null="true" />
+         </qc_3024>
+         <qc_3025>
+            <error_text>It is not plausible that you choose option (2) or (3) for the Declaration of Conformity (Part 2 of section II-4) when HFCs &gt;0 are reported and confirmed for 12A or 12B (Table 2 in section II-2) and option a) or b) was selected for the summary verification statement (section II-3). Please reconsider the selected statements.</error_text>
+            <warning_flag null="true" />
+         </qc_3025>
+         <qc_3026>
+            <error_text>Option a) can not be selected in case for any of the statements of Table 1 and 2 option a) was not selected. Please revise your selection on 13D summary statement</error_text>
+            <warning_flag null="true" />
+         </qc_3026>
+         <qc_3027>
+            <error_text>Option b) can not be selected in case for any of the statements of Table 1 and 2 option c) was selected. Please revise your selection on 13D summary statement</error_text>
+            <warning_flag null="true" />
+         </qc_3027>
+         <qc_3028>
+            <error_text>You must select a statement for 11_P</error_text>
+            <warning_flag null="true" />
+         </qc_3028>
+         <qc_3029>
+            <error_text>Please enter a statement explaining your verdict on 11_P</error_text>
+            <warning_flag null="true" />
+         </qc_3029>
+         <qc_3030>
+            <error_text>Please enter a comment explaining your choice of Yes in in Part 3 Section II-4.</error_text>
+            <warning_flag null="true" />
+         </qc_3030>
+         <qc_3031>
+            <error_text>Please enter a comment explaining your choice of No in in Part 3 Section II-4.</error_text>
+            <warning_flag null="true" />
+         </qc_3031>
+         <qc_3032>
+            <error_text>Please enter a comment explaining your choice in Part 3 Section II-4.</error_text>
+            <warning_flag null="true" />
+         </qc_3032>
+         <qc_3033>
+            <error_text>The auditor's selection "No"/"Option C was no used..." in section II-4, Part 3: option C of DoCs is not plausible as HFC amounts > 0 have been reported by the undertaking in 12aA/12aB and have been confirmed in section II-2 by the auditor. Please reconsider the combination of these verification statements</error_text>
+            <warning_flag null="true" />
+         </qc_3033>
+         <unusualGasesG1>
+            <part1>is an unusual gas for the application of</part1>
+            <part2>Continue with</part2>
+         </unusualGasesG1>
+         <unusualGasesG2>
+            <part1>is unusual for the product category of</part1>
+            <part2>Continue with</part2>
+         </unusualGasesG2>
+      </validation_messages>
+      <verification-scope>
+         <li-1>Data report pursuant to Article 26(1)-(6) of Regulation (EU) 2024/573</li-1>
+         <li-2>URL of BDR submission:</li-2>
+         <li-3>Submission date:</li-3>
+         <li-4>Calendar year of reported activities:</li-4>
+         <li-5>Reported by:</li-5>
+         <li-6>Only Representative:</li-6>
+      </verification-scope>
+       <verification-scope-title>Verification Scope</verification-scope-title>
+      <url-submission>URL of BDR submission:</url-submission>
+      <submission-date>Submission date:</submission-date>
+      <calendar-year>Calendar year of reported activities:</calendar-year>
+      <reported-by>Reported by:</reported-by>
+      <scope-ver>Scope of verification:</scope-ver>      
+      <both>Bulk HFCs and HFCs in imported products/equipment verification pursuant to Article 26(7)</both>  
+      <bulk-selection>Bulk selection</bulk-selection> 
+      <eq-selection>Equipment selection</eq-selection>   
+      <bulk>Bulk HFCs verification pursuant to Article 26(8)</bulk>
+      <equipment>HFCs imported in products/equipment verification pursuant to Article 26(8)</equipment>
+   </labels>

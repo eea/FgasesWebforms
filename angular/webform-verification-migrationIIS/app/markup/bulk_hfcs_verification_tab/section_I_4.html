@@ -1,0 +1,27 @@
+<div>
+    <p data-translate="bulk-hfcs-verification.section-I-4-upload-document-text"></p>
+    <div ng-if="instance.Verification.BulkHFCs.section_I_4.VerificationReport.Url">
+
+        <a id="bulk-hfcs-verification-verification-report" 
+            href="{{instance.Verification.BulkHFCs.section_I_4.VerificationReport.Url}}"
+            target="_blank">{{instance.Verification.BulkHFCs.section_I_4.VerificationReport.Url}}</a>
+        <button type="button" class="btn btn-xs" style="margin-left: 1em;"
+                ng-click="removeDocument('instance.Verification.BulkHFCs.section_I_4', 'VerificationReport');">
+            <span data-translate="common.remove"></span>
+        </button>
+    </div>
+
+    <div>
+        <input id="bulk-hfcs-verification-verification-report-upload" type="file" uploader="uploaders['bulk-hfcs']"
+                ng-init="configureUploaderBulkHFCS" style="display:inline; margin-left:5px;"
+                nv-file-select />
+        <button type="button" class="btn btn-success btn-xs"
+                ng-click="uploadFile('bulk-hfcs', 'instance.Verification.BulkHFCs.section_I_4', 'VerificationReport', 'VR-BULK-'); "
+                ng-if="uploaders['bulk-hfcs'].queue.length == 1">
+            <span class="glyphicon glyphicon-upload"></span> Upload
+        </button>
+        <div class="progress" ng-if="uploaders['bulk-hfcs'].queue.length == 1" ng-show="uploaders['bulk-hfcs'].isHTML5">
+            <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploaders['bulk-hfcs'].progress + '%' }"></div>
+        </div>
+    </div>
+</div>

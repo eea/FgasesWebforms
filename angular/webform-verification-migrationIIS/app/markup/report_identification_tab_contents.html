@@ -1,0 +1,46 @@
+
+<style>
+    .readonly-check .form-check-input, .readonly-check .form-check-label {
+        opacity: 1 !important;
+    }
+    .readonly-check {
+        padding-left:5em;
+    }
+        
+</style>
+<div ng-controller="IdentificationCtrl">
+    <h2><span data-translate="intro.reporting-ident"></span></h2>
+    </br>
+    <ul>
+        <li>
+            <span data-translate="verification-scope.li-1"></span>
+        </li>
+        </br>
+        <li>
+            <span data-translate="verification-scope.li-2"></span>
+            {{DataReportUrl}}
+        </li>
+        </br>
+        <li>
+            <span data-translate="verification-scope.li-3"></span>
+            {{DateReport}}
+        </li>
+        </br>
+        <li>
+            <span data-translate="verification-scope.li-4"></span>
+            {{TransactionYear}}
+        </li>
+        </br>
+        <li>
+            <!--ng-if="!showLegalRepresentative"-->
+            <span data-translate="verification-scope.li-5"></span>
+            {{CompanyID}} - {{CompanyName}} ({{CompanyCountry}})
+        </li>
+        </br>
+        <li ng-if="showLegalRepresentative">
+            <span data-translate="verification-scope.li-6"></span>
+            {{EuLegalRepresentativeName}}  ({{EuLegalRepresentativeCountry}})
+        </li>
+        </br>
+    </ul>
+</div>

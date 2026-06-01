@@ -1,0 +1,1213 @@
+<!-- html subform [ng-form="Sheet6b"] -->
+<div data-name="Sheet6Section8" ng-if="instance.FGasesReporting.GeneralReportData.Activities['D']">
+    <h2><span data-translate="sheet6.section8-heading"></span></h2>
+    <p><span data-translate="sheet6.section8-info1"></span></p>
+    <p><span data-translate="sheet6.section8-info2"></span></p>
+    <p><span data-translate="sheet6.section8-info3"></span></p>
+    <p><span data-translate="sheet6.section8-info4"></span></p>
+    <p><span data-translate="sheet6.section8-info5"></span></p>
+    <p><span data-translate="sheet6.section8-info6"></span></p>
+
+    <p><b><span data-translate="sheet6.section8-expl1"></span></b></p>
+    <p><span data-translate="sheet6.section8-expl2"></span></p>
+    <p><span data-translate="sheet6.section8-expl3"></span></p>
+    <p><span data-translate="sheet6.section8-expl4"></span></p>
+    <p><span data-translate="sheet6.section8-expl5"></span></p>
+    <p><b><span data-translate="sheet6.section8-expl6"></span></b></p>
+
+    <h3 ng-show="!instance.FGasesReporting.F6_FUDest.transactionsConfirmed"><span data-translate="sheet6.section8-header_step1"></span></h3>
+    <h3 ng-show="instance.FGasesReporting.F6_FUDest.transactionsConfirmed"><span data-translate="sheet6.section8-header_step2"></span></h3>
+
+    <table class="table table-bordered" style="width: 1000px;" ng-show="!instance.FGasesReporting.F6_FUDest.transactionsConfirmed">
+        <!-- Start 8_A -->
+        <tr>
+            <th style="width: 500px;"><span>8_A : </span><span data-translate="sheet6.tr_8a.parameter"></span></th>
+            <td style="width: 80px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 2em;"><span>8_A1 : </span><span data-translate="sheet6.tr_8a1.parameter"></span></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_A1_i : </span><span data-translate="sheet6.tr_8a1i.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8A1i',['tr_8A1ia']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1i"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_A1_ii : </span><span data-translate="sheet6.tr_8a1ii.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8A1ii',['tr_8A1iia']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1ii"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_A1_iii : </span><span data-translate="sheet6.tr_8a1iii.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8A1iii',['tr_8A1iiia']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1iii"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_A1_iv : </span><span data-translate="sheet6.tr_8a1iv.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8A1iv',['tr_8A1iva']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1iv"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_A1_v : </span><span data-translate="sheet6.tr_8a1v.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8A1v');calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1v"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_A1_vi : </span><span data-translate="sheet6.tr_8a1vi.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8A1vi');calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1vi"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_A1_other : </span><span data-translate="sheet6.tr_8a1other.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8A1other',['tr_8A1othera']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1other"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 2em;"><span>8_A2 : </span><span data-translate="sheet6.tr_8a2.parameter"></span></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_A2_i : </span><span data-translate="sheet6.tr_8a2i.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8A2i');calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2i"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_A2_ii : </span><span data-translate="sheet6.tr_8a2ii.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8A2ii');calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2ii"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_A2_other : </span><span data-translate="sheet6.tr_8a2other.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8A2other',['tr_8A2othera']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2other"></td>
+        </tr>
+        <!-- Start 8_Ba -->
+        <tr>
+            <th style="width: 500px;"><span>8_Ba : </span><span data-translate="sheet6.tr_8ba.parameter"></span></th>
+            <td style="width: 80px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 2em;"><span>8_Ba1 : </span><span data-translate="sheet6.tr_8ba1.parameter"></span></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_Ba1_i : </span><span data-translate="sheet6.tr_8ba1i.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8Ba1i',['tr_8Ba1ia']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1i"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_Ba1_ii : </span><span data-translate="sheet6.tr_8ba1ii.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8Ba1ii',['tr_8Ba1iia']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1ii"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_Ba1_iii : </span><span data-translate="sheet6.tr_8ba1iii.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8Ba1iii');calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1iii"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_Ba1_other : </span><span data-translate="sheet6.tr_8ba1other.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8Ba1other',['tr_8Ba1othera']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1other"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 2em;"><span>8_Ba2 : </span><span data-translate="sheet6.tr_8ba2.parameter"></span></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_Ba2_other : </span><span data-translate="sheet6.tr_8ba2other.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8Ba2other',['tr_8Ba2othera']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba2other"></td>
+        </tr>
+        <!-- Start 8_Bb -->
+        <tr>
+            <th style="width: 500px;"><span>8_Bb : </span><span data-translate="sheet6.tr_8bb.parameter"></span></th>
+            <td style="width: 80px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 2em;"><span>8_Bb1 : </span><span data-translate="sheet6.tr_8bb1.parameter"></span></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_Bb1_i : </span><span data-translate="sheet6.tr_8bb1i.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8Bb1i',['tr_8Bb1ia']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1i"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_Bb1_ii : </span><span data-translate="sheet6.tr_8bb1ii.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8Bb1ii',['tr_8Bb1iia']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1ii"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_Bb1_iii : </span><span data-translate="sheet6.tr_8bb1iii.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8Bb1iii');calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1iii"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_Bb1_other : </span><span data-translate="sheet6.tr_8bb1other.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8Bb1other',['tr_8Bb1othera']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1other"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 2em;"><span>8_Bb2 : </span><span data-translate="sheet6.tr_8bb2.parameter"></span></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_Bb2_other : </span><span data-translate="sheet6.tr_8bb2other.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8Bb2other',['tr_8Bb2othera']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb2other"></td>
+        </tr>
+        <!-- Start 8_C -->
+        <tr>
+            <th style="width: 500px;"><span>8_C : </span><span data-translate="sheet6.tr_8c.parameter"></span></th>
+            <td style="width: 80px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 2em;"><span>8_C1 : </span><span data-translate="sheet6.tr_8c1.parameter"></span></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_C1_other : </span><span data-translate="sheet6.tr_8c1other.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8C1other',['tr_8C1othera']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8C1other"></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 2em;"><span>8_C2 : </span><span data-translate="sheet6.tr_8c2.parameter"></span></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 4em;"><span>8_C2_other : </span><span data-translate="sheet6.tr_8c2other.parameter"></span></td>
+            <td><input type="checkbox" ng-change="sheet6CheckTransaction('tr_8C2other',['tr_8C2othera']);calculateSheet6Totals();" ng-model="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8C2other"></td>
+        </tr>
+
+    </table>
+
+    <table class="table table-hover table-bordered fixed-table">
+        <tr ng-show="!instance.FGasesReporting.F6_FUDest.transactionsConfirmed">
+            <td>Confirm selected technolgies</td>
+            <td><input class="btn btn-sm btn-primary" type="button" ng-click="confirmTransactions_section8();" value="Confirm selected technolgies"></td>
+        </tr>
+
+    </table>
+
+    <table class="table table-hover table-bordered fixed-table" ng-show="instance.FGasesReporting.F6_FUDest.transactionsConfirmed">
+        <colgroup>
+            <col style="width: 60px" />
+            <col style="width: 60px" />
+            <col style="width: 60px" />
+            <col style="width: 60px" /><!--Explanation for category, if needed-->
+            <col style="width: 150px" /><!--amount of imported equipment / products per category-->
+            <col style="width: 150px" /><!--measurement unit for amount of imported equipment / products-->
+            <!-- <col class="fixed-width-gas-amount" ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" /> -->
+        </colgroup>
+        <tr>
+            <th rowspan="2" colspan="5"><span data-translate="sheet6.code_and_reporting_parameter6"></span></th>
+            <th ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center" style="border-bottom: 0px; text-align: center;">
+                <div align="center" ng-switch="reportedGas.IsCustomComposition">
+                    <span ng-switch-when="true">{{'common.mixture' | translate}} ({{reportedGas.Name}})</span>
+                    <span ng-switch-default>{{reportedGas.Name}}</span>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center" style="border-top: 0px; text-align: center;">
+                <span data-translate="sheet6.unit_tonnes"></span>
+            </th>
+        </tr>
+
+        <!-- Group header row 8A -->
+        <tr>
+            <td><span data-translate="sheet6.tr_8a.code"></span></td>
+            <td colspan="4"><span data-translate="sheet6.tr_8a.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8a.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <input ng-switch-when="true" gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A.Amount" ng-change="calculateSheet6Totals();" />
+                    <div ng-switch-when="false">
+                        <div ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1i
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1ii
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1iii
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1iv
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1v
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1vi
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1other
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2i
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2ii
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2other
+                        ">
+                            {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A.Amount }}
+                        </div>
+                    </div>
+                </div>
+            </td>           
+        </tr>
+
+        <!-- Group header row 8A1 -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1i
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1ii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1iii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1iv
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1v
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1vi
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1other
+        ">
+            <td colspan="1">&nbsp;</td>
+            <td colspan="1"><span data-translate="sheet6.tr_8a1.code"></span></td>
+            <td colspan="3"><span data-translate="sheet6.tr_8a1.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8a1.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1.Amount }}
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8A1i -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1i">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a1i.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8a1i.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1i.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8A1ia -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1i">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a1ia.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8a1ia.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1ia.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8A1ii -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1ii">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a1ii.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8a1ii.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1ii.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8A1iia -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1ii">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a1iia.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8a1iia.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1iia.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8A1iii -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1iii">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a1iii.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8a1iii.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1iii.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8A1iiia -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1iii">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a1iiia.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8a1iiia.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1iiia.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8A1iv -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1iv">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a1iv.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8a1iv.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1iv.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8A1iva -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1iv">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a1iva.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8a1iva.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1iva.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8A1v -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1v">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a1v.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8a1v.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false" ng-switch="viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                        <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23GasExcluded' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                        <div ng-switch-when="false">
+                            <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1v.Amount" ng-change="calculateSheet6Totals();" />
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8A1vi -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1vi">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a1vi.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8a1vi.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false" ng-switch="viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                        <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23GasExcluded' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                        <div ng-switch-when="false">
+                            <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1vi.Amount" ng-change="calculateSheet6Totals();" />
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8A1other -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1other">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a1other.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8a1other.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false" ng-controller="ModalController">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1other.Amount" ng-change="calculateSheet6Totals();" ng-blur="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1other, null, {title: 'Destruction technology to be specified'});" />
+                        <div align="left" ng-show="!isNaN(instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1other.Amount) && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1other.Amount !== '' && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1other.Amount !== null">
+                            <button ng-controller="ModalController" data-tooltip="{{'common.add-edit-comment-tooltip' | translate}}" ng-click="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1other, null, {title: 'Destruction technology to be specified'});"
+                                    class="glyphicon glyphicon-comment"></button>
+                            <span ng-if="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1other.Comment" data-tooltip="{{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1other.Comment}}">
+                                {{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1other.Comment | limitTo:commentLimit}} ...
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8A1othera -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1other">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a1othera.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8a1othera.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A1othera.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Group header row 8A2 -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2i
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2ii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1other
+        ">
+            <td colspan="1">&nbsp;</td>
+            <td colspan="1"><span data-translate="sheet6.tr_8a2.code"></span></td>
+            <td colspan="3"><span data-translate="sheet6.tr_8a2.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8a2.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A2.Amount }}
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8A2i -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2i">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a2i.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8a2i.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false" ng-switch="viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                        <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23GasExcluded' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                        <div ng-switch-when="false">
+                            <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A2i.Amount" ng-change="calculateSheet6Totals();" />
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8A2ii -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2ii">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a2ii.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8a2ii.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false" ng-switch="viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                        <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23GasExcluded' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                        <div ng-switch-when="false">
+                            <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A2ii.Amount" ng-change="calculateSheet6Totals();" />
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8A2other -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2other">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a2other.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8a2other.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false" ng-controller="ModalController">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A2other.Amount" ng-change="calculateSheet6Totals();" ng-blur="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A2other, null, {title: 'Destruction technology to be specified'});" />
+                        <div align="left" ng-show="!isNaN(instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A2other.Amount) && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A2other.Amount !== '' && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A2other.Amount !== null">
+                            <button ng-controller="ModalController" data-tooltip="{{'common.add-edit-comment-tooltip' | translate}}" ng-click="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A2other, null, {title: 'Destruction technology to be specified'});"
+                                    class="glyphicon glyphicon-comment"></button>
+                            <span ng-if="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A2other.Comment" data-tooltip="{{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A2other.Comment}}">
+                                {{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A2other.Comment | limitTo:commentLimit}} ...
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8A2othera -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2other">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8a2othera.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8a2othera.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8A2othera.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Group header row 8Aa -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1i
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1ii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1iii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1iv
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1other
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2other
+        ">
+            <td colspan="1">&nbsp;</td>
+            <td colspan="1"><span data-translate="sheet6.tr_8aa.code"></span></td>
+            <td colspan="3"><span data-translate="sheet6.tr_8aa.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8aa.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Aa.Amount }}
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Group header row 8Ba -->
+        <tr>
+            <td><span data-translate="sheet6.tr_8ba.code"></span></td>
+            <td colspan="4"><span data-translate="sheet6.tr_8ba.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8ba.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <input ng-switch-when="true" gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba.Amount" ng-change="calculateSheet6Totals();" />
+                    <div ng-switch-when="false">
+                        <div ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1i
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1ii
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1iii
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1other
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba2other
+                        ">
+                            {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba.Amount }}
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Group header row 8Ba1 -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1i
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1ii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1iii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1other
+        ">
+            <td colspan="1">&nbsp;</td>
+            <td colspan="1"><span data-translate="sheet6.tr_8ba1.code"></span></td>
+            <td colspan="3"><span data-translate="sheet6.tr_8ba1.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8ba1.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1.Amount }}
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8Ba1i -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1i">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8ba1i.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8ba1i.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1i.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8Ba1ia -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1i">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8ba1ia.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8ba1ia.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1ia.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8Ba1ii -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1ii">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8ba1ii.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8ba1ii.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1ii.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8Ba1iia -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1ii">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8ba1iia.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8ba1iia.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1iia.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8Ba1iii -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1iii">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8ba1iii.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8ba1iii.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false" ng-switch="viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                        <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23GasExcluded' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                        <div ng-switch-when="false">
+                            <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1iii.Amount" ng-change="calculateSheet6Totals();" />
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8Ba1other -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1other">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8ba1other.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8ba1other.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false" ng-controller="ModalController">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1other.Amount" ng-change="calculateSheet6Totals();" ng-blur="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1other, null, {title: 'Destruction technology to be specified'});" />
+                        <div align="left" ng-show="!isNaN(instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1other.Amount) && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1other.Amount !== '' && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1other.Amount !== null">
+                            <button ng-controller="ModalController" data-tooltip="{{'common.add-edit-comment-tooltip' | translate}}" ng-click="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1other, null, {title: 'Destruction technology to be specified'});"
+                                    class="glyphicon glyphicon-comment"></button>
+                            <span ng-if="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1other.Comment" data-tooltip="{{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1other.Comment}}">
+                                {{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1other.Comment | limitTo:commentLimit}} ...
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8Ba1othera -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1other">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8ba1othera.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8ba1othera.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba1othera.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Group header row 8Ba2 -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba2other
+        ">
+            <td colspan="1">&nbsp;</td>
+            <td colspan="1"><span data-translate="sheet6.tr_8ba2.code"></span></td>
+            <td colspan="3"><span data-translate="sheet6.tr_8ba2.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8ba2.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba2.Amount }}
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8Ba2other -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba2other">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8ba2other.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8ba2other.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false" ng-controller="ModalController">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba2other.Amount" ng-change="calculateSheet6Totals();" ng-blur="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba2other, null, {title: 'Destruction technology to be specified'});" />
+                        <div align="left" ng-show="!isNaN(instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba2other.Amount) && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba2other.Amount !== '' && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba2other.Amount !== null">
+                            <button ng-controller="ModalController" data-tooltip="{{'common.add-edit-comment-tooltip' | translate}}" ng-click="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba2other, null, {title: 'Destruction technology to be specified'});"
+                                    class="glyphicon glyphicon-comment"></button>
+                            <span ng-if="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba2other.Comment" data-tooltip="{{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba2other.Comment}}">
+                                {{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba2other.Comment | limitTo:commentLimit}} ...
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8Ba2othera -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba2other">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8ba2othera.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8ba2othera.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ba2othera.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Group header row 8Baa -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1i
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1ii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1other
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba2other
+        ">
+            <td colspan="1">&nbsp;</td>
+            <td colspan="1"><span data-translate="sheet6.tr_8baa.code"></span></td>
+            <td colspan="3"><span data-translate="sheet6.tr_8baa.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8baa.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Baa.Amount }}
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+
+        <!-- Group header row 8Bb -->
+        <tr>
+            <td><span data-translate="sheet6.tr_8bb.code"></span></td>
+            <td colspan="4"><span data-translate="sheet6.tr_8bb.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8bb.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <input ng-switch-when="true" gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb.Amount" ng-change="calculateSheet6Totals();" />
+                    <div ng-switch-when="false">
+                        <div ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1i
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1ii
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1iii
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1other
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb2other
+                        ">
+                            {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb.Amount }}
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Group header row 8Bb1 -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1i
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1ii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1iii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1other
+        ">
+            <td colspan="1">&nbsp;</td>
+            <td colspan="1"><span data-translate="sheet6.tr_8bb1.code"></span></td>
+            <td colspan="3"><span data-translate="sheet6.tr_8bb1.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8bb1.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1.Amount }}
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8Bb1i -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1i">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8bb1i.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8bb1i.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1i.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8Bb1ia -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1i">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8bb1ia.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8bb1ia.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1ia.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8Bb1ii -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1ii">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8bb1ii.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8bb1ii.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1ii.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8Bb1iia -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1ii">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8bb1iia.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8bb1iia.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1iia.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8Bb1iii -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1iii">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8bb1iii.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8bb1iii.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false" ng-switch="viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                        <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23GasExcluded' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                        <div ng-switch-when="false">
+                            <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1iii.Amount" ng-change="calculateSheet6Totals();" />
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8Bb1other -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1other">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8bb1other.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8bb1other.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false" ng-controller="ModalController">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1other.Amount" ng-change="calculateSheet6Totals();" ng-blur="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1other, null, {title: 'Destruction technology to be specified'});" />
+                        <div align="left" ng-show="!isNaN(instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1other.Amount) && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1other.Amount !== '' && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1other.Amount !== null">
+                            <button ng-controller="ModalController" data-tooltip="{{'common.add-edit-comment-tooltip' | translate}}" ng-click="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1other, null, {title: 'Destruction technology to be specified'});"
+                                    class="glyphicon glyphicon-comment"></button>
+                            <span ng-if="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1other.Comment" data-tooltip="{{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1other.Comment}}">
+                                {{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1other.Comment | limitTo:commentLimit}} ...
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8Bb1othera -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1other">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8bb1othera.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8bb1othera.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb1othera.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Group header row 8Bb2 -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb2other
+        ">
+            <td colspan="1">&nbsp;</td>
+            <td colspan="1"><span data-translate="sheet6.tr_8bb2.code"></span></td>
+            <td colspan="3"><span data-translate="sheet6.tr_8bb2.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8bb2.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb2.Amount }}
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8Bb2other -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb2other">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8bb2other.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8bb2other.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false" ng-controller="ModalController">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb2other.Amount" ng-change="calculateSheet6Totals();" ng-blur="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb2other, null, {title: 'Destruction technology to be specified'});" />
+                        <div align="left" ng-show="!isNaN(instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb2other.Amount) && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb2other.Amount !== '' && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb2other.Amount !== null">
+                            <button ng-controller="ModalController" data-tooltip="{{'common.add-edit-comment-tooltip' | translate}}" ng-click="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb2other, null, {title: 'Destruction technology to be specified'});"
+                                    class="glyphicon glyphicon-comment"></button>
+                            <span ng-if="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb2other.Comment" data-tooltip="{{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb2other.Comment}}">
+                                {{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb2other.Comment | limitTo:commentLimit}} ...
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8Bb2othera -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb2other">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8bb2othera.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8bb2othera.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bb2othera.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Group header row 8Bba -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1i
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1ii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1other
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb2other
+        ">
+            <td colspan="1">&nbsp;</td>
+            <td colspan="1"><span data-translate="sheet6.tr_8bba.code"></span></td>
+            <td colspan="3"><span data-translate="sheet6.tr_8bba.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8bba.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Bba.Amount }}
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Group header row 8C -->
+        <tr>
+            <td><span data-translate="sheet6.tr_8c.code"></span></td>
+            <td colspan="4"><span data-translate="sheet6.tr_8c.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8c.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <div ng-switch-when="true" ng-controller="ModalController">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C.Amount" ng-change="calculateSheet6Totals();" ng-blur="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C, null, {title: 'Destruction technology to be specified'});" />
+                        <div align="left" ng-show="!isNaN(instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C.Amount) && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C.Amount !== '' && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C.Amount !== null">
+                            <button ng-controller="ModalController" data-tooltip="{{'common.add-edit-comment-tooltip' | translate}}" ng-click="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C, null, {title: 'Destruction technology to be specified'});"
+                                    class="glyphicon glyphicon-comment"></button>
+                            <span ng-if="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C.Comment" data-tooltip="{{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C.Comment}}">
+                                {{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C.Comment | limitTo:commentLimit}} ...
+                            </span>
+                        </div>
+                    </div>
+                    <div ng-switch-when="false">
+                        <div ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8C1other
+                            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8C2other
+                        ">
+                            {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C.Amount }}
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Group header row 8C1 -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8C1other
+        ">
+            <td colspan="1">&nbsp;</td>
+            <td colspan="1"><span data-translate="sheet6.tr_8c1.code"></span></td>
+            <td colspan="3"><span data-translate="sheet6.tr_8c1.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8c1.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C1.Amount }}
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8C1other -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8C1other">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8c1other.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8c1other.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false" ng-controller="ModalController">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C1other.Amount" ng-change="calculateSheet6Totals();" ng-blur="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C1other, null, {title: 'Destruction technology to be specified'});" />
+                        <div align="left" ng-show="!isNaN(instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C1other.Amount) && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C1other.Amount !== '' && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C1other.Amount !== null">
+                            <button ng-controller="ModalController" data-tooltip="{{'common.add-edit-comment-tooltip' | translate}}" ng-click="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C1other, null, {title: 'Destruction technology to be specified'});"
+                                    class="glyphicon glyphicon-comment"></button>
+                            <span ng-if="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C1other.Comment" data-tooltip="{{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C1other.Comment}}">
+                                {{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C1other.Comment | limitTo:commentLimit}} ...
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8C1othera -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8C1other">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8c1othera.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8c1othera.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C1othera.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Group header row 8C2 -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8C2other
+        ">
+            <td colspan="1">&nbsp;</td>
+            <td colspan="1"><span data-translate="sheet6.tr_8c2.code"></span></td>
+            <td colspan="3"><span data-translate="sheet6.tr_8c2.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8c2.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C2.Amount }}
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8C2other -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8C2other">
+            <td colspan="2">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8c2other.code"></span></td>
+            <td colspan="2"><span data-translate="sheet6.tr_8c2other.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="viewModel.sheet6.section8._isHfcAndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFCGas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false" ng-controller="ModalController">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C2other.Amount" ng-change="calculateSheet6Totals();" ng-blur="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C2other, null, {title: 'Destruction technology to be specified'});" />
+                        <div align="left" ng-show="!isNaN(instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C2other.Amount) && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C2other.Amount !== '' && instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C2other.Amount !== null">
+                            <button ng-controller="ModalController" data-tooltip="{{'common.add-edit-comment-tooltip' | translate}}" ng-click="open('lg', 'CommentAddEditModal.html', 'CommentAddEditModalInstanceController', instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C2other, null, {title: 'Destruction technology to be specified'});"
+                                    class="glyphicon glyphicon-comment"></button>
+                            <span ng-if="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C2other.Comment" data-tooltip="{{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C2other.Comment}}">
+                                {{instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C2other.Comment | limitTo:commentLimit}} ...
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Standard row 8C2othera -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8C2other">
+            <td colspan="3">&nbsp;</td>
+            <td><span data-translate="sheet6.tr_8c2othera.code"></span></td>
+            <td colspan="1"><span data-translate="sheet6.tr_8c2othera.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8C2othera.Amount" ng-change="calculateSheet6Totals();" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Group header row 8Ca -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8C1other
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8C2other
+        ">
+            <td colspan="1">&nbsp;</td>
+            <td colspan="1"><span data-translate="sheet6.tr_8ca.code"></span></td>
+            <td colspan="3"><span data-translate="sheet6.tr_8ca.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8ca.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Ca.Amount }}
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Group header row 8D -->
+        <tr>
+            <td><span data-translate="sheet6.tr_8d.code"></span></td>
+            <td colspan="4"><span data-translate="sheet6.tr_8d.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8d.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">{{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8D.Amount }}</td>
+        </tr>
+
+        <!-- Group header row 8Da -->
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1i
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1ii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1iii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1iv
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1v
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1vi
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A1other
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2i
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2ii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8A2other
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1i
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1ii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1iii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba1other
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Ba2other
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1i
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1ii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1iii
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb1other
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8Bb2other
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8C1other
+            || instance.FGasesReporting.F6_FUDest.UISelectedTransactions.tr_8C2other
+            ">
+            <td colspan="1">&nbsp;</td>
+            <td colspan="1"><span data-translate="sheet6.tr_8da.code"></span></td>
+            <td colspan="3"><span data-translate="sheet6.tr_8da.parameter"></span><br /><span class="formula" data-translate="sheet6.tr_8da.formula"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <div ng-switch="!viewModel.sheet6.section8._isHfc23AndMixtures(reportedGas)">
+                    <span ng-switch-when="true" data-tooltip="{{'sheet6.errorHFC23Gas' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                    <div ng-switch-when="false">
+                        {{ instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8Da.Amount }}
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Standard row 8E -->
+        <tr>
+            <td><span data-translate="sheet6.tr_8e.code"></span></td>
+            <td colspan="4"><span data-translate="sheet6.tr_8e.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8E.Amount" ng-change="calculateSheet6Totals();" />
+            </td>
+        </tr>
+
+        <!-- Standard row 8F -->
+        <tr>
+            <td><span data-translate="sheet6.tr_8f.code"></span></td>
+            <td colspan="4"><span data-translate="sheet6.tr_8f.parameter"></span></td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
+                <input gas-input ng-model="instance.FGasesReporting.F6_FUDest.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_8F.Amount" ng-change="calculateSheet6Totals();" />
+            </td>
+        </tr>
+
+    </table>
+
+    <table class="table table-hover table-bordered fixed-table">
+        <tr ng-show="instance.FGasesReporting.F6_FUDest.transactionsConfirmed">
+            <td>Change reporting technolgies</td>
+            <td><input class="btn btn-sm btn-primary" type="button" ng-click="unConfirmTransactions_section8();" value="Change technolgies"></td>
+        </tr>
+    </table>
+
+
+</div> <!-- end of div name="Sheet6Section8" -->
+<!-- end of html subform [ng-form="Sheet6b"] -->

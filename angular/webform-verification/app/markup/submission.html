@@ -1,0 +1,105 @@
+<h2><span data-translate="submission.header"></span></h2>
+
+
+<div class="alert ng-isolate-scope alert-danger alert-dismissable" type="danger" ng-show="!formTotalValidated">
+    <div><span data-translate="submission.validation_failed"></span></div>
+</div>
+
+<div class="alert alert-success ng-scope" ng-show="formTotalValidated && instance.Verification.GeneralReportData['@status'] == 'incomplete'">
+    <span data-translate="submission.ready_for_submission"></span>
+</div>
+
+<div class="" ng-show="instance.Verification.GeneralReportData['@status'] == 'incomplete'">
+    <strong><span data-translate="submission.close_text"></span></strong><br />
+    <button type="button" ng-click="submitReport()" class="btn btn-lg btn-success" ng-show="formTotalValidated"><span data-translate="submission.submit_button"></span></button>
+    <button type="button" ng-click="submitReport()" class="btn btn-lg btn-warning" ng-show="!formTotalValidated"><span data-translate="submission.submit_button"></span></button>
+</div>
+
+<div class="alert alert-success ng-scope" ng-show="instance.Verification.GeneralReportData['@status'] == 'completed'">
+    <span data-translate="submission.reopen-text"></span> <button type="button" ng-click="reopenReport();gotoTab('Intro')" class="btn btn-sm btn-primary"><span data-translate="submission.reopen_button"></span></button>
+</div>
+
+<!-- TODO validation message display code can be iterate on valSubCat-->
+
+<h2 ng-show="validationMessages['general'].length > 0"><span data-translate="submission.general_errors"></span></h2>
+
+<table ng-show="validationMessages['general'].length > 0" class="table table-hover table-bordered" style="width: 1000px;">
+    <tr>
+        <th style="width: 250px;"><span data-translate="submission.column-error-category-header"></span></th>
+        <th style="width: 100px;"><span data-translate="form7.validation_category" /></th>
+        <th style="width: 900px;"><span data-translate="form7.validation_violation" /></th>
+    </tr>
+
+    <tr ng-repeat="error in validationMessages['general']">
+        <td style="width: 100px;"><span class="{{ viewModel.submission.getErrorCategoryClass(error) }}">{{ viewModel.submission.getErrorCategoryName(error) }}</span></td>
+        <td><span>{{ error.transactionLabel }}</span></td>
+        <td>
+            <span ng-switch="error.message == null">
+                <span ng-switch-when="true"><span data-translate="validation_messages.qc_{{ error.qccode }}.error_text"></span></span>
+                <span ng-switch-when="false">{{ error.message }}</span>
+            </span>
+            &nbsp;({{ error.qccode }})
+        </td>
+    </tr>
+
+</table>
+
+
+<h2 ng-show="validationMessages['reportIdentification'].length > 0">
+    <span data-translate="submission.activities_errors"></span>
+    <a href="#" ng-click="gotoTab('ReportIdentification');"><span class="glyphicon glyphicon-new-window" data-tooltip="{{'common.go-to-tab' | translate}}"></span></a>
+</h2>
+
+<table ng-show="validationMessages['reportIdentification'].length > 0" class="table table-hover table-bordered" style="width: 1000px;">
+    <tr>
+        <th style="width: 250px;"><span data-translate="submission.column-error-category-header"></span></th>
+        <th style="width: 100px;"><span data-translate="form7.validation_category" /></th>
+        <th style="width: 900px;"><span data-translate="form7.validation_violation" /></th>
+    </tr>
+
+    <tr ng-repeat="error in validationMessages['reportIdentification']">
+        <td style="width: 100px;"><span class="{{ viewModel.submission.getErrorCategoryClass(error) }}">{{ viewModel.submission.getErrorCategoryName(error) }}</span></td>
+        <td><span>{{ error.transactionLabel }}</span></td>
+        <td><span>{{ error.message }}</span>&nbsp;({{ error.qccode }})</td>
+    </tr>
+
+</table>
+
+
+<h2 ng-show="validationMessages['BulkHFCsVerification'].length > 0">
+    <span data-translate="submission.bulk_errors"></span>
+    <a href="#" ng-click="gotoTab('BulkHFCsVerification');"><span class="glyphicon glyphicon-new-window" data-tooltip="{{'common.go-to-tab' | translate}}"></span></a>
+</h2>
+
+<table ng-show="validationMessages['BulkHFCsVerification'].length > 0" class="table table-hover table-bordered" style="width: 1000px;">
+    <tr>
+        <th style="width: 250px;"><span data-translate="submission.column-error-category-header"></span></th>
+        <th style="width: 100px;"><span data-translate="submission.validation_category" /></th>
+        <th style="width: 900px;"><span data-translate="submission.validation_violation" /></th>
+    </tr>
+
+    <tr ng-repeat="error in validationMessages['BulkHFCsVerification']">
+        <td style="width: 100px;"><span class="{{ viewModel.submission.getErrorCategoryClass(error) }}">{{ viewModel.submission.getErrorCategoryName(error) }}</span></td>
+        <td><span>{{ error.transactionLabel }}</span></td>
+        <td><span>{{ error.message }}</span>&nbsp;({{ error.qccode }})</td>
+    </tr>
+
+</table>
+
+
+<h2 ng-show="validationMessages['EquipmentVerification'].length > 0">
+    <span data-translate="submission.equipment_errors"> </span>
+    <a href="#" ng-click="gotoTab('EquipmentVerification');"><span class="glyphicon glyphicon-new-window" data-tooltip="{{'common.go-to-tab' | translate}}"></span></a>
+</h2>
+<table ng-show="validationMessages['EquipmentVerification'].length > 0" class="table table-hover table-bordered" style="width: 1000px;">
+    <tr>
+        <th style="width: 250px;"><span data-translate="submission.column-error-category-header"></span></th>
+        <th style="width: 100px;"><span data-translate="submission.validation_category" /></th>
+        <th style="width: 900px;"><span data-translate="submission.validation_violation" /></th>
+    </tr>
+    <tr ng-repeat="error in validationMessages['EquipmentVerification']">
+        <td style="width: 100px;"><span class="{{ viewModel.submission.getErrorCategoryClass(error) }}">{{ viewModel.submission.getErrorCategoryName(error) }}</span></td>
+        <td><span>{{ error.transactionLabel }}</span></td>
+        <td><span>{{ error.message }}</span>&nbsp;({{ error.qccode }})</td>
+    </tr>
+</table>

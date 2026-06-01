@@ -1,0 +1,18 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">	
+	<xs:element name="QuotasRoot">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Quotas" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:int" name="TransactionYear"/>
+							<xs:element type="xs:int" name="CompanyID"/>
+							<xs:element type="xs:int" name="AllocatedQuota"/>
+							<xs:element type="xs:int" name="AvailableQuota"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

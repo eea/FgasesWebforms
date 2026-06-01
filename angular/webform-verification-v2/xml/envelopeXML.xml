@@ -1,0 +1,13 @@
+<envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" released="false" company_id="63646" acceptable="unknown" xsi:noNamespaceSchemaLocation="http://cdr.eionet.europa.eu/schemas/envelope-metadata.xsd">
+<title>BM test 110325</title>
+<description/>
+<date>2025-03-11T11:17:12Z</date>
+<coverage>http://rod.eionet.europa.eu/spatial/5</coverage>
+<countrycode>BE</countrycode>
+<obligation>http://rod.eionet.europa.eu/obligations/868</obligation>
+<link>https://bdr-test.eionet.europa.eu/fgases/be/63646/envz9anqa</link>
+<year/>
+<endyear/>
+<partofyear/>
+<file name="Fluorinated_gases__Verification__1.xml" type="text/xml" schema="http://dd.eionet.europa.eu/schemas/fgases-2024/Verification.xsd" title="" restricted="yes" link="https://bdr-test.eionet.europa.eu/fgases/be/63646/envz9anqa/Fluorinated_gases__F-Gases__reporting_2024_transaction_year__1.xml" uploaded="2025-03-12T14:26:49Z"/>
+</envelope>

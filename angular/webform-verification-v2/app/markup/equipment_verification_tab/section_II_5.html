@@ -1,0 +1,27 @@
+<div>
+    <p data-translate="equipment-verification.section-II-5-upload-document-text"></p>
+    <div ng-if="instance.Verification.EquipmentHFCs.section_II_5.VerificationReport.Url">
+
+        <a id="equipment-verification-verification-report"
+            href="{{instance.Verification.EquipmentHFCs.section_II_5.VerificationReport.Url}}"
+            target="_blank">{{instance.Verification.EquipmentHFCs.section_II_5.VerificationReport.Url}}</a>
+        <button type="button" class="btn btn-xs" style="margin-left: 1em;"
+                ng-click="removeDocument('instance.Verification.EquipmentHFCs.section_II_5', 'VerificationReport');">
+            <span data-translate="common.remove"></span>
+        </button>
+    </div>
+
+    <div>
+        <input id="equipment-verification-verification-report-upload" type="file" uploader="uploaders['equipment']"
+                ng-init="configureUploaderEquipment" style="display:inline; margin-left:5px;"
+                nv-file-select />
+        <button type="button" class="btn btn-success btn-xs"
+                ng-click="uploadFile('equipment', 'instance.Verification.EquipmentHFCs.section_II_5', 'VerificationReport', 'VR-EQ-'); "
+                ng-if="uploaders['equipment'].queue.length == 1">
+            <span class="glyphicon glyphicon-upload"></span> Upload
+        </button>
+        <div class="progress" ng-if="uploaders['equipment'].queue.length == 1" ng-show="uploaders['equipment'].isHTML5">
+            <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploaders['equipment'].progress + '%' }"></div>
+        </div>
+    </div>
+</div>

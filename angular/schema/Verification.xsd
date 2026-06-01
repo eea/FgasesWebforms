@@ -1,0 +1,501 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
+<xs:element name="Verification" type="VerificationType"/>
+    <xs:attribute type="xs:string" name="lang"/> 
+<xs:complexType name="PostalAddressType">
+<xs:sequence>
+<xs:element type="xs:string" name="StreetAddress"/>
+<xs:element type="xs:string" name="City"/>
+<xs:element type="xs:string" name="Region"/>
+<xs:element type="xs:string" name="PostalCode"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="CountryType" mixed="true">
+<xs:sequence>
+<xs:element type="xs:string" name="Name" minOccurs="0"/>
+<xs:element type="xs:string" name="Type" minOccurs="0"/>
+</xs:sequence>
+<xs:attribute type="xs:string" name="desc" use="optional"/>
+</xs:complexType>
+    <xs:complexType name="CountryTypeLegalRepr" mixed="true">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Type" minOccurs="0"/>
+            <xs:element type="xs:string" name="Name" minOccurs="0"/>
+           
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="desc" use="optional"/>
+    </xs:complexType>
+    
+<xs:complexType name="ContactInfoType">
+<xs:sequence>
+<xs:element type="xs:string" name="Telephone"/>
+<xs:element type="xs:string" name="FaxNumber"/>
+<xs:element type="xs:string" name="Email"/>
+<xs:element type="xs:string" name="ContactPerson"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="CompanyType">
+<xs:sequence>
+<xs:element type="xs:string" name="CompanyId" minOccurs="0"/>
+<xs:element type="xs:string" name="CompanyName"/>
+<xs:element type="PostalAddressType" name="PostalAddress" minOccurs="0"/>
+<xs:element type="CountryType" name="Country" minOccurs="0"/>
+<xs:element type="ContactInfoType" name="ContactInfo" minOccurs="0"/>
+<xs:element type="xs:string" name="EoriCode" minOccurs="0"/>
+<xs:element type="xs:string" name="VatCode" minOccurs="0"/>
+<xs:element type="xs:string" name="NoReporting" minOccurs="0"/>
+<xs:element type="xs:string" name="City" minOccurs="0"/>
+</xs:sequence>
+<xs:attribute type="xs:string" name="status" use="optional"/>
+<xs:attribute type="xs:string" name="lang" use="optional"/>
+</xs:complexType>
+<xs:complexType name="EuLegalRepresentativeCompanyType">
+<xs:sequence>
+<xs:element type="xs:string" name="Name"/>
+    <xs:element type="CountryTypeLegalRepr" name="Country" minOccurs="0"/>
+</xs:sequence>
+<xs:attribute type="xs:string" name="status" use="optional"/>
+<xs:attribute type="xs:string" name="lang" use="optional"/>
+</xs:complexType>
+<xs:complexType name="AdressType">
+<xs:sequence>
+<xs:element type="xs:string" name="Number"/>
+<xs:element type="xs:string" name="Street"/>
+<xs:element type="xs:string" name="PostalCode"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="AuditorType">
+<xs:sequence>
+<xs:element type="xs:string" name="Auditor_uid"/>
+<xs:element type="xs:string" name="Name"/>
+<xs:element type="xs:string" name="LeadAuditorEmail"/>
+<xs:element type="xs:string" name="Telephone"/>
+<xs:element type="xs:anyURI" name="Website"/>
+<xs:element type="CompanyType" name="Company"/>
+<xs:element type="AdressType" name="Adress"/>
+<xs:element type="CountryTypeLegalRepr" name="Country"/>
+    <xs:element type="xs:string" name="Phone"/>
+    <xs:element type="xs:string" name="leadAuditorFirstName"/>
+    <xs:element type="xs:string" name="leadAuditorLastName"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="GeneralReportDataType">
+<xs:sequence>
+<xs:element type="CompanyType" name="Company"/>
+<xs:element type="EuLegalRepresentativeCompanyType" name="EuLegalRepresentativeCompany"/>
+<xs:element type="AuditorType" name="Auditor"/>
+    <xs:element type="xs:string" name="ReportingYear"/>
+    
+</xs:sequence>
+<xs:attribute type="xs:string" name="status"/>
+<xs:attribute ref="xml:lang"/>
+</xs:complexType>
+<xs:complexType name="VerificationScopeType">
+<xs:sequence>
+<xs:element type="xs:string" name="DataReportUrl"/>
+    <xs:element type="xs:string" name="SubmissionDate"/>
+    <xs:element type="xs:string" name="TransactionYear"/>
+<xs:element type="xs:string" name="Bulk"/>
+<xs:element type="xs:string" name="Equipment"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="confirmation_aType">
+<xs:sequence>
+<xs:element type="xs:string" name="checked"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="confirmation_bType">
+<xs:sequence>
+<xs:element type="xs:string" name="checked"/>
+<xs:element type="xs:string" name="option_1"/>
+<xs:element type="xs:string" name="option_2"/>
+<xs:element type="xs:string" name="option_3"/>
+<xs:element type="xs:string" name="option_4"/>
+<xs:element type="xs:string" name="option_4_reason"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="confirmation_cType">
+<xs:sequence>
+<xs:element type="xs:string" name="checked"/>
+<xs:element type="xs:string" name="option_1"/>
+<xs:element type="xs:string" name="option_2"/>
+<xs:element type="xs:string" name="option_3"/>
+<xs:element type="xs:string" name="option_4"/>
+<xs:element type="xs:string" name="option_4_reason"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="section_I_1Type">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_01AType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_01A_a_ownType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_01A_a_otherType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_01BType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_01CType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_02AType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_02BType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_02GType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_02HType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_02IType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_03BType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_04CType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_04HType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_05AType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_05BType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_05C_exemptedType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_05DType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_05EType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_05FType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_09AType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_09FType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="section_I_2Type">
+<xs:sequence>
+<xs:element type="tr_01AType" name="tr_01A"/>
+<xs:element type="tr_01A_a_ownType" name="tr_01A_a_own"/>
+<xs:element type="tr_01A_a_otherType" name="tr_01A_a_other"/>
+<xs:element type="tr_01BType" name="tr_01B"/>
+<xs:element type="tr_01CType" name="tr_01C"/>
+<xs:element type="tr_02AType" name="tr_02A"/>
+<xs:element type="tr_02BType" name="tr_02B"/>
+<xs:element type="tr_02GType" name="tr_02G"/>
+<xs:element type="tr_02HType" name="tr_02H"/>
+<xs:element type="tr_02IType" name="tr_02I"/>
+<xs:element type="tr_03BType" name="tr_03B"/>
+<xs:element type="tr_04CType" name="tr_04C"/>
+<xs:element type="tr_04HType" name="tr_04H"/>
+<xs:element type="tr_05AType" name="tr_05A"/>
+<xs:element type="tr_05BType" name="tr_05B"/>
+<xs:element type="tr_05C_exemptedType" name="tr_5C_exempted_CO2e"/>
+<xs:element type="tr_05DType" name="tr_05D"/>
+<xs:element type="tr_05EType" name="tr_05E"/>
+<xs:element type="tr_05FType" name="tr_05F"/>
+<xs:element type="tr_09AType" name="tr_09A"/>
+<xs:element type="tr_09FType" name="tr_09F"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="section_I_3Type">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="VerificationReportType">
+<xs:sequence>
+<xs:element type="xs:string" name="Url"/>
+<xs:element type="xs:string" name="Title"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="section_I_4Type">
+<xs:sequence>
+<xs:element type="VerificationReportType" name="VerificationReport"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="BulkHFCsType">
+<xs:sequence>
+<xs:element type="section_I_1Type" name="section_I_1"/>
+<xs:element type="section_I_2Type" name="section_I_2"/>
+<xs:element type="section_I_3Type" name="section_I_3"/>
+<xs:element type="section_I_4Type" name="section_I_4"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="section_II_1Type">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_11GType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_12AType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_12aAType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_13DType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="tr_11PType">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="section_II_2Type">
+<xs:sequence>
+<xs:element type="tr_11GType" name="tr_11G"/>
+<xs:element type="tr_12AType" name="tr_12A"/>
+<xs:element type="tr_12aAType" name="tr_12aA"/>
+<xs:element type="tr_13DType" name="tr_13D"/>
+<xs:element type="tr_11PType" name="tr_11P"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="section_II_3Type">
+<xs:sequence>
+<xs:element type="confirmation_aType" name="confirmation_a"/>
+<xs:element type="confirmation_bType" name="confirmation_b"/>
+<xs:element type="confirmation_cType" name="confirmation_c"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="option_aType">
+<xs:sequence>
+<xs:element type="xs:string" name="option"/>
+<xs:element type="xs:string" name="reason_1"/>
+<xs:element type="xs:string" name="reason_2"/>
+<xs:element type="xs:string" name="reason_3"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="option_bType">
+<xs:sequence>
+<xs:element type="xs:string" name="option"/>
+<xs:element type="xs:string" name="reason_1"/>
+<xs:element type="xs:string" name="reason_2"/>
+<xs:element type="xs:string" name="reason_3"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="section_II_4Type">
+<xs:sequence>
+<xs:element type="option_aType" name="option_a"/>
+<xs:element type="option_bType" name="option_b"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="section_II_5Type">
+<xs:sequence>
+<xs:element type="VerificationReportType" name="VerificationReport"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EquipmentHFCsType">
+<xs:sequence>
+<xs:element type="section_II_1Type" name="section_II_1"/>
+<xs:element type="section_II_2Type" name="section_II_2"/>
+<xs:element type="section_II_3Type" name="section_II_3"/>
+<xs:element type="section_II_4Type" name="section_II_4"/>
+<xs:element type="section_II_5Type" name="section_II_5"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="ComponentType">
+<xs:sequence>
+<xs:element type="xs:string" name="Code"/>
+<xs:element type="xs:string" name="Percentage"/>
+<xs:element type="xs:string" name="GWP_AR4_AnnexIV"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="BlendComponentsType">
+<xs:sequence>
+<xs:element type="ComponentType" name="Component"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="ReportedGasesType">
+<xs:sequence>
+<xs:element type="xs:string" name="GasId"/>
+<xs:element type="xs:string" name="Name"/>
+<xs:element type="xs:string" name="GWP_AR4_AnnexIV"/>
+<xs:element type="BlendComponentsType" name="BlendComponents"/>
+</xs:sequence>
+</xs:complexType>
+    <xs:complexType name="TransactionsGasesEq">
+        <xs:sequence>
+            <xs:element type="xs:string" name="id"/>
+            <xs:element type="xs:string" name="code"/>
+            <xs:element type="xs:string" name="description"/>
+            <xs:element type="xs:string" name="formula" minOccurs="0"/>
+            <xs:element type="xs:string" name="option_a_tooltip" minOccurs="0"/>
+            <xs:element type="xs:string" name="option_b_tooltip" minOccurs="0"/>
+            <xs:element type="xs:string" name="option_c_tooltip" minOccurs="0"/>
+            <xs:element type="xs:string" name="tco2e"/>
+        </xs:sequence>
+    </xs:complexType>
+<xs:complexType name="gasesType">
+<xs:sequence>
+<xs:element type="xs:string" name="gas_id"/>
+    <xs:element type="xs:string" name="amount" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="TransactionsType">
+<xs:sequence>
+<xs:element type="xs:string" name="id"/>
+<xs:element type="xs:string" name="code"/>
+<xs:element type="xs:string" name="description"/>
+<xs:element type="xs:string" name="formula" minOccurs="0"/>
+    <xs:element type="xs:string" name="option_a_tooltip" minOccurs="0"/>
+    <xs:element type="xs:string" name="option_b_tooltip" minOccurs="0"/>
+    <xs:element type="xs:string" name="option_c_tooltip" minOccurs="0"/>
+<xs:element type="xs:string" name="tco2e"/>
+    <xs:element type="gasesType" name="gases" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="ReportedBulkType">
+<xs:sequence>
+    <xs:element type="ReportedGasesType" name="ReportedGases" maxOccurs="unbounded"/>
+    <xs:element type="TransactionsType" name="Transactions" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="ReportedEquipmentType">
+<xs:sequence>
+    <xs:element type="ReportedGasesType" name="ReportedGases" maxOccurs="unbounded" minOccurs="0"/>
+    <xs:element type="TransactionsGasesEq" name="Transactions" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="VerificationType">
+<xs:sequence>
+<xs:element type="GeneralReportDataType" name="GeneralReportData"/>
+<xs:element type="VerificationScopeType" name="VerificationScope"/>
+<xs:element type="BulkHFCsType" name="BulkHFCs"/>
+<xs:element type="EquipmentHFCsType" name="EquipmentHFCs"/>
+<xs:element type="ReportedBulkType" name="ReportedBulk"/>
+<xs:element type="ReportedEquipmentType" name="ReportedEquipment"/>
+<xs:element type="xs:string" name="NILReport"/>
+    <xs:element type="xs:string" name="qcWarningFlags"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

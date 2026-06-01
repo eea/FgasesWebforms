@@ -1,0 +1,218 @@
+{
+	"assignedToAuditor": true,
+	"dataReportTitle": "test3+1 bulk gases",
+	"dataReportTransactionYear": 2024,
+	"company": {
+	  "eori_code": "VAT10086",
+	  "city": "Brussel Test city",
+	  "country": "Andorra",
+	  "company_id": 10086,
+	  "contact_persons": [
+		{
+		  "first_name": "ECAS",
+		  "last_name": "TEST",
+		  "email": "ecas.test@oeko.de"
+		},
+		{
+		  "first_name": "fname21201",
+		  "last_name": "lname21201",
+		  "email": "21201email@climaOds2010.yyy"
+		},
+		{
+		  "first_name": "fname3068",
+		  "last_name": "lname3068",
+		  "email": "3068email@climaOds2010.yyy"
+		},
+		{
+		  "first_name": "Cornel",
+		  "last_name": "Nitu",
+		  "email": "cornel.nitu@eaudeweb.ro"
+		},
+		{
+		  "first_name": "David",
+		  "last_name": "Batranu",
+		  "email": "david.batranu@eaudeweb.ro"
+		},
+		{
+		  "first_name": "fname42790",
+		  "last_name": "lname42790",
+		  "email": "42790email@climaOds2010.yyy"
+		},
+		{
+		  "first_name": "fname11351",
+		  "last_name": "lname11351",
+		  "email": "11351email@climaOds2010.yyy"
+		},
+		{
+		  "first_name": "fname15154",
+		  "last_name": "lname15154",
+		  "email": "15154email@climaOds2010.yyy"
+		},
+		{
+		  "first_name": "fname21198",
+		  "last_name": "lname21198",
+		  "email": "21198email@climaOds2010.yyy"
+		},
+		{
+		  "first_name": "fname32474",
+		  "last_name": "lname32474",
+		  "email": "32474email@climaOds2010.yyy"
+		},
+		{
+		  "first_name": "fname36824",
+		  "last_name": "lname36824",
+		  "email": "36824email@climaOds2010.yyy"
+		},
+		{
+		  "first_name": "fname37161",
+		  "last_name": "lname37161",
+		  "email": "37161email@climaOds2010.yyy"
+		},
+		{
+		  "first_name": "fname39516",
+		  "last_name": "lname39516",
+		  "email": "39516email@climaOds2010.yyy"
+		},
+		{
+		  "first_name": "fname41923",
+		  "last_name": "lname41923",
+		  "email": "41923email@climaOds2010.yyy"
+		},
+		{
+		  "first_name": "fname41966",
+		  "last_name": "lname41966",
+		  "email": "41966email@climaOds2010.yyy"
+		},
+		{
+		  "first_name": "Diana",
+		  "last_name": "Boiangiu",
+		  "email": "diana.boiangiu@eaudeweb.ro"
+		},
+		{
+		  "first_name": "David",
+		  "last_name": "Robin",
+		  "email": "david.robin@oekorecherche.de"
+		},
+		{
+		  "first_name": "Peder",
+		  "last_name": "Gabrielsen",
+		  "email": "peder.gabrielsen@gmail.com"
+		},
+		{
+		  "first_name": "Kristina",
+		  "last_name": "Kaar",
+		  "email": "kristina.kaar@oekorecherche.de"
+		},
+		{
+		  "first_name": "Olimpiu",
+		  "last_name": "Rob",
+		  "email": "olimpiu.rob@eaudeweb.ro"
+		},
+		{
+		  "first_name": "Steffi",
+		  "last_name": "Osterheld",
+		  "email": "steffi.osterheld@oekorecherche.de"
+		},
+		{
+		  "first_name": "Josu",
+		  "last_name": "Olaso",
+		  "email": "jolaso@bilbomatica.es"
+		},
+		{
+		  "first_name": "Alba",
+		  "last_name": "Lallana",
+		  "email": "alallana@bilbomatica.es"
+		},
+		{
+		  "first_name": "Víctor Miguélez",
+		  "last_name": "Blanco",
+		  "email": "vmiguelez@bilbomatica.es"
+		},
+		{
+		  "first_name": "David",
+		  "last_name": "Perez",
+		  "email": "dperez@bilbomatica.es"
+		}
+	  ],
+	  "postal_code": "cp7964",
+	  "company_name": "NMORGANIZATION--10086",
+	  "address": "str7964, 1"
+	},
+	"leadAuditorEmail": "auditor.wgj@oeko.de",
+	"requiresAuditor": true,
+	"dataReportUrl": "https://bdr-test.eionet.europa.eu/fgases/be/10086/envzzfmg",
+	"auditor": {
+	  "website": null,
+	  "status": "VALID",
+	  "name": "auditor_bdr_1",
+	  "auditor_uid": "FAUBO4SY",
+	  "ms_accreditation": false,
+	  "date_updated": "16/12/2024",
+	  "ms_accreditation_issuing_countries": [],
+	  "ets_accreditation": true,
+	  "date_created_in_ecr": "24/02/2025",
+	  "phone": "+331234567",
+	  "date_updated_in_ecr": "09/04/2025",
+	  "address": {
+		"country": {
+		  "code": "FI",
+		  "type": "EU_TYPE",
+		  "name": "Finland"
+		},
+		"zipcode": null,
+		"street": "snowflake",
+		"number": 33,
+		"city": "Pokka"
+	  },
+	  "date_created": "16/12/2024",
+	  "users": [
+		{
+		  "username": "lepikpi",
+		  "first_name": "Piotr",
+		  "last_name": "LEPIK",
+		  "ecas_id": "lepikpi",
+		  "type": "AUDITOR_ORG_FGAS",
+		  "email": "Piotr.LEPIK@ext.ec.europa.eu"
+		},
+		{
+		  "username": "n0022jyn",
+		  "first_name": "Olimpiu",
+		  "last_name": "Rob",
+		  "ecas_id": "n0022jyn",
+		  "type": "AUDITOR_ORG_AND_VERIFIER",
+		  "email": "olimpiu.rob@eaudeweb.ro"
+		},
+		{
+		  "username": "n003ave9",
+		  "first_name": "GirtsZ",
+		  "last_name": "NiedraZ",
+		  "ecas_id": "n003ave9",
+		  "type": "AUDITOR_ORG_FGAS",
+		  "email": "girts.niedra+1@gmail.com"
+		},
+		{
+		  "username": "n00inijn",
+		  "first_name": "Auditor",
+		  "last_name": "Test",
+		  "ecas_id": "n00inijn",
+		  "type": "AUDITOR_ORG_AND_VERIFIER",
+		  "email": "auditor.test@oeko.de"
+		},
+		{
+		  "username": "n00ircat",
+		  "first_name": "wgj",
+		  "last_name": "Auditor",
+		  "ecas_id": "n00ircat",
+		  "type": "AUDITOR_ORG_ONLY_VERIFIER",
+		  "email": "auditor.wgj@oeko.de"
+		}
+	  ]
+	},
+	"verificationOptions": {
+	  "bulk": true,
+	  "equipment": true,
+	  "none": false
+	},
+	"dataReportReleaseDate": "2025-04-09T11:57:36Z",
+	"dataReportId": "envzzfmg"
+  }
