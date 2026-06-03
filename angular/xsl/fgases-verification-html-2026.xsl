@@ -1554,24 +1554,24 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     				
     				
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_01A/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -1584,22 +1584,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_01A/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -1636,22 +1636,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_own/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_own/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_own/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_own/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_01A_a_own/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -1664,22 +1664,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_own/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_own/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_own/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_own/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_01A_a_own/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -1720,22 +1720,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_other/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_other/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_other/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_other/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_01A_a_other/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -1749,22 +1749,22 @@
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_other/confirmation_c/option_1 = 'true'">
     				<span >
     					<xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_other/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_other/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01A_a_other/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_01A_a_other/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -1801,22 +1801,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01B/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01B/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01B/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01B/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_01B/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -1829,22 +1829,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01B/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01B/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01B/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01B/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_01B/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -1883,22 +1883,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01C/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01C/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01C/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01C/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_01C/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -1911,22 +1911,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01C/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01C/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01C/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_01C/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_01C/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -1964,22 +1964,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02A/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02A/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02A/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02A/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_02A/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -1992,22 +1992,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02A/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02A/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02A/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02A/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_02A/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -2045,22 +2045,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02B/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02B/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02B/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02B/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_02B/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -2073,22 +2073,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02B/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02B/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02B/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02B/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_02B/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -2127,22 +2127,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02G/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02G/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02G/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02G/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_02G/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -2155,22 +2155,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02G/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02G/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02G/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02G/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_02G/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -2209,22 +2209,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02H/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02H/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02H/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02H/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_02H/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -2237,22 +2237,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02H/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02H/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02H/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02H/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_02H/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -2290,22 +2290,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02I/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02I/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02I/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02I/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_02I/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -2318,22 +2318,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02I/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02I/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02I/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_02I/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_02I/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -2372,22 +2372,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_03B/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_03B/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_03B/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_03B/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_03B/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -2400,22 +2400,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_03B/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_03B/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_03B/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_03B/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_03B/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -2453,22 +2453,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04C/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04C/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04C/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04C/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_04C/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -2481,22 +2481,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04C/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04C/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04C/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04C/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_04C/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -2535,22 +2535,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04H/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04H/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04H/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04H/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_04H/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -2563,22 +2563,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04H/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04H/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04H/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_04H/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_04H/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -2644,22 +2644,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05A/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05A/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05A/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05A/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_05A/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -2672,22 +2672,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05A/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05A/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05A/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05A/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_05A/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -2726,22 +2726,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05B/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05B/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05B/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05B/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_05B/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -2754,22 +2754,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05B/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05B/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05B/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05B/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_05B/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -2808,22 +2808,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_5C_exempted_CO2e/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_5C_exempted_CO2e/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_5C_exempted_CO2e/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_5C_exempted_CO2e/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_5C_exempted_CO2e/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -2836,22 +2836,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_5C_exempted_CO2e/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_5C_exempted_CO2e/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_5C_exempted_CO2e/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_5C_exempted_CO2e/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_5C_exempted_CO2e/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -2895,22 +2895,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05D/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05D/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05D/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05D/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_05D/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -2923,22 +2923,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05D/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05D/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05D/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05D/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_05D/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -2976,22 +2976,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05E/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05E/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05E/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05E/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_05E/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -3004,22 +3004,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05E/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05E/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05E/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05E/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_05E/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -3058,22 +3058,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05F/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05F/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05F/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05F/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_05F/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -3086,22 +3086,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05F/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05F/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05F/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_05F/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_05F/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -3241,22 +3241,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09A/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09A/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09A/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09A/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_09A/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -3269,22 +3269,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09A/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09A/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09A/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09A/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_09A/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -3356,22 +3356,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09F/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09F/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09F/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09F/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_09F/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -3384,22 +3384,22 @@
     			</input>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09F/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09F/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09F/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../BulkHFCs/section_I_2/tr_09F/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../BulkHFCs/section_I_2/tr_09F/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -4006,22 +4006,22 @@
     			</input>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11G/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11G/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11G/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11G/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_11G/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -4034,22 +4034,22 @@
     			</input>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11G/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11G/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11G/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11G/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_11G/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -4087,22 +4087,22 @@
     			</input>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11J1/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11J1/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11J1/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11J1/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_11J1/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -4115,22 +4115,22 @@
     			</input>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11J1/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11J1/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11J1/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_11J1/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_11J1/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -4196,22 +4196,22 @@
     			</input>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12A/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12A/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12A/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12A/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_12A/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -4224,22 +4224,22 @@
     			</input>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12A/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12A/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12A/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12A/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_12A/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -4282,22 +4282,22 @@
     			</input>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aA/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aA/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aA/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aA/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_12aA/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -4310,22 +4310,22 @@
     			</input>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aA/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aA/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aA/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aA/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_12aA/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -4363,22 +4363,22 @@
     			</input>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12B/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12B/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12B/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12B/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_12B/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -4391,22 +4391,22 @@
     			</input>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12B/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12B/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12B/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12B/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_12B/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -4448,22 +4448,22 @@
     			</input>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aB/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aB/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aB/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aB/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_12aB/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -4476,22 +4476,22 @@
     			</input>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aB/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aB/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aB/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_12aB/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_12aB/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -4535,22 +4535,22 @@
     			</input>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_13D/confirmation_b/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_13D/confirmation_b/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_13D/confirmation_b/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_13D/confirmation_b/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_13D/confirmation_b/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>
@@ -4563,22 +4563,22 @@
     			</input>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_13D/confirmation_c/option_1 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_13D/confirmation_c/option_2 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_13D/confirmation_c/option_3 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
     				</xsl:call-template></span>
     			</xsl:if>
     			<xsl:if test="../EquipmentHFCs/section_II_2/tr_13D/confirmation_c/option_4 = 'true'">
     				<span ><xsl:call-template name="getLabel">
-    					<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+    					<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
     				</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_13D/confirmation_c/option_4_reason"/></xsl:call-template></span>
     			</xsl:if>    			
     		</td>    		
@@ -4675,22 +4675,22 @@
 						</input>
 						<xsl:if test="../EquipmentHFCs/section_II_2/tr_11P/confirmation_b/option_1 = 'true'">
 							<span ><xsl:call-template name="getLabel">
-								<xsl:with-param name="labelName" select="'section-I-1-table-option-b1'"/>
+								<xsl:with-param name="labelName" select="'section-I-2-table-option-b1'"/>
 							</xsl:call-template></span>
 						</xsl:if>
 						<xsl:if test="../EquipmentHFCs/section_II_2/tr_11P/confirmation_b/option_2 = 'true'">
 							<span ><xsl:call-template name="getLabel">
-								<xsl:with-param name="labelName" select="'section-I-1-table-option-b2'"/>
+								<xsl:with-param name="labelName" select="'section-I-2-table-option-b2'"/>
 							</xsl:call-template></span>
 						</xsl:if>
 						<xsl:if test="../EquipmentHFCs/section_II_2/tr_11P/confirmation_b/option_3 = 'true'">
 							<span ><xsl:call-template name="getLabel">
-								<xsl:with-param name="labelName" select="'section-I-1-table-option-b3'"/>
+								<xsl:with-param name="labelName" select="'section-I-2-table-option-b3'"/>
 							</xsl:call-template></span>
 						</xsl:if>
 						<xsl:if test="../EquipmentHFCs/section_II_2/tr_11P/confirmation_b/option_4 = 'true'">
 							<span ><xsl:call-template name="getLabel">
-								<xsl:with-param name="labelName" select="'section-I-1-table-option-b4'"/>
+								<xsl:with-param name="labelName" select="'section-I-2-table-option-b4'"/>
 							</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_11P/confirmation_b/option_4_reason"/></xsl:call-template></span>
 						</xsl:if>    			
 					</td>
@@ -4703,22 +4703,22 @@
 						</input>
 						<xsl:if test="../EquipmentHFCs/section_II_2/tr_11P/confirmation_c/option_1 = 'true'">
 							<span ><xsl:call-template name="getLabel">
-								<xsl:with-param name="labelName" select="'section-I-1-table-option-c1'"/>
+								<xsl:with-param name="labelName" select="'section-I-2-table-option-c1'"/>
 							</xsl:call-template></span>
 						</xsl:if>
 						<xsl:if test="../EquipmentHFCs/section_II_2/tr_11P/confirmation_c/option_2 = 'true'">
 							<span ><xsl:call-template name="getLabel">
-								<xsl:with-param name="labelName" select="'section-I-1-table-option-c2'"/>
+								<xsl:with-param name="labelName" select="'section-I-2-table-option-c2'"/>
 							</xsl:call-template></span>
 						</xsl:if>
 						<xsl:if test="../EquipmentHFCs/section_II_2/tr_11P/confirmation_c/option_3 = 'true'">
 							<span ><xsl:call-template name="getLabel">
-								<xsl:with-param name="labelName" select="'section-I-1-table-option-c3'"/>
+								<xsl:with-param name="labelName" select="'section-I-2-table-option-c3'"/>
 							</xsl:call-template></span>
 						</xsl:if>
 						<xsl:if test="../EquipmentHFCs/section_II_2/tr_11P/confirmation_c/option_4 = 'true'">
 							<span ><xsl:call-template name="getLabel">
-								<xsl:with-param name="labelName" select="'section-I-1-table-option-c4'"/>
+								<xsl:with-param name="labelName" select="'section-I-2-table-option-c4'"/>
 							</xsl:call-template></span><br></br><span><xsl:call-template name="getValue"><xsl:with-param name="elem" select="../EquipmentHFCs/section_II_2/tr_13D/confirmation_c/option_4_reason"/></xsl:call-template></span>
 						</xsl:if>    			
 					</td>    		
