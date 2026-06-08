@@ -1036,103 +1036,131 @@ declare function xmlconv:getDouble($elem) as xs:double {
     End of rules
 :)
 
+declare function xmlconv:safe-doc($url as xs:string) as document-node()? {
+    if (fn:doc-available($url)) then fn:doc($url) else ()
+};
+
 declare function xmlconv:validateReport($url as xs:string)
 as element(div)
 {
-    let $doc := fn:doc($url)/Verification
-
-    (:let $rStatus := xmlconv:rule_ReportStatus($doc):)
-    (: for NIL reports only return the status check :)
-    let $nilReport := xmlconv:is-NIL-Report($doc)
-
-    (:let $nilReport := false():)
-    
-    let $resultDiv :=
-        if(not($nilReport))
-        then
-            let $r3006 := xmlconv:qc3006($doc)
-            let $r3007 := xmlconv:qc3007($doc)
-            let $r3008 := xmlconv:qc3008($doc)
-            let $r3009 := xmlconv:qc3009($doc)
-            let $r3010 := xmlconv:qc3010($doc)
-            let $r3011 := xmlconv:qc3011($doc)
-            let $r3012 := xmlconv:qc3012($doc)
-            let $r3000 := xmlconv:qc3000($doc)
-            let $r3001 := xmlconv:qc3001($doc)
-            let $r3002 := xmlconv:qc3002($doc)
-            let $r3003 := xmlconv:qc3003($doc)
-            let $r3004 := xmlconv:qc3004($doc)
-            let $r3005 := xmlconv:qc3005($doc)
-            let $r3026 := xmlconv:qc3026($doc)
-            let $r3027 := xmlconv:qc3027($doc)
-            let $r3028 := xmlconv:qc3028($doc)
-            let $r3029 := xmlconv:qc3029($doc)
-            let $r3013 := xmlconv:qc3013($doc)
-            let $r3014 := xmlconv:qc3014($doc)
-            let $r3015 := xmlconv:qc3015($doc)
-            let $r3016 := xmlconv:qc3016($doc)
-            let $r3018 := xmlconv:qc3018($doc)
-            let $r3017 := xmlconv:qc3017($doc)
-            let $r3019 := xmlconv:qc3019($doc)
-            let $r3020 := xmlconv:qc3020($doc)
-            let $r3021 := xmlconv:qc3021($doc)
-            let $r3022 := xmlconv:qc3022($doc)
-            let $r3023 := xmlconv:qc3023($doc)
-            let $r3024 := xmlconv:qc3024($doc)
-            let $r3025 := xmlconv:qc3025($doc)            
-            let $r3030 := xmlconv:qc3030($doc)
-            let $r3031 := xmlconv:qc3031($doc)
-            let $r3032 := xmlconv:qc3032($doc)
-           (: let $r3033 := xmlconv:qc3033($doc):)
-
-            return
-                <div class="errors">
-                    <!--{$rStatus}-->
-                    {$r3006}
-                    {$r3007}
-                    {$r3008}
-                    {$r3009}
-                    {$r3010}
-                    {$r3011}
-                    {$r3012}
-                    {$r3000}
-                    {$r3001}
-                    {$r3002}
-                    {$r3003}
-                    {$r3004}
-                    {$r3005}
-                    {$r3026}
-                    {$r3027}
-                    {$r3028}
-                    {$r3029}
-                    {$r3013}
-                    {$r3014}
-                    {$r3015}
-                    {$r3016}
-                    {$r3017}
-                    {$r3018}
-                    {$r3019}
-                    {$r3020}
-                    {$r3021}
-                    {$r3022}
-                    {$r3023}
-                    {$r3024}
-                    {$r3025}
-                    {$r3030}
-                    {$r3031}
-                    {$r3032}
-                   
-                    
-
-                </div>
+  (: 1) Safe document load :)
+  let $doc-node := if (fn:doc-available($url)) then fn:doc($url) else ()
+  return
+    (: 2) Documento not available → 0000 BLOCKER :)
+    if (empty($doc-node)) then
+      <div class="errors">
+        {
+          uiutil:buildRuleResult(
+            "0000",
+            "",
+            concat("Source not available or connection error: ", cutil:getCleanUrl($url)),
+            $xmlconv:BLOCKER,
+            true(),
+            (),
+            ""
+          )
+        }
+      </div>
+    else
+      (: 3) Root not found → 0001 BLOCKER :)
+      let $doc := $doc-node/Verification
+      return
+        if (empty($doc)) then
+          <div class="errors">
+            {
+              uiutil:buildRuleResult(
+                "0001",
+                "",
+                "Root element <Verification> not found.",
+                $xmlconv:BLOCKER,
+                true(),
+                (),
+                ""
+              )
+            }
+          </div>
         else
-            <div>
-                
-                    <!--{$rStatus}-->
-            </div>
-
-    return $resultDiv
-
+          (: 4) Correct document and root :)
+          (:let $rStatus := xmlconv:rule_ReportStatus($doc):)
+          (: for NIL reports only return the status check :)
+          let $nilReport := xmlconv:is-NIL-Report($doc)
+          let $resultDiv :=
+            if (not($nilReport)) then
+              let $r3006 := xmlconv:qc3006($doc)
+              let $r3007 := xmlconv:qc3007($doc)
+              let $r3008 := xmlconv:qc3008($doc)
+              let $r3009 := xmlconv:qc3009($doc)
+              let $r3010 := xmlconv:qc3010($doc)
+              let $r3011 := xmlconv:qc3011($doc)
+              let $r3012 := xmlconv:qc3012($doc)
+              let $r3000 := xmlconv:qc3000($doc)
+              let $r3001 := xmlconv:qc3001($doc)
+              let $r3002 := xmlconv:qc3002($doc)
+              let $r3003 := xmlconv:qc3003($doc)
+              let $r3004 := xmlconv:qc3004($doc)
+              let $r3005 := xmlconv:qc3005($doc)
+              let $r3026 := xmlconv:qc3026($doc)
+              let $r3027 := xmlconv:qc3027($doc)
+              let $r3028 := xmlconv:qc3028($doc)
+              let $r3029 := xmlconv:qc3029($doc)
+              let $r3013 := xmlconv:qc3013($doc)
+              let $r3014 := xmlconv:qc3014($doc)
+              let $r3015 := xmlconv:qc3015($doc)
+              let $r3016 := xmlconv:qc3016($doc)
+              let $r3018 := xmlconv:qc3018($doc)
+              let $r3017 := xmlconv:qc3017($doc)
+              let $r3019 := xmlconv:qc3019($doc)
+              let $r3020 := xmlconv:qc3020($doc)
+              let $r3021 := xmlconv:qc3021($doc)
+              let $r3022 := xmlconv:qc3022($doc)
+              let $r3023 := xmlconv:qc3023($doc)
+              let $r3024 := xmlconv:qc3024($doc)
+              let $r3025 := xmlconv:qc3025($doc)
+              let $r3030 := xmlconv:qc3030($doc)
+              let $r3031 := xmlconv:qc3031($doc)
+              let $r3032 := xmlconv:qc3032($doc)
+              return
+              <div class="errors">
+                <!--{$rStatus}-->
+                {$r3006}
+                {$r3007}
+                {$r3008}
+                {$r3009}
+                {$r3010}
+                {$r3011}
+                {$r3012}
+                {$r3000}
+                {$r3001}
+                {$r3002}
+                {$r3003}
+                {$r3004}
+                {$r3005}
+                {$r3026}
+                {$r3027}
+                {$r3028}
+                {$r3029}
+                {$r3013}
+                {$r3014}
+                {$r3015}
+                {$r3016}
+                {$r3017}
+                {$r3018}
+                {$r3019}
+                {$r3020}
+                {$r3021}
+                {$r3022}
+                {$r3023}
+                {$r3024}
+                {$r3025}
+                {$r3030}
+                {$r3031}
+                {$r3032}
+              </div>
+            else
+              <div>
+                <!--{$rStatus}-->
+              </div>
+          return $resultDiv
 };
 
 declare function xmlconv:getMostCriticalErrorClass($ruleResults as element()?)
