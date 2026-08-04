@@ -775,7 +775,9 @@ as element(div)*
     let $pathII4 := $report/EquipmentHFCs/section_II_4
     let $errorText := 'Please enter a comment for Option 1 in Part 1 in Section II-4.'
 
-    return if ((xmlconv:getDouble($checkpath/tco2e) = 0 or ($pathII2/confirmation_c/checked = "true")) and $pathII4/option_a/option = "1" and string-length($pathII4/option_a/reason_1) = 0) then
+    return if ((xmlconv:getDouble($checkpath/tco2e) = 0 or ($pathII2/confirmation_c/checked = "true")) 
+        and $pathII4/option_a/option = "1" 
+        and string-length($pathII4/option_a/reason_1) = 0) then
         uiutil:buildRuleResult("3018", "", $errorText, $xmlconv:BLOCKER, true(), (), "")
     else()
 };
@@ -788,7 +790,9 @@ as element(div)*
     let $pathII4 := $report/EquipmentHFCs/section_II_4
     let $errorText := 'Please enter a comment for Option 2 in Part 1 in Section II-4.'
 
-    return if (xmlconv:getDouble($checkpath/tco2e) = 0 and $pathII4/option_a/option = "2" and string-length($pathII4/option_a/reason_2) = 0) then
+    return if (xmlconv:getDouble($checkpath/tco2e) <= 0 
+        and $pathII4/option_a/option = "2" 
+        and string-length($pathII4/option_a/reason_2) = 0) then
         uiutil:buildRuleResult("3019", "", $errorText, $xmlconv:BLOCKER, true(), (), "")
     else()
 };
@@ -802,7 +806,8 @@ as element(div)*
     let $pathII4 := $report/EquipmentHFCs/section_II_4
     let $errorText := 'Please enter a comment for Option 3 in Part 1 in Section II-4.'
 
-    return if (xmlconv:getDouble($checkpath/tco2e) = 0 and ($pathII2/confirmation_a/checked = "true" or $pathII2/confirmation_b/checked = "true" ) and $pathII4/option_a/option = "3" and string-length($pathII4/option_a/reason_3) = 0) then
+    return if (xmlconv:getDouble($checkpath/tco2e) > 0 and (($pathII2/confirmation_a/checked = "true" or $pathII2/confirmation_b/checked = "true" ))
+     and $pathII4/option_a/option = "3" and string-length($pathII4/option_a/reason_3) = 0) then
         uiutil:buildRuleResult("3020", "", $errorText, $xmlconv:BLOCKER, true(), (), "")
     else()
 };
@@ -833,8 +838,11 @@ as element(div)*
     let $pathII4 := $report/EquipmentHFCs/section_II_4
     let $errorText := 'Please enter a comment for Option 1 in in Part 2 Section II-4.'
 
-    return if (((xmlconv:getDouble($checkpath/tco2e) = 0 and xmlconv:getDouble($checkpath2/tco2e) = 0) or ($pathII2/confirmation_c/checked = "true")or ($pathII3/confirmation_c/checked = "true")) and $pathII4/option_b/option = "1" and string-length($pathII4/option_b/reason_1) = 0) then
-        uiutil:buildRuleResult("3022", "", $errorText, $xmlconv:BLOCKER, true(), (), "")
+    return if (((xmlconv:getDouble($checkpath/tco2e) = 0 and xmlconv:getDouble($checkpath2/tco2e) = 0) 
+        or (($pathII2/confirmation_c/checked = "true")or ($pathII3/confirmation_c/checked = "true"))) 
+        and $pathII4/option_b/option = "1" 
+        and string-length($pathII4/option_b/reason_1) = 0) then
+        uiutil:buildRuleResult("3022", "", concat($errorText,'::',$pathII4/option_b/option), $xmlconv:BLOCKER, true(), (), "")
     else()
 };
 
@@ -847,7 +855,9 @@ as element(div)*
     let $pathII4 := $report/EquipmentHFCs/section_II_4
     let $errorText := 'Please enter a comment for Option 2 in Part 2 in Section II-4.'
 
-    return if ((xmlconv:getDouble($checkpath/tco2e) = 0 and xmlconv:getDouble($checkpath2/tco2e)=0) and $pathII4/option_b/option = "2" and string-length($pathII4/option_b/reason_2) < 5) then
+    return if ((xmlconv:getDouble($checkpath/tco2e) = 0 and xmlconv:getDouble($checkpath2/tco2e)=0) 
+        and $pathII4/option_b/option = "2" 
+        and string-length($pathII4/option_b/reason_2) < 5) then
         uiutil:buildRuleResult("3023", "", $errorText, $xmlconv:BLOCKER, true(), (), "")
     else()
 };
@@ -900,13 +910,18 @@ declare function xmlconv:qc3030($report as element())
 as element(div)*
 {
     let $checkpath := $report/ReportedEquipment/Transactions[id = 'tr_12aA']
-    let $checkpath2 := $report/ReportedEquipment/Transactions[id = 'tr_12B']
+    let $checkpath2 := $report/ReportedEquipment/Transactions[id = 'tr_12aB']
     let $pathII2 := $report/EquipmentHFCs/section_II_2/tr_12aA
-    let $pathII3 := $report/EquipmentHFCs/section_II_2/tr_12B
+    let $pathII3 := $report/EquipmentHFCs/section_II_2/tr_12aB
     let $pathII4 := $report/EquipmentHFCs/section_II_4
     let $errorText := 'Please enter a comment explaining your choice of Yes in in Part 2 Section II-4.'
 
-    return if (((xmlconv:getDouble($checkpath/tco2e) = 0 and xmlconv:getDouble($checkpath2/tco2e) = 0) or ($pathII2/confirmation_c/checked = "true")or ($pathII3/confirmation_c/checked = "true")) and $pathII4/option_c/option = "1" and string-length($pathII4/option_c/reason_1) = 0) then
+    return if (
+        (xmlconv:getDouble($checkpath/tco2e) = 0 and xmlconv:getDouble($checkpath2/tco2e) = 0) 
+        or (($pathII2/confirmation_c/checked = "true")
+        or ($pathII3/confirmation_c/checked = "true")) 
+        and $pathII4/option_c/option = "1" 
+        and string-length($pathII4/option_c/reason_1) = 0) then
         uiutil:buildRuleResult("3030", "", $errorText, $xmlconv:BLOCKER, true(), (), "")
     else()
 };
@@ -919,7 +934,9 @@ as element(div)*
     let $pathII4 := $report/EquipmentHFCs/section_II_4
     let $errorText := 'Please enter a comment explaining your choice of No in in Part 2 Section II-4..'
 
-    return if ((xmlconv:getDouble($checkpath/tco2e) = 0 and xmlconv:getDouble($checkpath2/tco2e)=0) and $pathII4/option_c/option = "2" and string-length($pathII4/option_c/reason_2) < 5) then
+    return if ((xmlconv:getDouble($checkpath/tco2e) = 0 and xmlconv:getDouble($checkpath2/tco2e)=0) 
+        and $pathII4/option_c/option = "2" 
+        and string-length($pathII4/option_c/reason_2) < 5) then
         uiutil:buildRuleResult("3031", "", $errorText, $xmlconv:BLOCKER, true(), (), "")
     else()
 };
