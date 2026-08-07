@@ -917,11 +917,19 @@ as element(div)*
     let $errorText := 'Please enter a comment explaining your choice of Yes in in Part 2 Section II-4.'
 
     return if (
-        (xmlconv:getDouble($checkpath/tco2e) = 0 and xmlconv:getDouble($checkpath2/tco2e) = 0) 
-        or (($pathII2/confirmation_c/checked = "true")
-        or ($pathII3/confirmation_c/checked = "true")) 
-        and $pathII4/option_c/option = "1" 
-        and string-length($pathII4/option_c/reason_1) = 0) then
+        ($report/VerificationScope/Equipment="true")
+        and (
+            (
+                (xmlconv:getDouble($checkpath/tco2e) = 0 and xmlconv:getDouble($checkpath2/tco2e) = 0) 
+                or (
+                    ($pathII2/confirmation_c/checked = "true")
+                    or ($pathII3/confirmation_c/checked = "true")
+                ) 
+            )
+            and $pathII4/option_c/option = "1" 
+            and string-length($pathII4/option_c/reason_1) = 0
+        )
+    ) then
         uiutil:buildRuleResult("3030", "", $errorText, $xmlconv:BLOCKER, true(), (), "")
     else()
 };
