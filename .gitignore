@@ -1,5 +1,7 @@
 ﻿node_modules/
 dist/
+build/
+bower_components/
 .angular/
 coverage/
 npm-debug.log*

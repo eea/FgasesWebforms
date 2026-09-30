@@ -7,17 +7,17 @@ BUILD_DIR = 'build'
 DEST_DIR = 'dist'
 DEST_ZIP_FILE = DEST_DIR + '/out.zip'
 PROJECT_META_FILE = 'webform-project-export.metadata'
-PROD_SCHEMA_URL = 'http://dd.eionet.europa.eu/schemas/fgases-2025/FGasesReporting.xsd'
+PROD_SCHEMA_URL = 'http://dd.eionet.europa.eu/schemas/fgases-2026/FGasesReporting.xsd'
 
 
 def createFormFileMetadata(filename, isTestDeployment, projectName):
 	template = """{
-        "title": "Fluorinated gases (F-Gases) (Article 19) (Transaction Year 2025)",
+        "title": "Fluorinated gases (F-Gases) (Article 19) (Transaction Year 2026)",
         "file": {
             "name": "%(filename)s"
         },
         "newXmlFileName": "fgases.xml",
-        "emptyInstanceUrl": "https://%(webqHost)s/download/project/%(projectName)s/file/fgases-instance-empty-2025.xml",
+        "emptyInstanceUrl": "https://%(webqHost)s/download/project/%(projectName)s/file/fgases-instance-empty-2026.xml",
         "xmlSchema": "%(xmlSchema)s",
         "active": true,
         "localForm": %(isLocal)s,
@@ -79,7 +79,7 @@ def createFileMetadata(filename, isTestDeployment, projectName):
 
 def copyResources(isTestDeployment, projectName):
     resources = [
-            '../xml/fgases-labels-2025-en.xml',
+            '../xml/fgases-labels-2026-en.xml',
             '../xml/fgases-gases.xml',         
     ]
 
@@ -87,7 +87,7 @@ def copyResources(isTestDeployment, projectName):
         resources.extend(listTestResources())
     else:
             resources.extend([           
-            '../xml/fgases-instance-empty-2025.xml'
+            '../xml/fgases-instance-empty-2026.xml'
         ])
 
     for resource in resources:
@@ -105,7 +105,7 @@ def listTestResources():
     ]
 
 def copyEmptyInstanceForTest(projectName):
-    with open('../xml/fgases-instance-empty-2025.xml') as source, open(BUILD_DIR + '/fgases-instance-empty-2025.xml', 'w') as dest:
+    with open('../xml/fgases-instance-empty-2026.xml') as source, open(BUILD_DIR + '/fgases-instance-empty-2026.xml', 'w') as dest:
         for line in source:
             destLine = line.replace(PROD_SCHEMA_URL, composeTestSchemaUrl(projectName))
             dest.write(destLine)

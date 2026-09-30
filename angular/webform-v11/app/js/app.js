@@ -134,7 +134,7 @@
 
     app.config(function(languageChangerProvider) {
         languageChangerProvider.setDefaultLanguage('en');
-        languageChangerProvider.setLanguageFilePrefix('fgases-labels-2025-');
+        languageChangerProvider.setLanguageFilePrefix('fgases-labels-2026-');
         languageChangerProvider.setAvailableLanguages({ "item" :[{
             "code": "bg",
             "label": "Български (bg)"}, {

@@ -32,7 +32,7 @@
             };
 
             DataProxy.prototype.getEmptyInstance = function() {
-                var url = 'fgases-instance-empty-2025.xml?format=json';
+                var url = 'fgases-instance-empty-2026.xml?format=json';
                 return $http.get(url, {tracker : $rootScope.loadingTracker});
             };
 
