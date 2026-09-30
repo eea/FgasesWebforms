@@ -1,0 +1,77 @@
+<!-- html subform [ng-form="Sheet2a"] -->
+<div data-name="Sheet2aSection5">
+    <h2><span data-translate="sheet2a.section5a-heading"></span></h2>
+    <p><span data-translate="sheet2a.section5a-info1"></span></p>
+    <table class="table table-hover table-bordered fixed-table">
+        <colgroup>
+            <col class="fixed-width-gas-transaction" />
+            <col class="fixed-width-gas-amount" ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" ng-if="containsHFC(reportedGas)" />
+        </colgroup>
+        <tr>
+            <th class="fixed-width-gas-transaction"><span data-translate="common.sheet-transactions-header"></span></th>
+            <th ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center" ng-if="containsHFC(reportedGas)">
+                <div align="center" ng-switch="reportedGas.IsCustomComposition">
+                    <span ng-switch-when="true">{{'common.mixture' | translate}} ({{reportedGas.Name}})</span>
+                    <span ng-switch-default>{{reportedGas.Name}}</span>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+            <th ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center" ng-if="containsHFC(reportedGas)">
+                <div align="center"><span data-translate="common.unit"></span></div>
+            </th>
+        </tr>
+        <!-- Field 5aD Start -->
+        <tr>
+            <td>
+                <span class="transaction-code">5aD : </span>
+                <span data-translate="sheet2a.tr-05aD-desc"></span>
+            </td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center" ng-if="containsHFC(reportedGas)">
+                <input gas-input ng-model="instance.FGasesReporting.F2a_S5a_exempted_HFCs.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_05aD.Amount"
+                       ng-if="instance.FGasesReporting.GeneralReportData.Activities['RQ']" />
+                <div ng-if="!instance.FGasesReporting.GeneralReportData.Activities['RQ']">
+                    <input ng-disabled="true" ng-class="'disabled'" />
+                    <span data-tooltip="{{'sheet2a.tr-05a-warningIcon' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                </div>
+            </td>
+        </tr>
+        <!-- Field 5aD End -->
+        <!-- Field 5aE Start -->
+        <tr>
+            <td>
+                <span class="transaction-code">5aE : </span>
+                <span data-translate="sheet2a.tr-05aE-desc"></span>
+            </td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center" ng-if="containsHFC(reportedGas)">
+                <input gas-input ng-model="instance.FGasesReporting.F2a_S5a_exempted_HFCs.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_05aE.Amount"
+                       ng-if="instance.FGasesReporting.GeneralReportData.Activities['RQ']" />
+                <div ng-if="!instance.FGasesReporting.GeneralReportData.Activities['RQ']">
+                    <input ng-disabled="true" ng-class="'disabled'" />
+                    <span data-tooltip="{{'sheet2a.tr-05a-warningIcon' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                </div>
+            </td>
+        </tr>
+        <!-- Field 5aE End -->
+        <!-- Field 5aF Start -->
+        <tr>
+            <td>
+                <span class="transaction-code">5aF : </span>
+                <span data-translate="sheet2a.tr-05aF-desc"></span>
+            </td>
+            <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center" ng-if="containsHFC(reportedGas)">
+                <input gas-input ng-model="instance.FGasesReporting.F2a_S5a_exempted_HFCs.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_05aF.Amount"
+                       ng-if="instance.FGasesReporting.GeneralReportData.Activities['RH']" />
+                <div ng-if="!instance.FGasesReporting.GeneralReportData.Activities['RH']">
+                    <input ng-disabled="true" ng-class="'disabled'" />
+                    <span data-tooltip="{{'sheet2a.tr-05aF-warningIcon' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
+                </div>
+            </td>
+        </tr>
+        <!-- Field 5aF End -->
+    </table>
+</div>
+
+    <!-- end of div name="Sheet2aSection5" -->
+<!-- end of html subform [ng-form="Sheet2a"] -->
