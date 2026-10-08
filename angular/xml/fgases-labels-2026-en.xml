@@ -571,6 +571,12 @@
 			<tr-09g-desc>Quota available in HFC registry on the date indicated below to cover the need of quota calculated in [9F]</tr-09g-desc>
 			<tr-09g-desc-tail>Date of HFC registry extract for 9G: {{ date }}</tr-09g-desc-tail>
 			<tr-09g-formula>[9G = Quota allocated + quota transfers received - quota transferred (all quota transactions in HFC registry)]</tr-09g-formula>
+			<tr-09h-desc></tr-09h-desc>
+			<tr-09h-formula>[9H = 9H1 + 9H2]</tr-09h-formula>
+			<tr-09h1-desc>HFC amounts released for free circulation recorded at customs</tr-09h1-desc>
+			<tr-09h1-desc-tail>Date of HFC registry extract for 9H1: {{ date }}</tr-09h1-desc-tail>
+			<tr-09h2-desc>Deviation of customs data from 9F reported quota need</tr-09h2-desc>
+			<tr-09h2-formula>[9H2 = 9H1 – 9F]</tr-09h2-formula>
 			<tr-nil_report>Nil report: To be completed by undertakings that have been allocated quota pursuant to Article 17(4) of Regulation (EU) 2024/573, or have received quotas pursuant to Article 21(1) of that Regulation but have not placed any quantities of hydrofluorocarbons on the market during the calendar year for which the report is submitted.</tr-nil_report>
 			<tr-nil_report-check>I confirm the absence of activities to be reported for hydrofluorocarbons in sections 1A, 2A, 2G, 4C or 9A.</tr-nil_report-check>
 			<tr-nilReport-tooltip>Undertakings that report no hydrofluorocarbons (gases listed in Section 1 of Annex I to Regulation (EU) 2024/573 or mixtures containing at least one of those gases) placed on the Union market in Section 4M shall confirm the absence of related activities.</tr-nilReport-tooltip>

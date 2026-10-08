@@ -12862,6 +12862,67 @@
 						</td>
 
 					</tr>
+					<tr>
+						<th class="padding-left-1em">
+							<span>9H : </span>
+							<xsl:call-template name="getLabel">
+								<xsl:with-param name="labelName" select="'tr-09h-desc'"/>
+							</xsl:call-template>
+							<br/>
+							<span class="formula">
+								<xsl:call-template name="getLabel">
+									<xsl:with-param name="labelName" select="'tr-09h-formula'"/>
+								</xsl:call-template>
+							</span>
+						</th>
+
+						<td class="total">
+							<xsl:call-template name="formatValue"><xsl:with-param name="num" select="tr_09H/Amount"/></xsl:call-template>
+						</td>
+
+					</tr>
+					<tr>
+						<th class="padding-left-2em">
+							<span>9H1 : </span>
+
+							<xsl:call-template name="getLabel">
+								<xsl:with-param name="labelName" select="'tr-09h1-desc'"/>
+							</xsl:call-template>
+							<br/>
+							<xsl:variable name="tr-09h1-desc-tail">
+								<xsl:call-template name="getLabel">
+									<xsl:with-param name="labelName" select="'tr-09h1-desc-tail'"/>
+								</xsl:call-template>
+							</xsl:variable>
+							<i>
+								<xsl:value-of select="replace(string($tr-09h1-desc-tail), '\{\{ date \}\}', string(tr_09H1/Comment) )"/>
+							</i>
+						</th>
+
+						<td class="total">
+							<xsl:call-template name="formatValue"><xsl:with-param name="num" select="tr_09H1/Amount"/></xsl:call-template>
+						</td>
+
+					</tr>
+					<tr>
+						<th class="padding-left-2em">
+							<span>9H2 : </span>
+							<xsl:call-template name="getLabel">
+								<xsl:with-param name="labelName" select="'tr-09h2-desc'"/>
+							</xsl:call-template>
+							<br/>
+							<span class="formula">
+								<xsl:call-template name="getLabel">
+									<xsl:with-param name="labelName" select="'tr-09h2-formula'"/>
+								</xsl:call-template>
+							</span>
+						</th>
+
+						<td class="total">
+							<xsl:call-template name="formatValue"><xsl:with-param name="num" select="tr_09H2/Amount"/></xsl:call-template>
+						</td>
+
+					</tr>
 				</tbody>
 			</table>
 

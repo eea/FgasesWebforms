@@ -701,7 +701,10 @@
           <xs:element name="tr_09D" type="CodeAmount" />
           <xs:element name="tr_09E" type="CodeAmount" />
           <xs:element name="tr_09F" type="CodeAmount" /> 
-          <xs:element name="tr_09G" type="CodeAmount" /> 
+          <xs:element name="tr_09G" type="CodeAmount" />
+          <xs:element name="tr_09H" type="CodeAmount" /> 
+          <xs:element name="tr_09H1" type="CodeAmount" /> 
+          <xs:element name="tr_09H2" type="CodeAmount" /> 
           <xs:element name="tr_5C_exempted_CO2e" type="CodeAmount"
             minOccurs="1" maxOccurs="1" />
           <xs:element name="NilReportConfirmed" type="xs:string" />

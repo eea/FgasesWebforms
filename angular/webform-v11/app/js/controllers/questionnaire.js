@@ -314,9 +314,12 @@
                 var section9Data = $scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata;
                 jsonNormalizer.normalizeObjectProperty(section9Data, 'tr_09A_imp_date');
                 jsonNormalizer.normalizeObjectProperty(section9Data, 'tr_09G');
+                jsonNormalizer.normalizeObjectProperty(section9Data, 'tr_09H1');
                 section9Data.tr_09A_imp_date = quota.allocatedQuotaDate;
                 section9Data.tr_09G.Amount = quota.availableQuota;
                 section9Data.tr_09G.Comment = quota.availableQuotaDate;
+                section9Data.tr_09H1.Amount = quota.availableQuota;
+                section9Data.tr_09H1.Comment = quota.availableQuotaDate;
                 viewModel.initCompanyQuota(quota);
 
                 while (section9Data.tr_09A_imp_TradePartners.Partner.length > 0) {
@@ -630,7 +633,7 @@
                         },
                         {
                             'form': 'F4_S9_IssuedAuthQuata',
-                            'rows': ['tr_09A', 'tr_09A_add', 'tr_09B', 'tr_09C', 'tr_09D', 'tr_09E', 'tr_09F']
+                            'rows': ['tr_09A', 'tr_09A_add', 'tr_09B', 'tr_09C', 'tr_09D', 'tr_09E', 'tr_09F', 'tr_09H']
                         }                        ]
                     }]
                 },
@@ -727,7 +730,7 @@
                         fields: [{
                             form: 'F4_S9_IssuedAuthQuata',
                             subForm: null,
-                            rows: ['tr_09A', 'tr_09A_add', 'tr_09B', 'tr_09C', 'tr_09D', 'tr_09E', 'tr_09F']
+                            rows: ['tr_09A', 'tr_09A_add', 'tr_09B', 'tr_09C', 'tr_09D', 'tr_09E', 'tr_09F', 'tr_09H']
                         }]
                     }],
                     onPostExecute: function(instance) {
@@ -743,7 +746,7 @@
                         'fields': [
                         {
                             'form': 'F4_S9_IssuedAuthQuata',
-                            'rows': ['tr_09A', 'tr_09A_add', 'tr_09B', 'tr_09C', 'tr_09D', 'tr_09E', 'tr_09F']
+                            'rows': ['tr_09A', 'tr_09A_add', 'tr_09B', 'tr_09C', 'tr_09D', 'tr_09E', 'tr_09F', 'tr_09H']
                         }]
                     }],
                     
@@ -1954,6 +1957,8 @@
                 section9Data.tr_09A.SumOfPartnerAmounts = $scope.getValueForReportedGasAmount(section9Data.tr_09A_imp) + $scope.getValueForReportedGasAmount(section9Data.tr_09A_add);
                 $scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09C.Amount = $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09B) + $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09A);
                 $scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09F.Amount = $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09E) + $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09A);
+                $scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H.Amount = $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H1) + $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H2);
+                $scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H2.Amount = $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H1) - $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09F);
             }; //end of function calculate9ADependingFields
 
             $scope.onTr07AChange = function(gasIndex) {

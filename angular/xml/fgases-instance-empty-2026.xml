@@ -739,7 +739,19 @@
 			<tr_09G>
 				<Code>09G</Code>
 				<Amount />
-			</tr_09G>		
+			</tr_09G>
+			<tr_09H>
+				<Code>09H</Code>
+				<Amount />
+			</tr_09H>	
+			<tr_09H1>
+				<Code>09H1</Code>
+				<Amount />
+			</tr_09H1>	
+			<tr_09H2>
+				<Code>09H2</Code>
+				<Amount />
+			</tr_09H2>			
 			<tr_5C_exempted_CO2e>
 				<Code>5C_exempted_CO2e</Code>
 				<Amount />
