@@ -83,9 +83,7 @@
           <td class="text-center"><span>{{ tr_13Ca() | thousandSeparator }}</span></td>
       </tr>
       <!-- 13Ca ends here-->
-
-
-
+      <!-- 13D stars here-->
       <tr>
           <td>
               <span class="transaction-code">13D : </span>
@@ -95,6 +93,38 @@
           </td>
           <td class="text-center"><span>{{ tr_13d() | thousandSeparator }}</span></td>
       </tr>
+      <!-- 13D ends here-->
+      <!-- 13E stars here-->
+      <tr>
+          <td>
+              <span class="transaction-code">13E : </span>
+              <span data-translate="sheet9.tr-13e-desc"></span>
+          </td>
+          <td class="text-center"></td>
+      </tr>
+      <!-- 13E ends here-->
+      <!-- 13E1 stars here-->
+      <tr>
+          <td style="padding-left: 2em;">
+              <span class="transaction-code">13E1 : </span>
+              <span data-translate="sheet9.tr-13e1-desc"></span>
+              <div><span class="hint" data-translate="sheet9.tr-13e1-desc-tail" data-translate-values="{ date: authorisationData.authorisation.ExtractDate }"></span></div>
+          </td>
+          <td class="text-center"><span>{{ tr_13e1() | thousandSeparator }}</span></td>
+      </tr>
+      <!-- 13E1 ends here-->
+      <!-- 13E2 stars here-->
+      <tr>
+          <td style="padding-left: 2em;">
+              <span class="transaction-code">13E2 : </span>
+              <span data-translate="sheet9.tr-13e2-desc"></span>
+              <div><span class="formula" data-translate="sheet9.tr-13e2-formula"></span></div>
+          </td>
+          <td class="text-center"><span>{{ tr_13e2() | thousandSeparator }}</span></td>
+      </tr>
+      <!-- 13E2 ends here-->
+
+
       <tr ng-switch="instance.FGasesReporting.F9_S13.Totals.tr_13Bb.Amount >= 1000">
           <td colspan="2">
               <label>

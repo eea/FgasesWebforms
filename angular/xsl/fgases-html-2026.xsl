@@ -1963,6 +1963,61 @@
 					</td>
 				</tr>
 				<tr>
+					<td class="code">
+						<span>13E : </span>
+						<xsl:call-template name="getLabel">
+							<xsl:with-param name="labelName" select="'tr-13e-desc'"/>
+						</xsl:call-template>
+					</td>
+
+					<td class="total">
+						
+					</td>
+
+				</tr>
+				<tr>
+					<td class="code padding-left-1em">
+						<span>13E1 : </span>
+
+						<xsl:call-template name="getLabel">
+							<xsl:with-param name="labelName" select="'tr-013e1-desc'"/>
+						</xsl:call-template>
+						<br/>
+						<xsl:variable name="tr-13e1-desc-tail">
+							<xsl:call-template name="getLabel">
+								<xsl:with-param name="labelName" select="'tr-13e1-desc-tail'"/>
+							</xsl:call-template>
+						</xsl:variable>
+						<i>
+							<xsl:value-of select="replace(string($tr-13e1-desc-tail), '\{\{ date \}\}', string(tr_13E1/Comment) )"/>
+						</i>
+					</td>
+
+					<td class="tdColorBlue total">
+						<xsl:call-template name="formatValue"><xsl:with-param name="num" select=".[name() = 'F9_S13']/Totals/tr_13E1/Amount"/></xsl:call-template>
+					</td>
+
+				</tr>
+				<tr>
+					<td class="code padding-left-1em">
+						<span>13E2 : </span>
+						<xsl:call-template name="getLabel">
+							<xsl:with-param name="labelName" select="'tr-13e2-desc'"/>
+						</xsl:call-template>
+						<br/>
+						<span class="formula">
+							<xsl:call-template name="getLabel">
+								<xsl:with-param name="labelName" select="'tr-13e2-formula'"/>
+							</xsl:call-template>
+						</span>
+					</td>
+
+					<td class="tdColorBlue total">
+						<xsl:call-template name="formatValue"><xsl:with-param name="num" select=".[name() = 'F9_S13']/Totals/tr_13E2/Amount"/></xsl:call-template>
+					</td>
+
+				</tr>
+				<tr>
 					<td colspan="3" class="code">
 						<xsl:if test=".[name() = 'F9_S13']/Verified = 'false' or .[name() = 'F9_S13']/Verified = ''">
 							<input type="checkbox" name="13checkbox" value="false"  disabled="true" />
@@ -12868,16 +12923,10 @@
 							<xsl:call-template name="getLabel">
 								<xsl:with-param name="labelName" select="'tr-09h-desc'"/>
 							</xsl:call-template>
-							<br/>
-							<span class="formula">
-								<xsl:call-template name="getLabel">
-									<xsl:with-param name="labelName" select="'tr-09h-formula'"/>
-								</xsl:call-template>
-							</span>
 						</th>
 
 						<td class="total">
-							<xsl:call-template name="formatValue"><xsl:with-param name="num" select="tr_09H/Amount"/></xsl:call-template>
+							
 						</td>
 
 					</tr>

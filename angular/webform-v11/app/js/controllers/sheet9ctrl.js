@@ -141,6 +141,31 @@
 
         };
 
+        $scope.tr_13e1 = function () {
+            var value = $scope.instance.FGasesReporting.F9_S13.AuthBalance.Amount;
+            var finalValue = value ? parseInt(value) : ''
+            if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13E1)
+                $scope.instance.FGasesReporting.F9_S13.Totals.tr_13E1.Amount = finalValue;
+            return finalValue;
+        };
+
+        $scope.tr_13e2 = function () {
+            var tr13e2_value = 0;
+            var tr13e1_value = 0;
+            var tr13d_value = 0;
+            if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13E1)
+                tr13e1_value = parseInt($scope.instance.FGasesReporting.F9_S13.Totals.tr_13E1.Amount || 0);
+            if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13D)
+                tr13d_value = parseInt($scope.instance.FGasesReporting.F9_S13.Totals.tr_13D.Amount || 0);
+            tr13e2_value = tr13e1_value - tr13d_value;
+            if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2)
+                $scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2.Amount = tr13e2_value;
+
+            return tr13e2_value;
+
+        };
+
+
       });
 })();
 

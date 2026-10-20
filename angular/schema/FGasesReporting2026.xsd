@@ -4513,6 +4513,9 @@
                         <xs:element name="tr_13C" type="TransactionType" minOccurs="1" maxOccurs="1"/>
                         <xs:element name="tr_13Ca" type="TransactionType" minOccurs="1" maxOccurs="1"/>
                         <xs:element name="tr_13D" type="TransactionType" minOccurs="1" maxOccurs="1"/>
+                        <xs:element name="tr_13E" type="TransactionType" minOccurs="1" maxOccurs="1"/>
+                        <xs:element name="tr_13E1" type="TransactionType" minOccurs="1" maxOccurs="1"/>
+                        <xs:element name="tr_13E2" type="TransactionType" minOccurs="1" maxOccurs="1"/>
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>

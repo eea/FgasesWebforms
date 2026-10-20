@@ -700,6 +700,21 @@
           "Code": "tr_13D",
           "Amount": null,
           "Unit": "CO2e"
+        },
+        "tr_13E": {
+          "Code": "tr_13E",
+          "Amount": null,
+          "Unit": "CO2e"
+        },
+        "tr_13E1": {
+          "Code": "tr_13E1",
+          "Amount": null,
+          "Unit": "CO2e"
+        },
+        "tr_13E2": {
+          "Code": "tr_13E2",
+          "Amount": null,
+          "Unit": "CO2e"
         }
       },
       "Verified": null

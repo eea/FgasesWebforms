@@ -2889,6 +2889,21 @@
 					<Amount />
 					<Unit>CO2e</Unit>
 				</tr_13D>
+				<tr_13E>
+					<Code>tr_13E</Code>
+					<Amount />
+					<Unit>CO2e</Unit>
+				</tr_13E>
+				<tr_13E1>
+					<Code>tr_13E1</Code>
+					<Amount />
+					<Unit>CO2e</Unit>
+				</tr_13E1>
+				<tr_13E2>
+					<Code>tr_13E2</Code>
+					<Amount />
+					<Unit>CO2e</Unit>
+				</tr_13E2>
 			</Totals>
 			<Verified />
 		</F9_S13>
