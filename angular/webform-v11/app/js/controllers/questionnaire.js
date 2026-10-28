@@ -633,7 +633,7 @@
                         },
                         {
                             'form': 'F4_S9_IssuedAuthQuata',
-                            'rows': ['tr_09A', 'tr_09A_add', 'tr_09B', 'tr_09C', 'tr_09D', 'tr_09E', 'tr_09F', 'tr_09H']
+                            'rows': ['tr_09A', 'tr_09A_add', 'tr_09B', 'tr_09C', 'tr_09D', 'tr_09E', 'tr_09F']
                         }                        ]
                     }]
                 },
@@ -730,7 +730,7 @@
                         fields: [{
                             form: 'F4_S9_IssuedAuthQuata',
                             subForm: null,
-                            rows: ['tr_09A', 'tr_09A_add', 'tr_09B', 'tr_09C', 'tr_09D', 'tr_09E', 'tr_09F', 'tr_09H']
+                            rows: ['tr_09A', 'tr_09A_add', 'tr_09B', 'tr_09C', 'tr_09D', 'tr_09E', 'tr_09F']
                         }]
                     }],
                     onPostExecute: function(instance) {
@@ -746,7 +746,7 @@
                         'fields': [
                         {
                             'form': 'F4_S9_IssuedAuthQuata',
-                            'rows': ['tr_09A', 'tr_09A_add', 'tr_09B', 'tr_09C', 'tr_09D', 'tr_09E', 'tr_09F', 'tr_09H']
+                            'rows': ['tr_09A', 'tr_09A_add', 'tr_09B', 'tr_09C', 'tr_09D', 'tr_09E', 'tr_09F']
                         }]
                     }],
                     
@@ -1957,8 +1957,10 @@
                 section9Data.tr_09A.SumOfPartnerAmounts = $scope.getValueForReportedGasAmount(section9Data.tr_09A_imp) + $scope.getValueForReportedGasAmount(section9Data.tr_09A_add);
                 $scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09C.Amount = $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09B) + $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09A);
                 $scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09F.Amount = $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09E) + $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09A);
-                $scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H.Amount = $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H1) + $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H2);
                 $scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H2.Amount = $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H1) - $scope.getValueForReportedGasAmount($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09F);
+                if ($scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H2.Amount <= 0) {
+                    $scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H2.Comment = "";
+                }
             }; //end of function calculate9ADependingFields
 
             $scope.onTr07AChange = function(gasIndex) {
@@ -5875,6 +5877,24 @@
                 var tradePartnerName = viewModel.sheet4.section9.getTr09ATradePartners()[tradePartnerIndex].CompanyName;
 
                 return "Authorizations to [company]".replace("[company]", tradePartnerName);
+            };
+
+            $scope.openCommentModalForTr09H2 = function () {
+                var data = $scope.getCommentDataForTr09H2();
+                $scope.openCommentModalTradePartner(data);
+            };
+
+            $scope.getCommentDataForTr09H2 = function () {
+                return $scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H2;
+            };
+
+            $scope.openCommentModalForTr13E2 = function () {
+                var data = $scope.getCommentDataForTr13E2();
+                $scope.openCommentModalTradePartner(data);
+            };
+
+            $scope.getCommentDataForTr13E2 = function () {
+                return $scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2;
             };
 
             $scope.mandatoryCommentForGasAmountTradePartner = function(data, confirmationCaption, resetAmountCallback, bodyText) {

@@ -701,11 +701,6 @@
           "Amount": null,
           "Unit": "CO2e"
         },
-        "tr_13E": {
-          "Code": "tr_13E",
-          "Amount": null,
-          "Unit": "CO2e"
-        },
         "tr_13E1": {
           "Code": "tr_13E1",
           "Amount": null,
@@ -895,10 +890,6 @@
       },
       "tr_09G": {
         "Code": "09G",
-        "Amount": null
-      },
-      "tr_09H": {
-        "Code": "09H",
         "Amount": null
       },
       "tr_09H1": {

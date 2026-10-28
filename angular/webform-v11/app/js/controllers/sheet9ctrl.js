@@ -158,8 +158,12 @@
             if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13D)
                 tr13d_value = parseInt($scope.instance.FGasesReporting.F9_S13.Totals.tr_13D.Amount || 0);
             tr13e2_value = tr13e1_value - tr13d_value;
-            if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2)
+            if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2) {
                 $scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2.Amount = tr13e2_value;
+                if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2.Amount <= 0) {
+                    $scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2.Comment = "";
+                }
+            }
 
             return tr13e2_value;
 

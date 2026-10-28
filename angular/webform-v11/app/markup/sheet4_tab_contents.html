@@ -252,21 +252,21 @@
         <tr>
             <td>
                 <span class="transaction-code">9H : </span>
-                <span data-translate="sheet4.tr-09h-desc"></span>
+                <strong data-translate="sheet4.tr-09h-desc"></strong>
             </td>
             <td align="center"></td>
         </tr>
         <tr>
-            <td style="padding-left: 2em;">
+            <td>
                 <span class="transaction-code">9H1 : </span>
                 <span data-translate="sheet4.tr-09h1-desc"></span>
-                <div><span class="hint" data-translate="sheet4.tr-09h1-desc-tail" data-translate-values="{ date: instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09G.Comment }"></span></div>
+                <div><span class="hint" data-translate="sheet4.tr-09h1-desc-tail" data-translate-values="{ date: instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H1.Comment }"></span></div>
             </td>
             <td align="center">
                 <span>{{ instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H1.Amount | thousandSeparator }}</span>
             </td>
         </tr>
-        <tr>
+        <tr ng-show="instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H2.Amount > 0">
             <td style="padding-left: 2em;">
                 <span class="transaction-code">9H2 : </span>
                 <span data-translate="sheet4.tr-09h2-desc"></span>
@@ -274,6 +274,19 @@
             </td>
             <td align="center">
                 <span>{{ instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H2.Amount | thousandSeparator }}</span>
+                <div ng-if="instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H2.Amount > 0">
+                    <span class="glyphicon glyphicon-exclamation-sign" data-tooltip="{{ 'sheet4.tr-09h2-tooltip' | translate }}"></span>
+                </div>
+                <!--comment button-->
+                <div align="left" ng-show="instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H2.Amount > 0">
+                    <button ng-controller="ModalController" data-tooltip="{{'common.add-edit-comment-tooltip' | translate}}"
+                            ng-click="openCommentModalForTr09H2();"
+                            class="glyphicon glyphicon-comment"></button>
+                    <span ng-if="instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H2.Comment"
+                          data-tooltip="{{instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H2.Comment}}">
+                        {{instance.FGasesReporting.F4_S9_IssuedAuthQuata.tr_09H2.Comment | limitTo:commentLimit}} ...
+                    </span>
+                </div>
             </td>
         </tr>
 

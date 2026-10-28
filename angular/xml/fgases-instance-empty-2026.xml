@@ -740,10 +740,6 @@
 				<Code>09G</Code>
 				<Amount />
 			</tr_09G>
-			<tr_09H>
-				<Code>09H</Code>
-				<Amount />
-			</tr_09H>	
 			<tr_09H1>
 				<Code>09H1</Code>
 				<Amount />
@@ -2889,11 +2885,6 @@
 					<Amount />
 					<Unit>CO2e</Unit>
 				</tr_13D>
-				<tr_13E>
-					<Code>tr_13E</Code>
-					<Amount />
-					<Unit>CO2e</Unit>
-				</tr_13E>
 				<tr_13E1>
 					<Code>tr_13E1</Code>
 					<Amount />

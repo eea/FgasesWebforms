@@ -98,14 +98,14 @@
       <tr>
           <td>
               <span class="transaction-code">13E : </span>
-              <span data-translate="sheet9.tr-13e-desc"></span>
+              <strong data-translate="sheet9.tr-13e-desc"></strong>
           </td>
           <td class="text-center"></td>
       </tr>
       <!-- 13E ends here-->
       <!-- 13E1 stars here-->
       <tr>
-          <td style="padding-left: 2em;">
+          <td>
               <span class="transaction-code">13E1 : </span>
               <span data-translate="sheet9.tr-13e1-desc"></span>
               <div><span class="hint" data-translate="sheet9.tr-13e1-desc-tail" data-translate-values="{ date: authorisationData.authorisation.ExtractDate }"></span></div>
@@ -114,13 +114,28 @@
       </tr>
       <!-- 13E1 ends here-->
       <!-- 13E2 stars here-->
-      <tr>
+      <tr ng-show="instance.FGasesReporting.F9_S13.Totals.tr_13E2.Amount > 0">
           <td style="padding-left: 2em;">
               <span class="transaction-code">13E2 : </span>
               <span data-translate="sheet9.tr-13e2-desc"></span>
               <div><span class="formula" data-translate="sheet9.tr-13e2-formula"></span></div>
           </td>
-          <td class="text-center"><span>{{ tr_13e2() | thousandSeparator }}</span></td>
+          <td class="text-center">
+              <span>{{ tr_13e2() | thousandSeparator }}</span>
+              <div ng-if="instance.FGasesReporting.F9_S13.Totals.tr_13E2.Amount > 0">
+                  <span class="glyphicon glyphicon-exclamation-sign" data-tooltip="{{ 'sheet9.tr-13e2-tooltip' | translate }}"></span>
+              </div>
+              <!--comment button-->
+              <div align="left" ng-show="instance.FGasesReporting.F9_S13.Totals.tr_13E2.Amount > 0">
+                  <button ng-controller="ModalController" data-tooltip="{{'common.add-edit-comment-tooltip' | translate}}"
+                          ng-click="openCommentModalForTr13E2();"
+                          class="glyphicon glyphicon-comment"></button>
+                  <span ng-if="instance.FGasesReporting.F9_S13.Totals.tr_13E2.Comment"
+                        data-tooltip="{{instance.FGasesReporting.F9_S13.Totals.tr_13E2.Comment}}">
+                      {{instance.FGasesReporting.F9_S13.Totals.tr_13E2.Comment | limitTo:commentLimit}} ...
+                  </span>
+              </div>
+          </td>
       </tr>
       <!-- 13E2 ends here-->
 
