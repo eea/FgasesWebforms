@@ -346,6 +346,8 @@
 				Special customs procedures pursuant to Article 210 of Regulation (EU) No 952/2013 are external and internal transit, storage in customs warehouses and free zones, temporary admission and end-use procedures, and inward and outward processing procedures.
 				Reporting by country of origin is not required.
 			</tr-02g-tooltip>
+			<tr-02g-modal-title>Amounts received under special customs procedures</tr-02g-modal-title>
+			<tr-02g-modal-description>Please indicate the name of the undertaking from which you have purchased/received the amounts under special customs. If possible, please also indicate the VAT Number and/or the F-Gas Portal code of the undertaking(s).</tr-02g-modal-description>
 			<tr-02h-desc>Amounts under special customs procedures that have been sold or supplied to other undertakings</tr-02h-desc>
 			<tr-02h-tooltip>
 				Sales of amounts reported in 2A and/or 2G, where those have not been placed on the market by the reporting undertaking. The undertaking/s in receipt of reported amounts shall be specified.

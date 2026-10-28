@@ -818,15 +818,37 @@
                 <span class="glyphicon glyphicon-info-sign row-tooltip" data-tooltip-placement="right" data-tooltip="{{'sheet1.tr-02g-tooltip' | translate}}"></span>
                 <span data-translate="sheet1.tr-02g-desc"></span>
             </td>
+            
+        </td>-->
+        </tr>
+        <!-- Start of Countries Row -->
+        <tr ng-repeat="(ctrIndex, ctr)  in instance.FGasesReporting.F1_S1_4_ProdImpExp.tr_02A_Countries.Country">
+            <td></td>
+            <td></td>
+            <td align="right">
+                <span data-translate="common.countryImportedOf"></span>
+                <span>: {{ctr.CountryName}}</span>
+
+            </td>
             <td ng-repeat="reportedGas in filteredReportedGases track by reportedGas.GasId | filter: filterNonFlourGases" align="center">
-                <div ng-switch="!(isUnspecifiedMix(reportedGas))">
-                    <div ng-switch-when="true">
-                        <input gas-input id="{{'tr_02G_' + reportedGas.GasId}}" ng-model="instance.FGasesReporting.F1_S1_4_ProdImpExp.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_02G.Amount" ng-change="doCalculationForFields(instance.FGasesReporting.ReportedGases.indexOf(reportedGas), ['tr_01K', 'tr_04M', 'tr_06X']);" />
-                    </div>
-                    <div ng-switch-when="false" ng-init="instance.FGasesReporting.F1_S1_4_ProdImpExp.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_02G.Amount = null;">
-                        <input ng-disabled="true" ng-class="'disabled'" />
-                        <span ng-if="(isUnspecifiedMix(reportedGas))" data-tooltip="{{'common.no-unspecified-mix' | translate}}" class="glyphicon glyphicon-warning-sign row-tooltip"></span>
-                    </div>
+                <div ng-show="ctrIndex==0">
+                    {{instance.FGasesReporting.F1_S1_4_ProdImpExp.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_02G.totalAmountForRow}}
+                </div>
+                <div id="{{'tr_02G_' + reportedGas.GasId}}" ng-show="containsHFC(reportedGas)">
+
+                    <input gas-input ng-disabled="false" ng-class="'enabled'" ng-change="doCalculationTotalForRow('F1_S1_4_ProdImpExp', 'tr_02G')"
+                           placeholder="Country Specific Amount"
+                           ng-blur="mandatoryCommentForTr02G(instance.FGasesReporting.ReportedGases.indexOf(reportedGas), ctrIndex);"
+                           ng-model="instance.FGasesReporting.F1_S1_4_ProdImpExp.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_02G.CountrySpecific.Country[ctrIndex].Amount" />
+                </div>
+                <div align="left" ng-show="instance.FGasesReporting.F1_S1_4_ProdImpExp.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_02G.CountrySpecific.Country[ctrIndex].Amount">
+                    <button ng-controller="ModalController" data-tooltip="{{'common.add-edit-comment-tooltip' | translate}}"
+                            ng-click="openCommentModalForTr02G(instance.FGasesReporting.ReportedGases.indexOf(reportedGas), ctrIndex);"
+                            class="glyphicon glyphicon-comment"></button>
+                    <span ng-if="instance.FGasesReporting.F1_S1_4_ProdImpExp.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_02G.CountrySpecific.Country[ctrIndex].Comment"
+                          data-tooltip="{{instance.FGasesReporting.F1_S1_4_ProdImpExp.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_02G.CountrySpecific.Country[ctrIndex].Comment}}">
+                        {{instance.FGasesReporting.F1_S1_4_ProdImpExp.Gas[instance.FGasesReporting.ReportedGases.indexOf(reportedGas)].tr_02G.CountrySpecific.Country[ctrIndex].Comment | limitTo:commentLimit}} ...
+                    </span>
                 </div>
             </td>
         </tr>
