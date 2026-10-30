@@ -1964,14 +1964,15 @@
 				</tr>
 				<tr>
 					<td class="code">
+						<span>13E</span>
+					</td>
+					<td>
 						<strong>
-							<span>13E : </span>
 							<xsl:call-template name="getLabel">
 								<xsl:with-param name="labelName" select="'tr-13e-desc'"/>
 							</xsl:call-template>
 						</strong>
 					</td>
-
 					<td class="total">
 						
 					</td>
@@ -1979,10 +1980,11 @@
 				</tr>
 				<tr>
 					<td class="code">
-						<span>13E1 : </span>
-
+						<span>13E1</span>
+					</td>
+					<td>
 						<xsl:call-template name="getLabel">
-							<xsl:with-param name="labelName" select="'tr-013e1-desc'"/>
+							<xsl:with-param name="labelName" select="'tr-13e1-desc'"/>
 						</xsl:call-template>
 						<br/>
 						<xsl:variable name="tr-13e1-desc-tail">
@@ -2003,11 +2005,12 @@
 				<xsl:if test="number(.[name() = 'F9_S13']/Totals/tr_13E2/Amount) &gt; 0">
 					<tr>
 						<td class="code padding-left-1em">
-							<span>13E2 : </span>
+							<span>13E2</span>
+						</td>
+						<td>
 							<xsl:call-template name="getLabel">
 								<xsl:with-param name="labelName" select="'tr-13e2-desc'"/>
 							</xsl:call-template>
-							<br/>
 							<span class="formula">
 								<xsl:call-template name="getLabel">
 									<xsl:with-param name="labelName" select="'tr-13e2-formula'"/>
