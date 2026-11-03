@@ -5355,8 +5355,8 @@
                 return $scope.instance.FGasesReporting.F1_S1_4_ProdImpExp.Gas[gasIndex].tr_02D.CountrySpecific.Country[countryIndex];
             };
 
-            $scope.getCommentDataForTr02G = function (gasIndex, countryIndex) {
-                return $scope.instance.FGasesReporting.F1_S1_4_ProdImpExp.Gas[gasIndex].tr_02G.CountrySpecific.Country[countryIndex];
+            $scope.getCommentDataForTr02G = function (gasIndex) {
+                return $scope.instance.FGasesReporting.F1_S1_4_ProdImpExp.Gas[gasIndex].tr_02G;
             };
 
             $scope.getCommentDataForTr02App = function (gasIndex, countryIndex) {
@@ -5399,9 +5399,9 @@
                 $scope.openCommentModalCountry(data);
             };
 
-            $scope.openCommentModalForTr02G = function (gasIndex, countryIndex) {
-                var data = $scope.getCommentDataForTr02G(gasIndex, countryIndex);
-                $scope.openCommentModalCountry(data);
+            $scope.openCommentModalForTr02G = function (gasIndex) {
+                var data = $scope.getCommentDataForTr02G(gasIndex);
+                $scope.openCommentModal(data);
             };
 
             $scope.openCommentModalForTr02App = function (gasIndex, countryIndex) {
@@ -5421,7 +5421,7 @@
                 return "[gas] supplies to [country]".replace("[gas]", gasName).replace("[country]", countryName);
             };    
 
-            $scope.getCommentModalCaptionForTr02G = function (gasIndex, countryIndex) {
+            $scope.getCommentModalCaptionForTr02G = function (gasIndex) {
                 return "sheet1.tr-02g-modal-title";
             };     
 
@@ -5449,10 +5449,11 @@
                 }, $translate.instant("validation_messages.qc_1401.error_text"));
             };
 
-            $scope.mandatoryCommentForTr02G = function (gasIndex, countryIndex) {
-                var data = $scope.getCommentDataForTr02G(gasIndex, countryIndex);
-                var caption = $scope.getCommentModalCaptionForTr02G(gasIndex, countryIndex);
-                $scope.mandatoryCommentForGasAmountCountry(data, caption, function () {
+            $scope.mandatoryCommentForTr02G = function (gasIndex) {
+                var data = $scope.getCommentDataForTr02G(gasIndex);
+                var caption = $scope.getCommentModalCaptionForTr02G(gasIndex);
+
+                $scope.mandatoryCommentForGasAmount(data, caption, function () {
                     $scope.reCalculateSheet1();
                 }, $translate.instant("sheet1.tr-02g-modal-description"));
             };
