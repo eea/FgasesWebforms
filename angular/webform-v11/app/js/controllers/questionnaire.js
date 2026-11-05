@@ -6026,7 +6026,8 @@
                 }
             };
             
-            $scope.mandatoryCommentForGasAmount = function(data, confirmationCaption, resetAmountCallback, bodyText) {
+            $scope.mandatoryCommentForGasAmount = function (data, confirmationCaption, resetAmountCallback, bodyText) {
+                    
                 if ((numericUtil.toNum(data.amount, 0) !== 0 || numericUtil.toNum(data.Amount, 0) !== 0) && stringUtil.isBlank(data.Comment)) {
                     $scope.showCommentConfirmationModal(data, confirmationCaption, resetAmountCallback, bodyText);
                 } else {
@@ -6034,11 +6035,12 @@
                 }
             };
 
-            $scope.showCommentConfirmationModal = function(data, confirmationCaption, resetAmountCallback, bodyText) {
+            $scope.showCommentConfirmationModal = function (data, confirmationCaption, resetAmountCallback, bodyText) {
+                
                 commentModalService.open($scope, 'lg', 'comment-confirmation-modal.html', 'ConfirmCommentDialogController', data, function() {
                     $scope.openCommentModal(data, resetAmountCallback);
                 }, function() {
-                    if (stringUtil.isBlank(data.Comment)) {
+                    if (stringUtil.isBlank(data.Comment) && data.Code !== "02G") {
                         data.Amount = null;
                         objectUtil.call(resetAmountCallback);
                     }
@@ -6049,12 +6051,12 @@
 
             };
 
-            $scope.openCommentModal = function(data, resetAmountCallback) {
+            $scope.openCommentModal = function (data, resetAmountCallback) {
                 var onCommentReset = null;
 
                 if (!objectUtil.isNull(resetAmountCallback)) {
                     onCommentReset = function() {
-                        if (stringUtil.isBlank(data.Comment)) {
+                        if (stringUtil.isBlank(data.Comment) && data.Code !== "02G") { // exception 2G comment
                             data.Amount = null;
                             objectUtil.call(resetAmountCallback);
                         }
