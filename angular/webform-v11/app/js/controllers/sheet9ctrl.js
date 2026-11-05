@@ -136,7 +136,8 @@
 
             if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13D)
                 $scope.instance.FGasesReporting.F9_S13.Totals.tr_13D.Amount = result;
-
+            var tr13e2_value = this.tr_13e2()
+            this.tr_13e2_DeleteComment(tr13e2_value)
             return result;
 
         };
@@ -146,6 +147,8 @@
             var finalValue = value ? parseInt(value) : ''
             if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13E1)
                 $scope.instance.FGasesReporting.F9_S13.Totals.tr_13E1.Amount = finalValue;
+            var tr13e2_value = this.tr_13e2()
+            this.tr_13e2_DeleteComment(tr13e2_value)
             return finalValue;
         };
 
@@ -158,16 +161,19 @@
             if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13D)
                 tr13d_value = parseInt($scope.instance.FGasesReporting.F9_S13.Totals.tr_13D.Amount || 0);
             tr13e2_value = tr13e1_value - tr13d_value;
+            return tr13e2_value;
+        };
+
+        $scope.tr_13e2_DeleteComment = function (tr13e2_value) {
             if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2) {
                 $scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2.Amount = tr13e2_value;
                 if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2.Amount <= 0) {
                     $scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2.Comment = "";
                 }
             }
+        }
 
-            return tr13e2_value;
 
-        };
 
 
       });
