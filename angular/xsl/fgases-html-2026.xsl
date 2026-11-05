@@ -3742,9 +3742,9 @@
 
 
 					<!--2App End -->
-                  
-				  <!--2G Start -->
-                  <tr>
+
+					<!--2G Start -->
+					<tr>
 						<th>
 							<span>2G : </span>
 
@@ -3755,12 +3755,21 @@
 						</th>
 						<xsl:for-each select=".|following-sibling::Gas[not(position()>($pagingLimit - 1))]">
 							<td class="num_cell">
-								<xsl:call-template name="formatValue"><xsl:with-param name="num" select="tr_02G/Amount"/></xsl:call-template>
+								<xsl:call-template name="formatValue">
+									<xsl:with-param name="num" select="tr_02G/Amount"/>
+								</xsl:call-template>
+								<br/>
+								<br/>
+								<span class="comment">
+									<xsl:call-template name="getValue">
+										<xsl:with-param name="elem" select="tr_02G/Comment"/>
+									</xsl:call-template>
+								</span>
 							</td>
 						</xsl:for-each>
 					</tr>
 
-			  <!--2G End -->
+					<!--2G End -->
 
 			  <!--2H Start -->
 					<tr>

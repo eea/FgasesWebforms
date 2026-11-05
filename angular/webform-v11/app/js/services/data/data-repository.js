@@ -61,7 +61,7 @@
                             $http.get(url, {tracker: $rootScope.loadingTracker})
                                 .error((function(vocabularyIdentifier){return function(data, status, headers, config){
                                     alert("Failed to read code lists '" + vocabularyIdentifier + "'. Data = " +  data + ", status = " + status);
-                                    angular.copy(dummyGasList, codeLists.FGasesCodelists[vocabularyIdentifier]);
+                                    //angular.copy(dummyGasList, codeLists.FGasesCodelists[vocabularyIdentifier]);
                                 }})(vocabularyIdentifier))
                                 .success((function(vocabularyIdentifier){return function (newCodeList) {
                                     codeLists.FGasesCodelists[vocabularyIdentifier] = {concepts:[]};
