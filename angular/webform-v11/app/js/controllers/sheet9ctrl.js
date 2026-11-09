@@ -167,7 +167,7 @@
         $scope.tr_13e2_DeleteComment = function (tr13e2_value) {
             if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2) {
                 $scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2.Amount = tr13e2_value;
-                if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2.Amount <= 0) {
+                if (($scope.instance.FGasesReporting.F9_S13.Totals.tr_13E1.Amount != 0 && $scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2.Amount == 0) || $scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2.Amount < 0) {
                     $scope.instance.FGasesReporting.F9_S13.Totals.tr_13E2.Comment = "";
                 }
             }
