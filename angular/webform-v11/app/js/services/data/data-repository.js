@@ -185,6 +185,7 @@
                         var registryData = {
                             stocks: that._fixStocks(data.registryData),
                             quota: that._fixQuota(data.registryData),
+                            certex: that._fixCertex(data.registryData),
                             large: that._fixLargeStatus(data.registryData),
                             ner: that._fixNerStatus(data.registryData)
                         };
@@ -243,6 +244,21 @@
                     });
 
                     return quota;
+                },
+                _fixCertex: function (companyData) {
+                    jsonNormalizer.normalizeObjectProperty(companyData, 'certex');
+                    var certex = {};
+                    certex.certexQuota = numericUtil.toNum(companyData.certex.certexQuota); // 9H1
+                    certex.certexQuotaDate = companyData.certex.certexQuotaDate;
+                    certex.certexAuth = numericUtil.toNum(companyData.certex.certexAuth); // 13E1
+                    certex.certexAuthDate = companyData.certex.certexAuthDate;
+                    if (typeof (certex.certexQuotaDate) == "undefined") {
+                        certex.certexQuotaDate = null;
+                    }
+                    if (typeof (certex.certexAuthDate) == "undefined") {
+                        certex.certexAuthDate = null;
+                    }
+                    return certex;
                 },
                 _fixLargeStatus: function(companyData) {
                     return objectUtil.isNull(companyData.large) ? false : companyData.large;

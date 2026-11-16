@@ -24,7 +24,8 @@
             };
             
             TransactionYearProvider.prototype._maxTransactionYear = function() {
-                return new Date().getFullYear() - 1;
+                //return new Date().getFullYear() - 1;
+                return new Date().getFullYear();
             };
             
             return new TransactionYearProvider();

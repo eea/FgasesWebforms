@@ -108,9 +108,9 @@
           <td>
               <span class="transaction-code">13E1 : </span>
               <span data-translate="sheet9.tr-13e1-desc"></span>
-              <div><span class="hint" data-translate="sheet9.tr-13e1-desc-tail" data-translate-values="{ date: authorisationData.authorisation.ExtractDate }"></span></div>
+              <div><span class="hint" data-translate="sheet9.tr-13e1-desc-tail" data-translate-values="{ date: instance.FGasesReporting.F9_S13.Totals.tr_13E1.Comment }"></span></div>
           </td>
-          <td class="text-center"><span>{{ tr_13e1() | thousandSeparator }}</span></td>
+          <td class="text-center"><span>{{ instance.FGasesReporting.F9_S13.Totals.tr_13E1.Amount | thousandSeparator }}</span></td>
       </tr>
       <!-- 13E1 ends here-->
       <!-- 13E2 stars here-->

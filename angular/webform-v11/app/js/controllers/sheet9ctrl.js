@@ -142,16 +142,6 @@
 
         };
 
-        $scope.tr_13e1 = function () {
-            var value = $scope.instance.FGasesReporting.F9_S13.AuthBalance.Amount;
-            var finalValue = value ? parseInt(value) : ''
-            if ($scope.instance.FGasesReporting.F9_S13.Totals.tr_13E1)
-                $scope.instance.FGasesReporting.F9_S13.Totals.tr_13E1.Amount = finalValue;
-            var tr13e2_value = this.tr_13e2()
-            this.tr_13e2_DeleteComment(tr13e2_value)
-            return finalValue;
-        };
-
         $scope.tr_13e2 = function () {
             var tr13e2_value = 0;
             var tr13e1_value = 0;

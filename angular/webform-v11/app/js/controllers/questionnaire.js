@@ -290,6 +290,7 @@
 
                 dataRepository.getRegistryData(companyId, transactionYearProvider.getTransactionYear(), function(extraCompanyData) {
                     $scope.applyStocks(extraCompanyData.stocks, forceStockOverwrite);
+                    $scope.applyCertex(extraCompanyData.certex);
                     $scope.applyQuota(extraCompanyData.quota);
                     $scope.applyCompanySize(extraCompanyData.large);
                     $scope.applyNerStatus(extraCompanyData.ner);
@@ -310,16 +311,25 @@
                 });
             };
 
+            $scope.applyCertex = function (certex) {
+                $scope.certex = certex;
+                var section9Data = $scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata;
+                jsonNormalizer.normalizeObjectProperty(section9Data, 'tr_09H1');
+                section9Data.tr_09H1.Amount = certex.certexQuota;
+                section9Data.tr_09H1.Comment = certex.certexQuotaDate;
+                var section13Data = $scope.instance.FGasesReporting.F9_S13.Totals;
+                jsonNormalizer.normalizeObjectProperty(section13Data, 'tr_13E1');
+                section13Data.tr_13E1.Amount = certex.certexAuth;
+                section13Data.tr_13E1.Comment = certex.certexAuthDate;
+            };
+
             $scope.applyQuota = function(quota) {
                 var section9Data = $scope.instance.FGasesReporting.F4_S9_IssuedAuthQuata;
                 jsonNormalizer.normalizeObjectProperty(section9Data, 'tr_09A_imp_date');
                 jsonNormalizer.normalizeObjectProperty(section9Data, 'tr_09G');
-                jsonNormalizer.normalizeObjectProperty(section9Data, 'tr_09H1');
                 section9Data.tr_09A_imp_date = quota.allocatedQuotaDate;
                 section9Data.tr_09G.Amount = quota.availableQuota;
                 section9Data.tr_09G.Comment = quota.availableQuotaDate;
-                section9Data.tr_09H1.Amount = quota.availableQuota;
-                section9Data.tr_09H1.Comment = quota.availableQuotaDate;
                 viewModel.initCompanyQuota(quota);
 
                 while (section9Data.tr_09A_imp_TradePartners.Partner.length > 0) {
